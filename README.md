@@ -1,7 +1,5 @@
-# JoakimSoftware-Examples
-
 <p align="center">
-  <img src="docs/img/joakimsoftware-logo.png" width="90%">
+  <img src="docs/img/joakimsoftware-logo.png" width="100%">
 </p>
 
 This repo contains examples of using primarily Azure PaaS service
