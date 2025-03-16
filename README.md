@@ -32,7 +32,7 @@ Davidson, NC, USA  28036
 
 ---
 
-## Directory Structure
+## Directory Structure - Top-Level Projects
 
 ```
 ├── LICENSE
@@ -42,6 +42,8 @@ Davidson, NC, USA  28036
 ├── docs
 │   └── img
 ├── dotnet_blazor
+├── java_gremlin_export
+├── java_jena_graph
 ├── java_spring
 ├── nodejs_ts_express
 ├── python_duckdb
