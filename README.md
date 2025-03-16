@@ -35,6 +35,7 @@ Davidson, NC, USA  28036
 ## Directory Structure
 
 ```
+├── LICENSE
 ├── README.md
 ├── az
 ├── data
@@ -42,8 +43,10 @@ Davidson, NC, USA  28036
 │   └── img
 ├── dotnet_blazor
 ├── java_spring
-├── node_ts_express
+├── nodejs_ts_express
+├── python_duckdb
 ├── python_fastapi
+├── python_jupyter
 ├── scripts
 └── sql
 ```
