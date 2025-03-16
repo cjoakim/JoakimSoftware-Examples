@@ -3,19 +3,34 @@
 </p>
 
 This repo contains examples of using primarily Azure PaaS service
-databases such as Cosmos DB NoSQL API, Cosmos DB Mongo vCore API,
-and Azure PostgreSQL.  Also used are various Azure AI Services, 
-Amazon S3 storage, and LLM orchestrators such as LangChain and
-Semantic Kernel.
+databases such as the **Azure Cosmos DB NoSQL API**, 
+**Azure Cosmos DB Mongo vCore API**, and **Azure PostgreSQL**
+in multiple programming language ecosystems.
+
+Also used are various Azure AI Services such as **Azure OpenAI**, 
+**Azure AI Search**, Amazon S3 storage, and LLM orchestrators such as
+**LangChain** and **Semantic Kernel**.
 
 The examples are roughly functionally equivalent, as they use a
 mainstream programming language (i.e. - C#, Java, Node.js/Typescript, and Python)
-along with a web application framework typical of that language
-ecosystem (i.e. - Blazor, SpringBoot, Express, and FastAPI, respectively).
+along with a web application framework typical of that language ecosystem
+(i.e. - Blazor, SpringBoot, Express, and FastAPI, respectively).
 
 These examples are both for my personal use, and for use on my
 customer projects.  They are intended to be **starter projects**
 rather than full-functionality business applications.
+
+---
+
+## Contact Information
+
+```
+Chris Joakim
+christopher.joakim@outlook.com
+Davidson, NC, USA  28036
+```
+
+---
 
 ## Directory Structure
 
@@ -31,5 +46,16 @@ rather than full-functionality business applications.
 ├── python_fastapi
 ├── scripts
 └── sql
+```
+
+---
+
+## Standard Environment Variables
+
+For consistency, these variable names are used throughout the various
+language-specific implementaion subprojects.
+
+```
+
 ```
 
