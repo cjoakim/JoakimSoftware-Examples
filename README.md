@@ -1,16 +1,8 @@
 # JoakimSoftware-Examples
 
-<pre>
-
-</pre>
-
 <p align="center">
   <img src="docs/img/joakimsoftware-logo.png" width="90%">
 </p>
-
-<pre>
-
-</pre>
 
 This repo contains examples of using primarily Azure PaaS service
 databases such as Cosmos DB NoSQL API, Cosmos DB Mongo vCore API,
