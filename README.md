@@ -20,6 +20,10 @@ These examples are both for my personal use, and for use on my
 customer projects.  They are intended to be **starter projects**
 rather than full-functionality business applications.
 
+Note: This the subprojects in this repo are being developed
+at this time (late March 2025).  They are expected to be completed
+by May 2025.
+
 ---
 
 ## Contact Information
