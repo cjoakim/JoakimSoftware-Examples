@@ -1,4 +1,3 @@
 # Java Apache Jena Graph
 
-TODO
-
+See https://github.com/AzureCosmosDB/CosmosAIGraph

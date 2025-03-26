@@ -1,4 +1,3 @@
 # Java Cosmos DB Gremlin Export 
 
-TODO
-
+See https://github.com/cjoakim/azure-cosmos-db-gremlinx
