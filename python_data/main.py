@@ -4,6 +4,7 @@ Usage:
   python main.py merge_car_makes
   python main.py download_cars_data
   python main.py merge_downloaded_cars_data
+  python main.py openflights_wrangle
 Options:
   -h --help     Show this screen.
   --version     Show version.
@@ -22,6 +23,7 @@ import httpx
 
 from docopt import docopt
 from dotenv import load_dotenv
+from six import moves 
 
 from src.io.fs import FS
 from src.os.env import Env
@@ -116,6 +118,138 @@ def merge_downloaded_cars_data():
     print("all_cars count: {}".format(len(sorted_cars)))
     FS.write_json(sorted_cars, "tmp/all_cars.json", sort_keys=False)
 
+def openflights_wrangle():
+    # The OpenFlights csv files do not contain headers, therefore
+    # we inject the column names and datatypes to con.read_csv(...).
+    # See https://openflights.org/data.php for csv file layouts.
+    # The output json files are document-per-line format.
+
+    con = duckdb.connect(database=":memory:")
+    
+    openflights_wrangle_airlines(con, False)
+    openflights_wrangle_airports(con, False)
+    openflights_wrangle_routes(con, False)
+    openflights_wrangle_countries(con, False)
+    openflights_wrangle_planes(con, False)
+    
+def openflights_wrangle_airlines(con, verbose=False):
+    airlines = con.read_csv(
+        "../data/openflights/raw/airlines.dat",
+        auto_detect=True,
+        columns={
+            'AirlineID': 'VARCHAR',
+            'Name': 'VARCHAR',
+            'Alias': 'VARCHAR',
+            'IATA': 'VARCHAR',
+            'ICAO': 'VARCHAR',
+            'Callsign': 'VARCHAR',
+            'Country_Territory': 'VARCHAR',
+            'Active': 'VARCHAR'
+        })
+    if verbose:
+        print(str(type(airlines))) # <class 'duckdb.duckdb.DuckDBPyRelation'>
+        rows = con.execute("describe airlines;").fetchall()
+        for row in rows:
+            print(row)
+        rows = con.execute("select * from airlines limit 999999;").fetchall()
+        for row in rows:
+            print(row)  # rows are simple tuples; <class 'tuple'>
+    
+    con.execute("copy airlines to '../data/openflights/airlines.json'")
+
+def openflights_wrangle_airports(con, verbose=False):
+    airports = con.read_csv(
+        "../data/openflights/raw/airports.dat",
+        columns={
+            'AirportID': 'VARCHAR',
+            'Name': 'VARCHAR',
+            'City': 'VARCHAR',
+            'Country': 'VARCHAR',
+            'IATA': 'VARCHAR',
+            'ICAO': 'VARCHAR',
+            'Latitude': 'VARCHAR',
+            'Longitude': 'VARCHAR',
+            'Altitude': 'VARCHAR',
+            'Timezone': 'VARCHAR',
+            'DST': 'VARCHAR',
+            'Tz': 'VARCHAR',
+            'AType': 'VARCHAR',
+            'Source': 'VARCHAR'
+        })
+    if verbose:
+        print(str(type(airports))) # <class 'duckdb.duckdb.DuckDBPyRelation'>
+        rows = con.execute("describe airports;").fetchall()
+        for row in rows:
+            print(row)
+        rows = con.execute("select * from airports limit 999999;").fetchall()
+        for row in rows:
+            print(row)  # rows are simple tuples; <class 'tuple'>
+    
+    con.execute("copy airports to '../data/openflights/airports.json'")      
+
+def openflights_wrangle_routes(con, verbose=False):
+    routes = con.read_csv(
+        "../data/openflights/raw/routes.dat",
+        columns={
+            'Airline': 'VARCHAR',
+            'AirlineID': 'VARCHAR',
+            'SourceAirport': 'VARCHAR',
+            'SourceAirportID': 'VARCHAR',
+            'DestinationAirport': 'VARCHAR',
+            'DestinationAirportID': 'VARCHAR',
+            'Codeshare': 'VARCHAR',
+            'Stops': 'VARCHAR',
+            'Equipment': 'VARCHAR'
+        })
+    if verbose:
+        print(str(type(routes))) # <class 'duckdb.duckdb.DuckDBPyRelation'>
+        rows = con.execute("describe routes;").fetchall()
+        for row in rows:
+            print(row)
+        rows = con.execute("select * from routes limit 999999;").fetchall()
+        for row in rows:
+            print(row)  # rows are simple tuples; <class 'tuple'>
+    
+    con.execute("copy routes to '../data/openflights/routes.json'")
+       
+def openflights_wrangle_countries(con, verbose):
+    countries = con.read_csv(
+        "../data/openflights/raw/countries.dat",
+        columns={
+            'Name': 'VARCHAR',
+            'IsoCode': 'VARCHAR',
+            'DafifCode': 'VARCHAR'
+        })
+    if verbose:
+        print(str(type(countries))) # <class 'duckdb.duckdb.DuckDBPyRelation'>
+        rows = con.execute("describe countries;").fetchall()
+        for row in rows:
+            print(row)
+        rows = con.execute("select * from countries limit 999999;").fetchall()
+        for row in rows:
+            print(row)  # rows are simple tuples; <class 'tuple'>
+    
+    con.execute("copy countries to '../data/openflights/countries.json'")
+
+def openflights_wrangle_planes(con, verbose):
+    planes = con.read_csv(
+        "../data/openflights/raw/planes.dat",
+        columns={
+            'Name': 'VARCHAR',
+            'IataCode': 'VARCHAR',
+            'IcaoCode': 'VARCHAR'
+        })	
+    if verbose:
+        print(str(type(planes))) # <class 'duckdb.duckdb.DuckDBPyRelation'>
+        rows = con.execute("describe planes;").fetchall()
+        for row in rows:
+            print(row)
+        rows = con.execute("select * from planes limit 999999;").fetchall()
+        for row in rows:
+            print(row)  # rows are simple tuples; <class 'tuple'>
+    
+    con.execute("copy planes to '../data/openflights/planes.json'")
+
 
 if __name__ == "__main__":
     try:
@@ -131,6 +265,8 @@ if __name__ == "__main__":
                 download_cars_data()
             elif func == "merge_downloaded_cars_data":
                 merge_downloaded_cars_data()
+            elif func == "openflights_wrangle":
+                openflights_wrangle()
             else:
                 print_options("Error: invalid function: {}".format(func))
     except Exception as e:
