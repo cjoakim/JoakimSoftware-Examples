@@ -3,12 +3,12 @@ Usage:
   python main.py <func>
   python main.py merge_car_makes
   python main.py download_cars_data
+  python main.py merge_downloaded_cars_data
 Options:
   -h --help     Show this screen.
   --version     Show version.
 """
 
-import base64
 import json
 import logging
 import sys
@@ -60,13 +60,6 @@ def download_cars_data():
         print("{}: {}".format(idx, make))
         download_models_for_make(make)
 
-        #r = httpx.get('https://www.example.org/')
-        # >>> r.status_code
-        # 200
-        # >>> r.headers['content-type']
-        # 'text/html; charset=UTF-8'
-        # >>> r.text
-
 def download_models_for_make(make):
     url_template = "https://public.opendatasoft.com/api/explore/v2.1/catalog/datasets/all-vehicles-model/records?select=make%2C%20model%2C%20city08u%2C%20highway08u%2C%20comb08u%2C%20cylinders%2C%20displ%2C%20drive%2C%20eng_dscr%2C%20fueltype1%2C%20id%2C%20trany%2C%20vclass%2C%20year%2C%20mfrcode%2C%20basemodel&where=make%20%3D%20%22{}%22&order_by=make%2C%20model%2C%20year&limit={}&offset={}"
     continue_to_process, limit, offset, seq = True, 100, -100, 0
@@ -97,6 +90,32 @@ def download_models_for_make(make):
                 logging.critical(str(e))
                 print(traceback.format_exc())
 
+def merge_downloaded_cars_data():
+    entries = FS.walk("tmp", include_dirs=['tmp/cars'], include_types=['json'])
+    print("entries count: {}".format(len(entries)))
+    all_cars, all_files = list(), list()
+
+    # collect the entry full filenames so as to process them
+    # in a sorted manner
+    for entry in entries:
+        all_files.append(entry["full"])
+
+    for idx, infile in enumerate(sorted(all_files)):
+        print("processing file: {} {}".format(idx + 1, infile))
+        data = FS.read_json(infile)
+        for car in data:
+            car["_make_model_year"] = "{}|{}|{}".format(car["make"], car["model"], car["year"])
+            car["_infile"] = infile
+            print(car)
+            all_cars.append(car)
+
+    sorted_cars = sorted(all_cars, key=lambda x: x['_make_model_year'])
+    for idx, car in enumerate(sorted_cars):
+        car["_seq"] = idx + 1
+
+    print("all_cars count: {}".format(len(sorted_cars)))
+    FS.write_json(sorted_cars, "tmp/all_cars.json", sort_keys=False)
+
 
 if __name__ == "__main__":
     try:
@@ -110,6 +129,8 @@ if __name__ == "__main__":
                 merge_car_makes()
             elif func == "download_cars_data":
                 download_cars_data()
+            elif func == "merge_downloaded_cars_data":
+                merge_downloaded_cars_data()
             else:
                 print_options("Error: invalid function: {}".format(func))
     except Exception as e:

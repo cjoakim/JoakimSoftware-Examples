@@ -192,13 +192,13 @@ class FS:
         return False
     
     @classmethod
-    def write_json(cls, obj: object, outfile: str, pretty=True, verbose=True) -> None:
+    def write_json(cls, obj: object, outfile: str, pretty=True, sort_keys=True, verbose=True) -> None:
         """ Write the given object to the given file as JSON """
         try:
             if obj is not None:
                 jstr = None
                 if pretty is True:
-                    jstr = json.dumps(obj, sort_keys=True, indent=2)
+                    jstr = json.dumps(obj, sort_keys=sort_keys, indent=2)
                 else:
                     jstr = json.dumps(obj)
 
