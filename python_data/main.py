@@ -5,6 +5,7 @@ Usage:
   python main.py download_cars_data
   python main.py merge_downloaded_cars_data
   python main.py openflights_wrangle
+  python main.py sean_lahman_baseball_data_to_json
 Options:
   -h --help     Show this screen.
   --version     Show version.
@@ -250,6 +251,26 @@ def openflights_wrangle_planes(con, verbose):
     
     con.execute("copy planes to '../data/openflights/planes.json'")
 
+def sean_lahman_baseball_data_to_json():
+    # data/baseball/files-list.txt
+    # data/baseball/lahman_1871-2023_csv/Batting.csv
+
+    list_file = "../data/baseball/files-list.txt"
+    list_lines = FS.read_lines(list_file)
+    for line in list_lines:
+        sline = line.strip()
+        sean_lahman_baseball_file_to_json(sline)
+
+    # TODO - implement
+
+def sean_lahman_baseball_file_to_json(basename):
+    barename = basename.split(".")[0]
+    data_dir = "../data/baseball/lahman_1871-2023_csv"
+    data_file = "{}/{}".format(data_dir, basename)
+    out_dir = "../data/baseball/json"
+    out_file = "../data/baseball/json/{}.json".format(barename)
+    print("data_file: {}".format(data_file))
+    print("  out_file: {}".format(out_file))
 
 if __name__ == "__main__":
     try:
@@ -267,6 +288,8 @@ if __name__ == "__main__":
                 merge_downloaded_cars_data()
             elif func == "openflights_wrangle":
                 openflights_wrangle()
+            elif func == "sean_lahman_baseball_data_to_json":
+                sean_lahman_baseball_data_to_json()
             else:
                 print_options("Error: invalid function: {}".format(func))
     except Exception as e:
