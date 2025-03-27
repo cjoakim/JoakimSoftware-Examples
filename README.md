@@ -50,7 +50,7 @@ Davidson, NC, USA  28036
 ├── java_jena_graph
 ├── java_spring
 ├── nodejs_ts_express
-├── python_duckdb
+├── python_data
 ├── python_fastapi
 ├── python_jupyter
 ├── scripts
