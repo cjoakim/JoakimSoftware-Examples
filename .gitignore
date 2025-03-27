@@ -1,3 +1,33 @@
+# cj
+
+**/.DS_Store
+**/.env
+**/.gradle/
+**/.idea/
+**/.vscode/
+**/.vscode
+**/__pycache__/
+**/__MACOSX/
+**/bin/
+**/build/
+**/gradle/
+**/include/
+**/htmlcov/
+**/lib/
+**/lib64/
+**/man/
+**/node_modules/
+**/out/
+**/tmp/
+**/Scripts/
+**/venv/
+
+**/*.class
+**/*.jar
+**/pyvenv.cfg
+**/.override.properties*
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
