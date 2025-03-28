@@ -38,21 +38,24 @@ Davidson, NC, USA  28036
 
 ## Directory Structure - Top-Level Projects
 
+Some of these subprojects are Implemented, others are Pending.
+
 ```
+    Subproject                   State
+    -------------------          ----------
 ├── LICENSE
 ├── README.md
-├── az
-├── data
-├── docs
-│   └── img
-├── dotnet_blazor
-├── java_gremlin_export
-├── java_jena_graph
-├── java_spring
-├── nodejs_ts_express
-├── python_data
-├── python_fastapi
-├── python_jupyter
+├── az                           Pending
+├── data                         Implemented
+├── docs                         Pending
+├── dotnet_blazor                Pending
+├── java_gremlin_export          Implemented, external repo
+├── java_jena_graph              Implemented, external repo
+├── java_spring                  Pending
+├── nodejs_ts_express            Pending, planned impl for April 2025
+├── python_data                  Implemented
+├── python_fastapi               Implemented
+├── python_jupyter               Pending
 ├── scripts
 └── sql
 ```
@@ -76,4 +79,3 @@ MONGO_CONN_STR
 REDIS_HOST
 REDIS_PORT
 ```
-
