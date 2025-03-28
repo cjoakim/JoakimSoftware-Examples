@@ -255,22 +255,27 @@ def sean_lahman_baseball_data_to_json():
     # data/baseball/files-list.txt
     # data/baseball/lahman_1871-2023_csv/Batting.csv
 
+    con = duckdb.connect(database=":memory:")
+    
+    # Read the master list of ~27 files
     list_file = "../data/baseball/files-list.txt"
     list_lines = FS.read_lines(list_file)
     for line in list_lines:
-        sline = line.strip()
-        sean_lahman_baseball_file_to_json(sline)
+        basename = line.strip()
+        sean_lahman_baseball_file_to_json(con, basename)  # Batting.csv
 
-    # TODO - implement
-
-def sean_lahman_baseball_file_to_json(basename):
+def sean_lahman_baseball_file_to_json(con, basename):
     barename = basename.split(".")[0]
     data_dir = "../data/baseball/lahman_1871-2023_csv"
     data_file = "{}/{}".format(data_dir, basename)
-    out_dir = "../data/baseball/json"
     out_file = "../data/baseball/json/{}.json".format(barename)
     print("data_file: {}".format(data_file))
     print("  out_file: {}".format(out_file))
+
+    relation = con.read_csv(data_file)
+    con.execute("copy relation to '{}'".format(out_file))
+
+
 
 if __name__ == "__main__":
     try:
