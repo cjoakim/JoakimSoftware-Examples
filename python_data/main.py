@@ -156,7 +156,7 @@ def openflights_wrangle_airlines(con, verbose=False):
         for row in rows:
             print(row)  # rows are simple tuples; <class 'tuple'>
     
-    con.execute("copy airlines to '../data/openflights/airlines.json'")
+    con.execute("copy airlines to '../data/openflights/json/airlines.json'")
 
 def openflights_wrangle_airports(con, verbose=False):
     airports = con.read_csv(
@@ -186,7 +186,7 @@ def openflights_wrangle_airports(con, verbose=False):
         for row in rows:
             print(row)  # rows are simple tuples; <class 'tuple'>
     
-    con.execute("copy airports to '../data/openflights/airports.json'")      
+    con.execute("copy airports to '../data/openflights/json/airports.json'")      
 
 def openflights_wrangle_routes(con, verbose=False):
     routes = con.read_csv(
@@ -211,7 +211,7 @@ def openflights_wrangle_routes(con, verbose=False):
         for row in rows:
             print(row)  # rows are simple tuples; <class 'tuple'>
     
-    con.execute("copy routes to '../data/openflights/routes.json'")
+    con.execute("copy routes to '../data/openflights/json/routes.json'")
        
 def openflights_wrangle_countries(con, verbose):
     countries = con.read_csv(
@@ -230,7 +230,7 @@ def openflights_wrangle_countries(con, verbose):
         for row in rows:
             print(row)  # rows are simple tuples; <class 'tuple'>
     
-    con.execute("copy countries to '../data/openflights/countries.json'")
+    con.execute("copy countries to '../data/openflights/json/countries.json'")
 
 def openflights_wrangle_planes(con, verbose):
     planes = con.read_csv(
@@ -249,7 +249,7 @@ def openflights_wrangle_planes(con, verbose):
         for row in rows:
             print(row)  # rows are simple tuples; <class 'tuple'>
     
-    con.execute("copy planes to '../data/openflights/planes.json'")
+    con.execute("copy planes to '../data/openflights/json/planes.json'")
 
 def sean_lahman_baseball_data_to_json():
     # data/baseball/files-list.txt
