@@ -10,25 +10,28 @@ six==1.17.0
 Faker
 Jinja2
 azure-identity
-#azure-storage-blob
 black
-boto3[crt]
 certifi
 dnspython
 docopt
 duckdb
+fastapi
 httpx
+hypercorn
 psutil
 pymongo
-
 pytest>= 8.3.5
 pytest-asyncio>=0.25.3
 pytest-cov>=6.0.0
-
 python-dotenv
 pytz
 redis
+uvicorn
 
-#requests
-#urllib3==2.3.0
 
+# Entries per Dependabot warnings
+# starlette>=0.37.0
+# werkzeug>=3.0.6
+# cryptography>=43.0.1
+# aiohttp>=3.10.2
+# requests>=2.30.0

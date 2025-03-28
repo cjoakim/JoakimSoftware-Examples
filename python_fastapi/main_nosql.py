@@ -2,6 +2,7 @@
 Usage:
     python main_nosql.py list_standard_envvars
     python main_nosql.py log_standard_envvars
+    python main_nosql.py load_openflights
     python main_nosql.py test_cosmos_nosql dbname, db_ru, cname, c_ru, pkpath
     python main_nosql.py test_cosmos_nosql dev 1000 test 0 /pk
     python main_nosql.py test_cosmos_nosql dev 1000 app 0 /pk
@@ -24,6 +25,7 @@ from dotenv import load_dotenv
 
 from faker import Faker
 
+from src.io.fs import FS
 from src.os.env import Env
 from src.db.cosmos_nosql_util import CosmosNoSqlUtil
 from src.util.data_gen import DataGenerator
@@ -35,7 +37,6 @@ def print_options(msg):
     arguments = docopt(__doc__, version="1.0.0")
     print(arguments)
 
-
 def list_standard_envvars():
     for name in Env.standard_env_vars():
         print(name)
@@ -43,9 +44,81 @@ def list_standard_envvars():
 def log_standard_envvars():
     Env.log_standard_env_vars() 
 
+async def load_openflights():
+    try:
+        opts = dict()
+        opts["enable_diagnostics_logging"] = True
+        nosql_util = CosmosNoSqlUtil(opts)
+        await nosql_util.initialize()
+        print("nosql_util initialized")
+        acct = Env.cosmosdb_nosql_acct()
+        dbname = Env.cosmosdb_nosql_default_database()
+        cname = Env.cosmosdb_nosql_default_container()
+        print("Cosmos DB acct: {}, dbname: {}, cname: {}".format(acct, dbname, cname))
+        nosql_util.set_db(dbname)
+        nosql_util.set_container(cname)
+        
+        # parsing loop
+        json_lines = FS.read_lines("../data/openflights/json/airports.json")
+        parsed_airports = list()
+        for json_line in json_lines:
+            doc = parse_reformat_airport(json_line)
+            if doc is not None:
+                parsed_airports.append(doc)
+        FS.write_json(parsed_airports, "tmp/parsed_airports.json")
+        print("{} parsed airports".format(len(parsed_airports)))
+
+        # loading loop.  intentionally inefficient (i.e - not bulk-loaded),
+        # so as to enable 1000-RU free Cosmos DB accounts.
+        for idx, doc in enumerate(parsed_airports):
+            await nosql_util.upsert_item(doc)
+            print("airport loaded: {} {}".format(idx + 1, doc["IATA"]))
+
+    except Exception as e:
+        logging.info(str(e))
+        logging.info(traceback.format_exc())
+    finally:   
+        if nosql_util is not None:
+            await nosql_util.close()
+
+def parse_reformat_airport(json_line):
+    try:
+        # The documents look like this.  Cast the numeric attributes
+        # to integers and floats in this method.
+        # {
+        #   "AType": "airport",
+        #   "AirportID": "3876",
+        #   "Altitude": "748",
+        #   "City": "Charlotte",
+        #   "Country": "United States",
+        #   "DST": "A",
+        #   "IATA": "CLT",
+        #   "ICAO": "KCLT",
+        #   "Latitude": "35.2140007019043",
+        #   "Longitude": "-80.94309997558594",
+        #   "Name": "Charlotte Douglas International Airport",
+        #   "Source": "OurAirports",
+        #   "Timezone": "-5",
+        #   "Tz": "America/New_York"
+        # }
+        doc = json.loads(json_line)
+        doc["AirportID"] = int(doc["AirportID"])
+        doc["Altitude"] = int(doc["Altitude"])
+        doc["Latitude"] = float(doc["Latitude"])
+        doc["Longitude"] = float(doc["Longitude"])
+        doc["Timezone"] = float(doc["Timezone"])
+        doc["id"] = str(uuid.uuid4())
+        doc["pk"] = doc["Country"]
+        if doc['IATA'] == "CLT":
+            print(json.dumps(doc, sort_keys=True, indent=2))
+        return doc
+    except Exception as e:
+        print("parse_reformat_airport - unable to parse line:\n{}".format(json_line))
+        return None
+
 async def test_cosmos_nosql(
     dbname: str, db_ru: int, cname: str, c_ru: int, pkpath: str):
-
+    nosql_util = None
     logging.info("test_cosmos_nosql, dbname: {}, db_ru: {}, cname: {}, c_ru: {}, pk: {}".format(
         dbname, db_ru, cname, c_ru, pkpath))
     try:
@@ -81,8 +154,6 @@ async def test_cosmos_nosql(
 
         ctrproxy = nosql_util.set_container(cname)
         print("ctrproxy: {}".format(ctrproxy))
-
-        #throw_exception_here()
 
         ctrproxy = nosql_util.set_container(cname)
         print("ctrproxy: {}".format(ctrproxy))
@@ -130,9 +201,9 @@ async def test_cosmos_nosql(
     except Exception as e:
         logging.info(str(e))
         logging.info(traceback.format_exc())
-    await nosql_util.close()
-    logging.info("end of test_cosmos_service")
-
+    finally:   
+        if nosql_util is not None:
+            await nosql_util.close()
 
 def create_random_document(id, pk):
     dg = DataGenerator()
@@ -147,7 +218,7 @@ if __name__ == "__main__":
     # standard initialization of env and logger
     load_dotenv(override=True)
     logging.basicConfig(format="%(asctime)s - %(message)s", level=logging.INFO)
-    
+
     if len(sys.argv) < 2:
         print_options("Error: invalid command-line")
         exit(1)
@@ -158,6 +229,8 @@ if __name__ == "__main__":
                 list_standard_envvars()
             elif func == "log_standard_envvars":
                 log_standard_envvars()
+            elif func == "load_openflights":
+                asyncio.run(load_openflights())
             elif func == "test_cosmos_nosql":
                 dbname = sys.argv[2]
                 db_ru  = int(sys.argv[3])
@@ -170,3 +243,4 @@ if __name__ == "__main__":
         except Exception as e:
             logging.info(str(e))
             logging.info(traceback.format_exc())
+
