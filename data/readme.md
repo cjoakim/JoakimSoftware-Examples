@@ -35,6 +35,8 @@ See the python_data directory where this data is wrangled.
 
 - https://github.com/unitedstates/
 - https://github.com/unitedstates/congress-legislators?tab=readme-ov-file
+- https://github.com/datasets/country-codes
+
 
 
 
