@@ -24,7 +24,7 @@ import httpx
 
 from docopt import docopt
 from dotenv import load_dotenv
-from six import moves 
+#from six import moves 
 
 from src.io.fs import FS
 from src.os.env import Env
