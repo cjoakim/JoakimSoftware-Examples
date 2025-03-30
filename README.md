@@ -45,6 +45,7 @@ Some of these subprojects are Implemented, others are Pending.
     -------------------          ----------
 ├── LICENSE
 ├── README.md
+├── aws                          Pending
 ├── az                           Pending
 ├── data                         Implemented
 ├── docs                         Pending
@@ -53,6 +54,7 @@ Some of these subprojects are Implemented, others are Pending.
 ├── java_jena_graph              Implemented, external repo
 ├── java_spring                  Pending
 ├── nodejs_ts_express            Pending, planned impl for April 2025
+├── python_aws                   Pending
 ├── python_data                  Implemented
 ├── python_fastapi               Implemented
 ├── python_jupyter               Pending
