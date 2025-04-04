@@ -3,11 +3,13 @@ Usage:
   python main.py <func>
   python main.py s3_list_buckets_and_files
   python main.py s3_download_billing_data
+  python main.py process_downloaded_files
 Options:
   -h --help     Show this screen.
   --version     Show version.
 """
 
+import gzip
 import json
 import logging
 import sys
@@ -56,6 +58,7 @@ def s3_list_buckets_and_files():
                 item_doc = dict()
                 item_doc["bucket_name"] = bucket_name
                 item_doc["key"] = item['Key']
+                item_doc["dir_path"] = item['Key'].split("/")
                 item_doc["size"] = item['Size']
                 item_doc["last_mod"] = str(item['LastModified'])
                 item_doc["etag"] = item['ETag'].replace('"','')
@@ -72,8 +75,8 @@ def s3_download_billing_data():
         billing_bucket = os.environ["AWS_BILLING_BUCKET"]
         billing_item_prefix = os.environ["AWS_BILLING_ITEM_PREFIX"]
         do_downloads = True
-        
         print("billing_bucket: {}".format(billing_bucket))
+
         s3 = boto3.client('s3')
         for idx, item in enumerate(s3_items_list):
             if item['bucket_name'] == billing_bucket:
@@ -96,16 +99,52 @@ def s3_download_billing_data():
         print(str(e))
         print(traceback.format_exc())
 
+def process_downloaded_files():
+    # Reformat the json files into "pretty" format for readability
+    files = FS.walk("tmp", include_types=['json']) 
+    for file in files:
+        path = file['full']
+        if 'Manifest' in path:
+            obj = FS.read_json(path)
+            FS.write_json(obj, path, sort_keys=False)
+            if 'columns' in obj.keys():
+                print("{} columns".format(len(obj['columns'])))  # 114
+
+    # read the csv.gz files with duckdb
+    files = FS.walk("tmp", include_types=['gz']) 
+    con = duckdb.connect(database=':memory:')
+    for file in files:
+        con = duckdb.connect(database=':memory:')
+        path = file['full']
+        print(path)
+        rel = con.read_csv(path)  # <class 'duckdb.duckdb.DuckDBPyRelation'>
+        rel.to_table("rel")
+        rows = con.sql("select bill_payer_account_id, line_item_blended_cost from rel").fetchall()
+        for row in rows:
+            print('---')
+            print(row)
+        con.close()
+
+    # read the csv.gz files as csv
+    files = FS.walk("tmp", include_types=['gz']) 
+    con = duckdb.connect(database=':memory:')
+    for idx, file in enumerate(files):
+        path = file['full']
+        with gzip.open(path, 'rt') as f:
+            csv_file = "tmp/{}.csv".format(idx+1)
+            json_file = "tmp/{}.json".format(idx+1)
+            FS.write(f.read(), csv_file)
+            dicts = FS.read_csv_as_dicts(csv_file)
+            FS.write_json(dicts, json_file)
+
 def s3_key_to_basename(key):
     if key is not None:
         try:
             if BILLING_PERIOD_LIT in key:
-                start_idx = key.index(BILLING_PERIOD_LIT) + len(BILLING_PERIOD_LIT) + 1
-                rest = key[start_idx:]
-                rest = rest.replace("/","--")
-                rest = rest.replace("=", "-")
-                rest = rest.replace(":", "")
-                return rest.strip()
+                path_list = key.split("/")
+                part1 = path_list[-2]
+                part2 = path_list[-1]
+                return "{}--{}".format(part1, part2).replace(":","")
             else:
                 return key.replace("/","--").strip()
         except Exception as e:
@@ -113,7 +152,10 @@ def s3_key_to_basename(key):
             return None
     else:
         return None
+    
 
+# jar tvf tmp\2025-04-04T164132.578Z-17ac9175-a598-4175-ba0a-15521e8b586d--StandardDataExport-CUR2-cjoakim-costmgmt-bucket-00001.csv.gz
+        
 if __name__ == "__main__":
     try:
         load_dotenv(override=True)
@@ -125,6 +167,8 @@ if __name__ == "__main__":
                 s3_list_buckets_and_files()
             elif func == "s3_download_billing_data":
                 s3_download_billing_data()
+            elif func == "process_downloaded_files":
+                process_downloaded_files()
             else:
                 print_options("Error: invalid function: {}".format(func))
     except Exception as e:
