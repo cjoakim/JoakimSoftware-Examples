@@ -54,7 +54,7 @@ Some of these subprojects are Implemented, others are Pending.
 ├── java_jena_graph              Implemented, external repo
 ├── java_spring                  Pending
 ├── nodejs_ts_express            Pending, planned impl for April 2025
-├── python_aws                   Pending
+├── python_aws_finops            In progress
 ├── python_data                  Implemented
 ├── python_fastapi               Implemented
 ├── python_jupyter               Pending
@@ -70,6 +70,8 @@ For consistency, these variable names are used throughout the various
 language-specific implementaion subprojects.
 
 ```
+AWS_BILLING_BUCKET
+AWS_BILLING_ITEM_PREFIX
 AZURE_COSMOSDB_NOSQL_ACCT
 AZURE_COSMOSDB_NOSQL_URI
 AZURE_COSMOSDB_NOSQL_KEY

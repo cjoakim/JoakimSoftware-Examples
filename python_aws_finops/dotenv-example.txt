@@ -1,0 +1,6 @@
+# Example of the '.env' file used by the python-dotenv library.
+# Chris Joakim, 2025
+
+AWS_BILLING_BUCKET="your_bucket"
+AWS_BILLING_ITEM_PREFIX="your_prefix"
+LOG_LEVEL="debug"
