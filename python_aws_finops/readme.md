@@ -1,11 +1,9 @@
-# Python Data
+# Python AWS FinOps
 
-This directory contains **data wrangling** logic to create the
-files in the **data/ directory** of this repo.
+Exploratory **FinOps** subproject to download and process
+very granular AWS cost management data from an Amazon S3 bucket.
 
-The **duckdb** library is used in some cases here, such as with
-the OpenFlights headerless CSV files which are cleansed and
-converted to JSON document-per-line format.
+Note: This directory is currently a work-in-progress.
 
 ## Sample Usage
 
@@ -21,12 +19,13 @@ Execute one of the following commands, macOS/Linux and Windows, respectively.
 ### Execute the program with CLI args
 
 ```
-$ python main.py
-Error: no CLI args provided
+(venv) PS ...\python_aws_finops> python .\main.py
 Usage:
   python main.py <func>
-  python main.py merge_car_makes
-  python main.py download_cars_data
-  python main.py merge_downloaded_cars_data
-  python main.py openflights_wrangle
+  python main.py s3_list_buckets_and_files
+  python main.py s3_download_billing_data
+  python main.py process_downloaded_files
+Options:
+  -h --help     Show this screen.
+  --version     Show version.
 ```
