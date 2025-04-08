@@ -1,15 +1,22 @@
 
-// https://www.webdevtutor.net/blog/typescript-aws-dynamodb-client
+import { AppLogger } from "./AppLogger";
+
+/**
+ * Utility class to access an AWS Dynamo DB service.
+ * See https://www.npmjs.com/package/@aws-sdk/client-dynamodb
+ * See https://www.webdevtutor.net/blog/typescript-aws-dynamodb-client
+ * 
+ * This is a minimal but working TypsScript class.
+ * Chris Joakim, 2025
+ */
 
 export class DynamoUtil {
     
-    constructor(
-        public verbose: boolean = false) {
-        // no statements required
+    private logger : AppLogger;
+    
+    constructor() {
+        this.logger = AppLogger.buildDefaultLogger('DynamoUtil');
     }
 
-    greet(name: string): string {
-        return `hello ${name}!`;
-    }
 
 }
