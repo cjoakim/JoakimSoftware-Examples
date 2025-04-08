@@ -3,6 +3,8 @@
 #
 # Chris Joakim, 2025
 
+del dist\*.*
+
 npm run build
 
-npm run test
+dir dist

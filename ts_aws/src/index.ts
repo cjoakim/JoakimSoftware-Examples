@@ -1,7 +1,6 @@
 
 import { Greeter } from "./Greeter.js";
-
-import util from "util";
+import { S3Util } from "./S3Util.js";
 
 let func = process.argv[2];
 
@@ -9,11 +8,8 @@ switch (func) {
     case "hello":
         hello();
         break;
-    case "xxx":
-        xxx();
-        break;
-    case "yyy":
-        yyy();
+    case "s3_list_buckets":
+        s3_list_buckets();
         break;
     default:
         displayCommandLineExamples();
@@ -25,17 +21,27 @@ function hello() {
     console.log(g.greet(process.argv[3]));
 }
 
-function xxx() {
-    console.log(util.format('  xxx; count: %s', 1));
+async function s3_list_buckets() {
+    try {
+        let util = new S3Util();
+        let results = await util.list_buckets();
+        console.log('Raw Results:');
+
+        console.log(results);
+        let buckets = results['Buckets'];
+
+        console.log('Bucket Names:');
+        buckets.forEach((b: object) => {
+            console.log(b['Name']);
+        });
+    } catch (error) {
+        console.log(error);
+    }
 }
 
-function yyy() {
-    console.log(util.format('  yyy; count: %s', 1));
-}
 function displayCommandLineExamples() {
     console.log('');
     console.log("node ./dist/index.js hello Miles");
-    console.log("node ./dist/index.js xxx");
-    console.log("node ./dist/index.js yyy <aaa> <bbb> <ccc>");
+    console.log("node ./dist/index.js s3_list_buckets");
     console.log('');
 }

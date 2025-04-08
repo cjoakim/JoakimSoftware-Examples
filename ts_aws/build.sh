@@ -5,3 +5,5 @@
 # Chris Joakim, 2025
 
 npm run build
+
+ls -al dist
