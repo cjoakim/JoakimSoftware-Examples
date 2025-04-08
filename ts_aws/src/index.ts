@@ -11,6 +11,9 @@ switch (func) {
     case "dynamo_load_openflights_airports":
         dynamo_load_openflights_airports();
         break;
+    case "dynamo_scan_openflights":
+        dynamo_scan_openflights();
+        break;
     case "s3_list_buckets":
         s3_list_buckets();
         break;
@@ -23,6 +26,7 @@ async function dynamo_load_openflights_airports() {
     try {
         let file_util = new FileUtil();
         let dynamo = new DynamoUtil();
+        let table_name = "openflights";
         let infile = '../data/openflights/json/airports.json'
         let json_lines: Array<string> = file_util.readTextFileAsLinesSync(infile);
         let line_num = 0;
@@ -73,12 +77,35 @@ async function dynamo_load_openflights_airports() {
                 let doc = airports[i];
                 await sleep(500);
                 logger.warn(`--- loading ${i+1} ${doc['pk']}`);
-                const response = await dynamo.load_document("openflights", doc);
+                const response = await dynamo.put_document(table_name, doc);
                 console.log(response);
                 docs_loaded = docs_loaded + 1;
             }
         }
         logger.warn(`documents loaded: ${docs_loaded}`)
+    }
+    catch (error) {
+        console.log(error);
+    }
+}
+
+async function dynamo_scan_openflights() {
+    try {
+        let file_util = new FileUtil();
+        let dynamo = new DynamoUtil();
+        let table_name = "openflights";
+
+        // Scan documents
+        let results = await dynamo.scan_documents(table_name, "pk");
+        console.log(results);
+        file_util.writeTextFileSync(
+            "tmp/scan.json", JSON.stringify(results, null, 2));
+
+        // Count documents
+        results = await dynamo.count_documents(table_name);
+        console.log(results);
+        file_util.writeTextFileSync(
+            "tmp/count.json", JSON.stringify(results, null, 2));
     }
     catch (error) {
         console.log(error);
@@ -111,6 +138,7 @@ async function sleep(ms: number): Promise<void> {
 function displayCommandLineExamples() {
     console.log('');
     console.log("node ./dist/index.js dynamo_load_openflights_airports");
+    console.log("node ./dist/index.js dynamo_scan_openflights");
     console.log("node ./dist/index.js s3_list_buckets");
     console.log('');
 }

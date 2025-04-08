@@ -1,6 +1,9 @@
 
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
-import { PutCommand, DynamoDBDocumentClient } from "@aws-sdk/lib-dynamodb";
+import { 
+    PutCommand, 
+    ScanCommand,
+    DynamoDBDocumentClient } from "@aws-sdk/lib-dynamodb";
 
 import { AppLogger } from "./AppLogger";
 
@@ -33,13 +36,41 @@ export class DynamoUtil {
      * Load the given Dynamo DB table name with the given document -
      * The partition key 'pk' is assumed to be populated appropriately.
      */
-    async load_document(table_name: string, document: Object): Promise<Object> {
+    async put_document(table_name: string, document: Object): Promise<Object> {
         try {
             console.log(document);
             const command = new PutCommand({
                 TableName: table_name,
                 Item: document
             });
+            return this.doc_client.send(command);
+        }
+        catch (error) {
+            console.log(error);
+            return error;
+        }
+    }
+
+    async scan_documents(table_name: string, projection_attr: string = "pk"): Promise<Object> {
+        try {
+            const command = new ScanCommand({
+                TableName: table_name,
+                ProjectionExpression: projection_attr
+              });
+            return this.doc_client.send(command);
+        }
+        catch (error) {
+            console.log(error);
+            return error;
+        }
+    }
+
+    async count_documents(table_name: string): Promise<Object> {
+        try {
+            const command = new ScanCommand({
+                TableName: table_name,
+                Select: "COUNT"
+              });
             return this.doc_client.send(command);
         }
         catch (error) {
