@@ -1,6 +1,7 @@
 
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 import { 
+    GetCommand,
     PutCommand, 
     ScanCommand,
     DynamoDBDocumentClient } from "@aws-sdk/lib-dynamodb";
@@ -42,6 +43,23 @@ export class DynamoUtil {
             const command = new PutCommand({
                 TableName: table_name,
                 Item: document
+            });
+            return this.doc_client.send(command);
+        }
+        catch (error) {
+            console.log(error);
+            return error;
+        }
+    }
+
+    async get_document(
+        table_name: string, pk_attr: string, pk_value: string): Promise<Object> {
+        try {
+            let key_obj = {};
+            key_obj[pk_attr] = pk_value;
+            const command = new GetCommand({
+                TableName: table_name,
+                Key: key_obj
             });
             return this.doc_client.send(command);
         }

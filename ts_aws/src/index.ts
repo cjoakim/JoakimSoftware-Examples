@@ -106,6 +106,12 @@ async function dynamo_scan_openflights() {
         console.log(results);
         file_util.writeTextFileSync(
             "tmp/count.json", JSON.stringify(results, null, 2));
+
+        // Get CLT airport
+        results = await dynamo.get_document(table_name, "pk", "CLT");
+        console.log(results);
+        file_util.writeTextFileSync(
+            "tmp/get_clt.json", JSON.stringify(results, null, 2));
     }
     catch (error) {
         console.log(error);
