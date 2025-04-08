@@ -10,6 +10,7 @@
 **/__MACOSX/
 **/bin/
 **/build/
+**/dist/
 **/gradle/
 **/include/
 **/htmlcov/

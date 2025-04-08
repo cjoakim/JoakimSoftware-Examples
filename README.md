@@ -58,8 +58,8 @@ Some of these subprojects are Implemented, others are Pending.
 ├── python_data                  Implemented
 ├── python_fastapi               Implemented
 ├── python_jupyter               Pending
-├── scripts
-└── sql
+├── sql
+└── ts_aws                       In progress
 ```
 
 ---
