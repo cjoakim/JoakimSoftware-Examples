@@ -8,8 +8,8 @@ let func = process.argv[2];
 let logger = AppLogger.buildDefaultLogger('Index');
 
 switch (func) {
-    case "dynamo_load_openflights":
-        dynamo_load_openflights();
+    case "dynamo_load_openflights_airports":
+        dynamo_load_openflights_airports();
         break;
     case "s3_list_buckets":
         s3_list_buckets();
@@ -19,21 +19,23 @@ switch (func) {
         break;
 }
 
-async function dynamo_load_openflights() {
+async function dynamo_load_openflights_airports() {
     try {
         let file_util = new FileUtil();
         let dynamo = new DynamoUtil();
-
         let infile = '../data/openflights/json/airports.json'
         let json_lines: Array<string> = file_util.readTextFileAsLinesSync(infile);
         let line_num = 0;
         let iata_codes = {};
+        let airports = Array<Object>();
+
+        // First read the json-doc-per-line airport data, and parse them
+        // into an array of objects to be loaded into Dynamo DB, below.
         json_lines.forEach((json_line) => {
             try {
                 line_num++;
                 let trimmed: string = json_line.trim();
                 if (trimmed.length > 10) {
-                    //logger.warn(json_line);
                     let doc = JSON.parse(json_line)
                     let iata = doc['IATA'];
                     if (iata in Object.keys(iata_codes)) {
@@ -43,7 +45,8 @@ async function dynamo_load_openflights() {
                         if (iata != '\\N') {
                             iata_codes[iata] = line_num;
                             doc['pk'] = iata;
-                            logger.warn(doc);
+                            airports.push(doc)
+
                         }
                         else {
                             logger.warn(`skipping iata_code ${iata} on line ${line_num}`);
@@ -57,9 +60,27 @@ async function dynamo_load_openflights() {
                 return null;
             }
         });
+
         file_util.writeTextFileSync(
             "tmp/iata_codes.json", JSON.stringify(iata_codes, null, 2));
-    } catch (error) {
+        file_util.writeTextFileSync(
+            "tmp/airport_documents.json", JSON.stringify(airports, null, 2));
+
+        // Load Dynamo DB with the parsed and augmented airport documents.
+        let docs_loaded : number = 0;
+        for (let i = 0; i < airports.length; i++) {
+            if (i < 999999) {
+                let doc = airports[i];
+                await sleep(500);
+                logger.warn(`--- loading ${i+1} ${doc['pk']}`);
+                const response = await dynamo.load_document("openflights", doc);
+                console.log(response);
+                docs_loaded = docs_loaded + 1;
+            }
+        }
+        logger.warn(`documents loaded: ${docs_loaded}`)
+    }
+    catch (error) {
         console.log(error);
     }
 }
@@ -77,14 +98,19 @@ async function s3_list_buckets() {
         buckets.forEach((b: object) => {
             console.log(b['Name']);
         });
-    } catch (error) {
+    }
+    catch (error) {
         console.log(error);
     }
 }
 
+async function sleep(ms: number): Promise<void> {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 function displayCommandLineExamples() {
     console.log('');
-    console.log("node ./dist/index.js dynamo_load_openflights");
+    console.log("node ./dist/index.js dynamo_load_openflights_airports");
     console.log("node ./dist/index.js s3_list_buckets");
     console.log('');
 }

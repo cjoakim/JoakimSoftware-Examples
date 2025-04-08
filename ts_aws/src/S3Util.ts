@@ -23,7 +23,7 @@ export class S3Util {
     constructor() {
         this.logger = AppLogger.buildDefaultLogger('S3Util');
         this.region = process.env.AWS_DEFAULT_REGION;
-        console.log('S3Util.region: %s', this.region);
+        this.logger.warn(`region: ${this.region}`);
         this.client = new S3Client({region: this.region});
     }
 
