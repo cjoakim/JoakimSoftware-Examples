@@ -3,6 +3,7 @@
 # Chris Joakim, 2025
 
 Faker
+awswrangler
 boto3[crt]
 docopt
 duckdb

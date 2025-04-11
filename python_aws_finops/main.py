@@ -9,6 +9,7 @@ Options:
   --version     Show version.
 """
 
+import datetime
 import gzip
 import json
 import logging
@@ -18,6 +19,9 @@ import os
 import traceback
 import urllib.parse
 
+import awswrangler as wr
+import pandas as pd
+\
 import boto3
 import duckdb
 import httpx
@@ -154,8 +158,11 @@ def s3_key_to_basename(key):
         return None
     
 
-# jar tvf tmp\2025-04-04T164132.578Z-17ac9175-a598-4175-ba0a-15521e8b586d--StandardDataExport-CUR2-cjoakim-costmgmt-bucket-00001.csv.gz
-        
+def explore():
+    df = wr.s3.read_csv("s3://cjoakim-costmgmt/StandardDataExport-CUR2-cjoakim-costmgmt-bucket/StandardDataExport-CUR2-cjoakim-costmgmt-bucket/data/BILLING_PERIOD=2025-04/2025-04-11T16:16:37.516Z-a724c92c-3d21-4a7b-b82b-6b0f33fa60f5/StandardDataExport-CUR2-cjoakim-costmgmt-bucket-00001.csv.gz")
+    print(df)
+
+
 if __name__ == "__main__":
     try:
         load_dotenv(override=True)
@@ -169,6 +176,8 @@ if __name__ == "__main__":
                 s3_download_billing_data()
             elif func == "process_downloaded_files":
                 process_downloaded_files()
+            elif func == "explore":
+                explore()
             else:
                 print_options("Error: invalid function: {}".format(func))
     except Exception as e:
