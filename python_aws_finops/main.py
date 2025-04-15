@@ -135,10 +135,15 @@ def process_downloaded_files():
     for idx, file in enumerate(files):
         path = file['full']
         with gzip.open(path, 'rt') as f:
-            csv_file = "tmp/{}.csv".format(idx+1)
-            json_file = "tmp/{}.json".format(idx+1)
+            datetime_prefix = path.split('.')[0][4:]
+            print("PREFIX: {}".format(datetime_prefix))
+            csv_file = "tmp/{}.csv".format(datetime_prefix)
+            json_file = "tmp/{}.json".format(datetime_prefix)
             FS.write(f.read(), csv_file)
             dicts = FS.read_csv_as_dicts(csv_file)
+            for d in dicts:
+                if len(d["resource_tags"]) > 2:
+                    print("TAG: " + d["resource_tags"])
             FS.write_json(dicts, json_file)
 
 def s3_key_to_basename(key):
