@@ -1,2 +1,40 @@
 # JoakimSoftware-Examples
-Examples and starter projects in various programming languages and frameworks, focusing on Azure Cosmos DB and Azure PostgreSQL.
+
+Examples and starter projects in various programming languages and frameworks,
+focusing on Azure Cosmos DB and Azure PostgreSQL.
+
+## Links 
+
+- https://learn.microsoft.com/en-us/azure/cosmos-db/partitioning-overview
+- https://learn.microsoft.com/en-us/azure/cosmos-db/media/partitioning-overview/logical-partitions.png
+- https://learn.microsoft.com/en-us/azure/cosmos-db/request-units
+- https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/query/
+- https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/sdk-python
+
+## Assignment #1 - Intro to Cosmos DB
+
+- Review the above Links
+- Clone/fork this repo
+- Provision a Cosmos DB Serverless account
+- Configure the necessary environment variables (see the root README.md file)
+- Use the \python_fastapi directory
+- OpenFlights data is in the data/openflights/ directory
+- Load the openflights airports into a Cosmos DB container
+  - python main_nosql.py load_openflights
+- Execute Query and CRUD operations
+  - python main_nosql.py test_cosmos_nosql dev 1000 test 0 /pk
+  - Explore the Cosmos DB SQL syntax
+    - https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/query/
+- Next assignment will use this same dataset
+
+```
+(venv) PS ...\python_fastapi> python main_nosql.py
+Usage:
+    python main_nosql.py list_standard_envvars
+    python main_nosql.py log_standard_envvars
+    python main_nosql.py load_openflights
+    python main_nosql.py test_cosmos_nosql dbname, db_ru, cname, c_ru, pkpath
+    python main_nosql.py test_cosmos_nosql dev 1000 test 0 /pk
+    python main_nosql.py test_cosmos_nosql dev 1000 app 0 /pk
+    python main_nosql.py test_cosmos_nosql dev 0 test 400 /pk
+```
