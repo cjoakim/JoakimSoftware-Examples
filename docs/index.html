@@ -11,6 +11,8 @@ focusing on Azure Cosmos DB and Azure PostgreSQL.
 - https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/query/
 - https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/sdk-python
 
+--- 
+
 ## Assignment #1 - Intro to Cosmos DB
 
 - Review the above Links
@@ -38,3 +40,43 @@ Usage:
     python main_nosql.py test_cosmos_nosql dev 1000 app 0 /pk
     python main_nosql.py test_cosmos_nosql dev 0 test 400 /pk
 ```
+
+--- 
+
+## Assignment #2 - Geospatial and GeoJSON
+
+### Links
+
+- See https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/query/geospatial?tabs=javascript
+- https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/how-to-geospatial-index-query
+
+### Assignment
+
+- Wrangle the Airport data such that it has a GeoJSON location attribute (example below)
+- Load the enhanced Airport data, with GeoJSON location, to Cosmos DB
+- Create the appropriate geospatial index if necessary
+
+```
+{
+  ...
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -122.12826822304672,
+      47.63980239335718
+    ]
+  },
+  ...
+}
+```
+
+- Query for the 20 airports closest to CLT and SEA 
+- Query for the list of airports in Connecticut
+  - use a Polygon of GPS coordinates as a bounding box
+  - use just four GPS coordinates for the Polygon, a rough rectangle
+  - ignore the rectangular irregularities 
+    - Fairfield County towards NYC 
+    - The "Southwick Jog" along the North border
+
+- Extra Credit:
+  - Same exercise for Washington State, but with a Polygon that closely aligns to the actual State border
