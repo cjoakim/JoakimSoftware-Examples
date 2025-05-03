@@ -55,6 +55,7 @@ httpx==0.28.1
     # via
     #   -r requirements.in
     #   langsmith
+    #   ollama
     #   openai
 httpx-sse==0.4.0
     # via langchain-community
@@ -85,8 +86,11 @@ langchain-core==0.3.58
     #   -r requirements.in
     #   langchain
     #   langchain-community
+    #   langchain-ollama
     #   langchain-openai
     #   langchain-text-splitters
+langchain-ollama==0.3.2
+    # via -r requirements.in
 langchain-openai==0.3.16
     # via -r requirements.in
 langchain-text-splitters==0.3.8
@@ -113,6 +117,8 @@ mypy-extensions==1.0.0
     #   typing-inspect
 numpy==2.2.5
     # via langchain-community
+ollama==0.4.8
+    # via langchain-ollama
 openai==1.77.0
     # via langchain-openai
 orjson==3.10.18
@@ -140,6 +146,7 @@ pydantic==2.11.4
     #   langchain
     #   langchain-core
     #   langsmith
+    #   ollama
     #   openai
     #   pydantic-settings
 pydantic-core==2.33.2
