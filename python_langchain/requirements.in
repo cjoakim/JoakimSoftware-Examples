@@ -28,7 +28,7 @@ python-dotenv
 pytz
 redis
 
-# LangChain related libraries below
+# LangChain and AI related libraries below
 
 langchain==0.3.25
 langchain-core==0.3.58
@@ -38,3 +38,6 @@ langchain-openai==0.3.16
 langchain-ollama==0.3.2
 langsmith==0.3.42
 langgraph
+chromadb
+pypistats
+
