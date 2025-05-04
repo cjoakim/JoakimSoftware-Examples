@@ -19,6 +19,13 @@
 
 ---
 
+## chromadb
+
+- [See chromadb.md in this directory](docs/chromadb.md)
+
+
+---
+
 ## LangChain libraries for Python Virtual Environment
 
 See the requirements.txt file in this directory, which includes:

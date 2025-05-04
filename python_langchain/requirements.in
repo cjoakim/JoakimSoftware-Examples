@@ -36,8 +36,10 @@ langchain-community==0.3.23
 langchain-text-splitters==0.3.8
 langchain-openai==0.3.16
 langchain-ollama==0.3.2
+langchain-chroma==0.2.3
 langsmith==0.3.42
 langgraph
-chromadb
+chromadb==0.6.3  # 0.6.3 from 2025/01/14 
+# chromadb-client  "thin client lib" when using chromadb in client-server mode
 pypistats
 

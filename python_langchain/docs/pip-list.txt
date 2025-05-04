@@ -16,7 +16,7 @@ certifi                                  2020.12.5
 chardet                                  5.2.0
 charset-normalizer                       3.4.2
 chroma-hnswlib                           0.7.6
-chromadb                                 1.0.7
+chromadb                                 0.6.3
 click                                    8.1.8
 coloredlogs                              15.0.1
 coverage                                 7.7.0
@@ -52,10 +52,9 @@ Jinja2                                   2.11.3
 jiter                                    0.9.0
 jsonpatch                                1.33
 jsonpointer                              3.0.0
-jsonschema                               4.23.0
-jsonschema-specifications                2025.4.1
 kubernetes                               32.0.1
 langchain                                0.3.25
+langchain-chroma                         0.2.3
 langchain-community                      0.3.23
 langchain-core                           0.3.58
 langchain-ollama                         0.3.2
@@ -125,13 +124,11 @@ python-slugify                           8.0.4
 pytz                                     2025.1
 PyYAML                                   6.0.2
 redis                                    5.2.1
-referencing                              0.36.2
 regex                                    2024.11.6
 requests                                 2.32.3
 requests-oauthlib                        2.0.0
 requests-toolbelt                        1.0.0
 rich                                     14.0.0
-rpds-py                                  0.24.0
 rsa                                      4.9.1
 setuptools                               80.3.0
 shellingham                              1.5.4

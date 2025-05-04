@@ -10,6 +10,7 @@
 **/__MACOSX/
 **/bin/
 **/build/
+**/chroma/
 **/dist/
 **/gradle/
 **/include/
