@@ -135,3 +135,29 @@ urllib3==2.4.0
 zstandard==0.23.0
     # via langsmith
 ```
+
+
+- https://pypi.org/project/all-packages/
+- https://pypistats.org/top  (top 20)
+- https://flexiple.com/python/python-libraries  (top 90)
+- https://dev.to/taipy/top-42-python-libraries-you-need-to-know-1omo  (top 42)
+- https://github.com/EvanLi/Github-Ranking/tree/master
+- https://medium.com/analytics-vidhya/the-ultimate-collection-125-python-packages-for-data-science-machine-learning-and-beyond-279974b5ab67 (125)
+- https://hugovk.github.io/top-pypi-packages/  (15000)
+- https://hugovk.github.io/top-pypi-packages/top-pypi-packages.csv 
+
+
+## Next
+
+- https://hugovk.github.io/top-pypi-packages/top-pypi-packages.csv 
+- https://github.com/hugovk/top-pypi-packages/blob/main/top-pypi-packages.csv
+- per-lib pip-compiles
+- https://github.com/ofek/pypinfo
+  - pypinfo is a simple CLI to access PyPI download statistics via Google's BigQuery.
+  - requires google credentials
+  - https://console.cloud.google.com/cloud-resource-manager
+- https://github.com/sethmlarson/pypi-data
+
+```
+curl https://hugovk.github.io/top-pypi-packages/top-pypi-packages.csv > data/top-pypi-packages.csv
+```
