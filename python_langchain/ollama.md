@@ -19,6 +19,29 @@ ollama is primarily a Terminal/CLI-oriented program.
 - Double-click execute it in the Applications folder
 - Install the CLI tool and first model upon first execution of the app UI
 
+### Alternative macOS installation with Homebrew
+
+```
+$ brew install ollama
+
+$ which ollama
+/opt/homebrew/bin/ollama
+```
+
+Optional configuration
+
+```
+$ brew services start ollama
+
+$ brew services list
+```
+
+Otherwise, just run "ollama serve" as necessary:
+
+```
+$ ollama serve
+```
+
 ## CLI interaction
 
 See the help info.
