@@ -62,6 +62,12 @@ Some of these subprojects are Implemented, others are Pending.
 └── ts_aws                       In progress
 ```
 
+| Directory          | State        | Description                              |
+| ------------------ |---- -------- | ---------------------------------------- |
+| az                 | Planned      | Azure CLI (az) deployment scripts        |
+| data               | Implemented  | Common datasets used in these projects   |
+| python_aws_finops  | Partial Impl | FinOps with AWS CUR data                 |
+
 ---
 
 ## Standard Environment Variables
