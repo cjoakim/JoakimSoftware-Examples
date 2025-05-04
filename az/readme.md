@@ -1,4 +1,0 @@
-# az CLI 
-
-TODO
-
