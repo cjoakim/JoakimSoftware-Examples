@@ -2,6 +2,8 @@
 # pip-compile program.  Can be used for dependency graph analysis.
 # Chris Joakim, 2025
 
+import traceback
+
 from src.io.fs import FS
 
 
@@ -42,11 +44,21 @@ class Libraries:
 class RequirementsTxtParser:
 
     def __init__(self):
+        self.infile = None
+        self.lines = None
         self.data = {}
 
     def parse(self, infile: str) -> list:
-        pass  # TODO
+        results = list()
+        try:
+            self.infile = "data/pip/{}".format(infile.strip())
+            self.lines = FS.read_lines(self.infile)
+            print("{} lines in {}".format(len(self.lines), self.infile))
 
+        except Exception as e:
+            print(str(e))
+            print(traceback.format_exc())
+        return results
 
 class SampleRequirements:
 

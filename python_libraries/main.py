@@ -33,7 +33,7 @@ from src.util.counter import Counter
 from src.os.env import Env
 from src.io.fs import FS
 from src.os.system import System
-from src.util.requirements_txt_parser import Requirement, Library, Libraries, RequirementsTxtParser
+from src.util.requirements import Requirement, Library, Libraries, RequirementsTxtParser
 
 
 def print_options(msg):
