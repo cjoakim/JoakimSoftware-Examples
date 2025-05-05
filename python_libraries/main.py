@@ -3,6 +3,7 @@ Usage:
   python main.py <func>
   python main.py seed_from_15k_csv 10
   python main.py gen_pip_compiles_script
+  python main.py parse_pip_compiles
   python main.py get_pypi_html_pages
   python main.py parse_pypi_html_pages
 Options:
@@ -32,6 +33,7 @@ from src.util.counter import Counter
 from src.os.env import Env
 from src.io.fs import FS
 from src.os.system import System
+from src.util.requirements_txt_parser import Requirement, Library, Libraries, RequirementsTxtParser
 
 
 def print_options(msg):
@@ -56,11 +58,50 @@ def gen_pip_compiles_script():
     script_lines.append("source venv/bin/activate")
     script_lines.append("")
     files = FS.list_files_in_dir("data/pip")
+    filenum = 0
     for f in files:
         if f.endswith(".in"):
+            filenum = filenum + 1
+            script_lines.append("")
+            script_lines.append("echo '========== {} {} =========='".format(filenum, f))
             script_lines.append("pip-compile {}".format(f))
     script_lines.append("")
     FS.write_lines(script_lines, "data/pip/pip_compiles.sh")
+
+def parse_pip_compiles():
+    pip_filenames_dict = dict()
+    files = FS.list_files_in_dir("data/pip")
+
+    # first get a list of all the *.in, *.txt, and *.json files in the pip 
+    # directory to determine which files need to be parsed.
+    for f in files:
+        stripped = f.strip()
+        if is_pip_processing_file(stripped):
+            pip_filenames_dict[stripped] = False
+    print("{} files in pip_filenames_dict".format(len(pip_filenames_dict)))
+
+    # second loop, the parsing loop, parse a file if not yet parsed
+    for f in files:
+        stripped = f.strip()
+        if stripped.endswith(".txt"):  # the output of a pip-compile
+            basename = stripped.split(".")[0]
+            jsonname = "{}.json".format(basename)
+            if jsonname in pip_filenames_dict.keys():
+                print("already parsed: {}".format(stripped))
+            else:
+                print("parsing: {}".format(stripped))
+                rtp = RequirementsTxtParser()
+                results = rtp.parse(stripped)
+                print(results)
+
+def is_pip_processing_file(filename):
+    if filename.endswith(".in"):
+        return True
+    if filename.endswith(".txt"):
+        return True
+    if filename.endswith(".json"):
+        return True
+    return False 
 
 def get_pypi_html_pages():
     pass 
@@ -78,6 +119,8 @@ if __name__ == "__main__":
             seed_from_15k_csv(top_n)
         elif func == "gen_pip_compiles_script":
             gen_pip_compiles_script()
+        elif func == "parse_pip_compiles":
+            parse_pip_compiles()
         elif func == "get_pypi_html_pages":
             get_pypi_html_pages()
         elif func == "parse_pypi_html_pages":
