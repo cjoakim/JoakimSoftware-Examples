@@ -1,7 +1,7 @@
 """
 Usage:
   python main.py <func>
-  python main.py seed_from_15k_csv 10
+  python main.py seed_from_15k_csv 16000
   python main.py gen_pip_compiles_script
   python main.py parse_pip_compiles 1
   python main.py get_pypi_html_pages
@@ -44,8 +44,14 @@ def print_options(msg):
 def seed_from_15k_csv(first_n):
     libs = FS.read_csv_as_dicts("data/csv/top-pypi-packages.csv")
     for idx, lib in enumerate(libs):
+        if idx < 1:
+            # Add a custom set of libs that may not be in the top-pypi-packages.csv dataset
+            for libname in "ageqrp,ggps,m26,gdg".split(","):
+                content = "{}".format(libname).strip()
+                outfile = "data/pip/{}.in".format(libname)
+                FS.write(content, outfile)
+
         if idx < first_n:
-            #print("{} {}".format(idx, lib))
             libname = lib['project']
             content = "{}".format(libname).strip()
             outfile = "data/pip/{}.in".format(libname)
