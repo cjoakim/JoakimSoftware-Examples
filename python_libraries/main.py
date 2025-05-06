@@ -64,13 +64,17 @@ def gen_pip_compiles_script():
     script_lines.append("source venv/bin/activate")
     script_lines.append("")
     files = FS.list_files_in_dir("data/pip")
-    filenum = 0
+    infiles = list()
+
     for f in files:
         if f.endswith(".in"):
-            filenum = filenum + 1
+            infiles.append(f.strip())
+
+    for fidx, f in enumerate(sorted(infiles)):
             script_lines.append("")
-            script_lines.append("echo '========== {} {} =========='".format(filenum, f))
+            script_lines.append("echo '========== {} {} =========='".format(fidx + 1, f))
             script_lines.append("pip-compile {}".format(f))
+
     script_lines.append("")
     FS.write_lines(script_lines, "data/pip/pip_compiles.sh")
 
