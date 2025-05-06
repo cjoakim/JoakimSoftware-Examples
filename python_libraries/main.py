@@ -3,7 +3,7 @@ Usage:
   python main.py <func>
   python main.py seed_from_15k_csv 10
   python main.py gen_pip_compiles_script
-  python main.py parse_pip_compiles
+  python main.py parse_pip_compiles 1
   python main.py get_pypi_html_pages
   python main.py parse_pypi_html_pages
 Options:
@@ -33,7 +33,7 @@ from src.util.counter import Counter
 from src.os.env import Env
 from src.io.fs import FS
 from src.os.system import System
-from src.util.requirements import Requirement, Library, Libraries, RequirementsTxtParser
+from src.util.requirements import Libraries, RequirementsTxtParser
 
 
 def print_options(msg):
@@ -41,10 +41,10 @@ def print_options(msg):
     arguments = docopt(__doc__, version="1.0.0")
     print(arguments)
 
-def seed_from_15k_csv(top_n):
+def seed_from_15k_csv(first_n):
     libs = FS.read_csv_as_dicts("data/csv/top-pypi-packages.csv")
     for idx, lib in enumerate(libs):
-        if idx < top_n:
+        if idx < first_n:
             #print("{} {}".format(idx, lib))
             libname = lib['project']
             content = "{}".format(libname).strip()
@@ -82,17 +82,19 @@ def parse_pip_compiles():
 
     # second loop, the parsing loop, parse a file if not yet parsed
     for f in files:
-        stripped = f.strip()
-        if stripped.endswith(".txt"):  # the output of a pip-compile
-            basename = stripped.split(".")[0]
-            jsonname = "{}.json".format(basename)
-            if jsonname in pip_filenames_dict.keys():
-                print("already parsed: {}".format(stripped))
+        filename = f.strip()
+        if filename.endswith(".txt"):  # the output of a pip-compile
+            libname = filename.split(".")[0]
+            jsonfile = "{}.json".format(libname)
+            if jsonfile in pip_filenames_dict.keys():
+                print("already parsed: {}".format(filename))
             else:
-                print("parsing: {}".format(stripped))
-                rtp = RequirementsTxtParser()
-                results = rtp.parse(stripped)
-                print(results)
+                if "boto3.txt" in filename:
+                    outfile = "data/pip/{}".format(jsonfile)
+                    print("parsing: {}".format(filename))
+                    rtp = RequirementsTxtParser()
+                    results = rtp.parse(filename)
+                    print(json.dumps(results, sort_keys=False, indent=2))
 
 def is_pip_processing_file(filename):
     if filename.endswith(".in"):
@@ -115,8 +117,8 @@ if __name__ == "__main__":
     try:
         func = sys.argv[1].lower()
         if func == "seed_from_15k_csv":
-            top_n = int(sys.argv[2])
-            seed_from_15k_csv(top_n)
+            first_n = int(sys.argv[2])
+            seed_from_15k_csv(first_n)
         elif func == "gen_pip_compiles_script":
             gen_pip_compiles_script()
         elif func == "parse_pip_compiles":

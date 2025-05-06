@@ -7,33 +7,12 @@ import traceback
 from src.io.fs import FS
 
 
-class Requirement:
-
-    def __init__(self, using_lib: str, dependency_lib: str):
-        self.using_lib = using_lib
-        self.dependency_lib = dependency_lib
-
-
-class Library:
-
-    def __init__(self, name: str):
-        self.name = name
-        self.dependencies = dict()
-
-    def add_dependency(self, lib):
-        if lib is not None:
-            self.dependencies[lib] = lib
-
-    def traverse_graph(self):
-        pass  # TODO
-
-
 class Libraries:
 
     def __init__(self):
         self.libs = dict()
 
-    def add_library(self, lib: Library):
+    def add_library(self, lib: dict):
         if lib is not None:
             self.libs[lib.name] = lib
 
@@ -44,21 +23,39 @@ class Libraries:
 class RequirementsTxtParser:
 
     def __init__(self):
-        self.infile = None
-        self.lines = None
-        self.data = {}
+        self.data = None
 
-    def parse(self, infile: str) -> list:
-        results = list()
+    def parse(self, filename: str) -> list:
+        self.data = dict()
+        self.data["libname"] = None
+        self.data["libvers"] = None
+        self.data["infile"] = None
+        self.data["dependencies"] = dict()
         try:
-            self.infile = "data/pip/{}".format(infile.strip())
-            self.lines = FS.read_lines(self.infile)
-            print("{} lines in {}".format(len(self.lines), self.infile))
+            infile = "data/pip/{}".format(filename.strip())
+            libname = filename.split(".")[0]
+            print("infile: {} -> libname: {}".format(infile, libname))
+            lines = FS.read_lines(infile)
+            print("{} lines in {}".format(len(lines), infile))
+
+            self.data["infile"] = infile
+            self.data["libname"] = libname
+            curr_lib = None
+
+            for line in lines:
+                if "==" in line:  # boto3==1.38.9
+                    curr_lib = line.split("==")[0]
+                    lib_vers = line.split("==")[1].rstrip()
+                    if curr_lib == libname:
+                        self.data["libvers"] = lib_vers
+                    else:
+                        self.data["dependencies"][curr_lib] = lib_vers
 
         except Exception as e:
             print(str(e))
             print(traceback.format_exc())
-        return results
+
+        return self.data
 
 class SampleRequirements:
 
