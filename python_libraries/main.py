@@ -73,6 +73,7 @@ def gen_pip_compiles_script():
     for fidx, f in enumerate(sorted(infiles)):
             script_lines.append("")
             script_lines.append("echo '========== {} {} =========='".format(fidx + 1, f))
+            script_lines.append("sleep 1")
             script_lines.append("pip-compile {}".format(f))
 
     script_lines.append("")
