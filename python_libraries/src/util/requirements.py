@@ -36,8 +36,7 @@ class RequirementsTxtParser:
             libname = filename.split(".")[0]
             print("infile: {} -> libname: {}".format(infile, libname))
             lines = FS.read_lines(infile)
-            print("{} lines in {}".format(len(lines), infile))
-
+            #print("{} lines in {}".format(len(lines), infile))
             self.data["infile"] = infile
             self.data["libname"] = libname
             curr_lib = None
@@ -50,8 +49,8 @@ class RequirementsTxtParser:
                         self.data["libvers"] = lib_vers
                     else:
                         self.data["dependencies"][curr_lib] = lib_vers
-
         except Exception as e:
+            self.data["exception"] = str(e)
             print(str(e))
             print(traceback.format_exc())
 

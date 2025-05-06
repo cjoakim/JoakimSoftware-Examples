@@ -26,7 +26,7 @@ from pprint import pprint
 from docopt import docopt
 from dotenv import load_dotenv
 
-from six import moves 
+#from six import moves 
 
 from src.util.bytes import Bytes
 from src.util.counter import Counter
@@ -91,10 +91,12 @@ def parse_pip_compiles():
             else:
                 if "boto3.txt" in filename:
                     outfile = "data/pip/{}".format(jsonfile)
+                    print("===")
                     print("parsing: {}".format(filename))
                     rtp = RequirementsTxtParser()
                     results = rtp.parse(filename)
-                    print(json.dumps(results, sort_keys=False, indent=2))
+                    #print(json.dumps(results, sort_keys=False, indent=2))
+                    FS.write_json(results, outfile, sort_keys=False)
 
 def is_pip_processing_file(filename):
     if filename.endswith(".in"):
