@@ -63,12 +63,26 @@ def gen_pip_compiles_script():
     script_lines.append("")
     script_lines.append("source venv/bin/activate")
     script_lines.append("")
-    files = FS.list_files_in_dir("data/pip")
+    pip_filenames_dict = dict()
     infiles = list()
+    files = FS.list_files_in_dir("data/pip")
+
+    # first get a list of all the *.in, *.txt, and *.json files in the pip 
+    # directory to determine which libs need to be pi-compiled.
+    for f in files:
+        stripped = f.strip()
+        if is_pip_processing_file(stripped):
+            pip_filenames_dict[stripped] = False
+    print("{} files in pip_filenames_dict".format(len(pip_filenames_dict)))
 
     for f in files:
         if f.endswith(".in"):
-            infiles.append(f.strip())
+            libname = f.split(".")[0]
+            txtfile = "{}.txt".format(libname)
+            if txtfile in pip_filenames_dict.keys():
+                print("already pip-compiled: {}".format(txtfile))
+            else:
+                infiles.append(f.strip())
 
     for fidx, f in enumerate(sorted(infiles)):
             script_lines.append("")
@@ -77,7 +91,7 @@ def gen_pip_compiles_script():
             script_lines.append("pip-compile {}".format(f))
 
     script_lines.append("")
-    FS.write_lines(script_lines, "data/pip/pip_compiles.sh")
+    FS.write_lines(script_lines, "data/pip/pip_compiles2.sh")
 
 def parse_pip_compiles():
     pip_filenames_dict = dict()
