@@ -1,823 +1,823 @@
 
-echo '========== 1 accuinsight.in =========='
-sleep 1
-pip-compile accuinsight.in
-
-echo '========== 2 addereq.in =========='
-sleep 1
-pip-compile addereq.in
-
-echo '========== 3 aea-ledger-fetchai.in =========='
-sleep 1
-pip-compile aea-ledger-fetchai.in
-
-echo '========== 4 ai-flow-nightly.in =========='
-sleep 1
-pip-compile ai-flow-nightly.in
-
-echo '========== 5 akida.in =========='
-sleep 1
-pip-compile akida.in
-
-echo '========== 6 alita-sdk.in =========='
-sleep 1
-pip-compile alita-sdk.in
-
-echo '========== 7 allennlp-pvt-nightly.in =========='
-sleep 1
-pip-compile allennlp-pvt-nightly.in
-
-echo '========== 8 allennlp.in =========='
-sleep 1
-pip-compile allennlp.in
-
-echo '========== 9 allianceauth-app-utils.in =========='
-sleep 1
-pip-compile allianceauth-app-utils.in
-
-echo '========== 10 allianceauth.in =========='
-sleep 1
-pip-compile allianceauth.in
-
-echo '========== 11 amplo.in =========='
-sleep 1
-pip-compile amplo.in
-
-echo '========== 12 amr.in =========='
-sleep 1
-pip-compile amr.in
-
-echo '========== 13 anyjson.in =========='
-sleep 1
-pip-compile anyjson.in
-
-echo '========== 14 apache-flink.in =========='
-sleep 1
-pip-compile apache-flink.in
-
-echo '========== 15 apache-superset.in =========='
-sleep 1
-pip-compile apache-superset.in
-
-echo '========== 16 appiumextended.in =========='
-sleep 1
-pip-compile appiumextended.in
-
-echo '========== 17 arcticdb.in =========='
-sleep 1
-pip-compile arcticdb.in
-
-echo '========== 18 arducamdepthcamera.in =========='
-sleep 1
-pip-compile arducamdepthcamera.in
-
-echo '========== 19 arducamevksdk.in =========='
-sleep 1
-pip-compile arducamevksdk.in
-
-echo '========== 20 aria2.in =========='
-sleep 1
-pip-compile aria2.in
-
-echo '========== 21 assemblyline-core.in =========='
-sleep 1
-pip-compile assemblyline-core.in
-
-echo '========== 22 assemblyline-service-client.in =========='
-sleep 1
-pip-compile assemblyline-service-client.in
-
-echo '========== 23 assemblyline-service-server.in =========='
-sleep 1
-pip-compile assemblyline-service-server.in
-
-echo '========== 24 assemblyline-ui.in =========='
-sleep 1
-pip-compile assemblyline-ui.in
-
-echo '========== 25 assemblyline-v4-service.in =========='
-sleep 1
-pip-compile assemblyline-v4-service.in
-
-echo '========== 26 assemblyline.in =========='
-sleep 1
-pip-compile assemblyline.in
-
-echo '========== 27 asyncdb.in =========='
-sleep 1
-pip-compile asyncdb.in
-
-echo '========== 28 audiolm-pytorch.in =========='
-sleep 1
-pip-compile audiolm-pytorch.in
-
-echo '========== 29 audioop-lts.in =========='
-sleep 1
-pip-compile audioop-lts.in
-
-echo '========== 30 auto-gptq.in =========='
-sleep 1
-pip-compile auto-gptq.in
-
-echo '========== 31 autoai-libs.in =========='
-sleep 1
-pip-compile autoai-libs.in
-
-echo '========== 32 autoawq.in =========='
-sleep 1
-pip-compile autoawq.in
-
-echo '========== 33 autogluon-cloud.in =========='
-sleep 1
-pip-compile autogluon-cloud.in
-
-echo '========== 34 autogluon-extra.in =========='
-sleep 1
-pip-compile autogluon-extra.in
-
-echo '========== 35 autogluon-mxnet.in =========='
-sleep 1
-pip-compile autogluon-mxnet.in
-
-echo '========== 36 autogluon-text.in =========='
-sleep 1
-pip-compile autogluon-text.in
-
-echo '========== 37 autogluon-vision.in =========='
-sleep 1
-pip-compile autogluon-vision.in
-
-echo '========== 38 autotorch.in =========='
-sleep 1
-pip-compile autotorch.in
-
-echo '========== 39 azure-mgmt.in =========='
-sleep 1
-pip-compile azure-mgmt.in
-
-echo '========== 40 azure-storage-logging.in =========='
-sleep 1
-pip-compile azure-storage-logging.in
-
-echo '========== 41 azure-storage.in =========='
-sleep 1
-pip-compile azure-storage.in
-
-echo '========== 42 azure.in =========='
-sleep 1
-pip-compile azure.in
-
-echo '========== 43 azureml-automl-core.in =========='
-sleep 1
-pip-compile azureml-automl-core.in
-
-echo '========== 44 azureml-automl-runtime.in =========='
-sleep 1
-pip-compile azureml-automl-runtime.in
-
-echo '========== 45 azureml-dataprep-native.in =========='
-sleep 1
-pip-compile azureml-dataprep-native.in
-
-echo '========== 46 azureml-dataprep-rslex.in =========='
-sleep 1
-pip-compile azureml-dataprep-rslex.in
-
-echo '========== 47 azureml-dataprep.in =========='
-sleep 1
-pip-compile azureml-dataprep.in
-
-echo '========== 48 azureml-dataset-runtime.in =========='
-sleep 1
-pip-compile azureml-dataset-runtime.in
-
-echo '========== 49 azureml-defaults.in =========='
-sleep 1
-pip-compile azureml-defaults.in
-
-echo '========== 50 azureml-designer-serving.in =========='
-sleep 1
-pip-compile azureml-designer-serving.in
-
-echo '========== 51 azureml-featurestore.in =========='
-sleep 1
-pip-compile azureml-featurestore.in
-
-echo '========== 52 azureml-fsspec.in =========='
-sleep 1
-pip-compile azureml-fsspec.in
-
-echo '========== 53 azureml-interpret.in =========='
-sleep 1
-pip-compile azureml-interpret.in
-
-echo '========== 54 azureml-opendatasets.in =========='
-sleep 1
-pip-compile azureml-opendatasets.in
-
-echo '========== 55 azureml-train-automl-client.in =========='
-sleep 1
-pip-compile azureml-train-automl-client.in
-
-echo '========== 56 azureml-train-automl-runtime.in =========='
-sleep 1
-pip-compile azureml-train-automl-runtime.in
-
-echo '========== 57 azureml-train-automl.in =========='
-sleep 1
-pip-compile azureml-train-automl.in
-
-echo '========== 58 basemodel.in =========='
-sleep 1
-pip-compile basemodel.in
-
-echo '========== 59 bcml.in =========='
-sleep 1
-pip-compile bcml.in
-
-echo '========== 60 beautifulsoup.in =========='
-sleep 1
-pip-compile beautifulsoup.in
-
-echo '========== 61 bigdl-chronos-spark2.in =========='
-sleep 1
-pip-compile bigdl-chronos-spark2.in
-
-echo '========== 62 bigdl-chronos-spark3.in =========='
-sleep 1
-pip-compile bigdl-chronos-spark3.in
-
-echo '========== 63 bigdl-chronos.in =========='
-sleep 1
-pip-compile bigdl-chronos.in
-
-echo '========== 64 bigdl-core-cpp.in =========='
-sleep 1
-pip-compile bigdl-core-cpp.in
-
-echo '========== 65 bigdl-core-xe-all.in =========='
-sleep 1
-pip-compile bigdl-core-xe-all.in
-
-echo '========== 66 bigdl-friesian-spark2.in =========='
-sleep 1
-pip-compile bigdl-friesian-spark2.in
-
-echo '========== 67 bigdl-friesian-spark3.in =========='
-sleep 1
-pip-compile bigdl-friesian-spark3.in
-
-echo '========== 68 bigdl-friesian.in =========='
-sleep 1
-pip-compile bigdl-friesian.in
-
-echo '========== 69 bigdl-spark2.in =========='
-sleep 1
-pip-compile bigdl-spark2.in
-
-echo '========== 70 bigdl-spark3.in =========='
-sleep 1
-pip-compile bigdl-spark3.in
-
-echo '========== 71 bigdl.in =========='
-sleep 1
-pip-compile bigdl.in
-
-echo '========== 72 blaze.in =========='
-sleep 1
-pip-compile blaze.in
-
-echo '========== 73 bosch-thermostat-client.in =========='
-sleep 1
-pip-compile bosch-thermostat-client.in
-
-echo '========== 74 bpmn-rpa.in =========='
-sleep 1
-pip-compile bpmn-rpa.in
-
-echo '========== 75 bpy-helper.in =========='
-sleep 1
-pip-compile bpy-helper.in
-
-echo '========== 76 bpy.in =========='
-sleep 1
-pip-compile bpy.in
-
-echo '========== 77 carla.in =========='
-sleep 1
-pip-compile carla.in
-
-echo '========== 78 catboost-dev.in =========='
-sleep 1
-pip-compile catboost-dev.in
-
-echo '========== 79 causal-conv1d.in =========='
-sleep 1
-pip-compile causal-conv1d.in
-
-echo '========== 80 certbot-dns-powerdns.in =========='
-sleep 1
-pip-compile certbot-dns-powerdns.in
-
-echo '========== 81 cicdtest.in =========='
-sleep 1
-pip-compile cicdtest.in
-
-echo '========== 82 click-default-group.in =========='
-sleep 1
-pip-compile click-default-group.in
-
-echo '========== 83 click-didyoumean.in =========='
-sleep 1
-pip-compile click-didyoumean.in
-
-echo '========== 84 cloudrail-knowledge.in =========='
-sleep 1
-pip-compile cloudrail-knowledge.in
-
-echo '========== 85 coala-bears.in =========='
-sleep 1
-pip-compile coala-bears.in
-
-echo '========== 86 composabl-api-dev.in =========='
-sleep 1
-pip-compile composabl-api-dev.in
-
-echo '========== 87 composabl-cli-dev.in =========='
-sleep 1
-pip-compile composabl-cli-dev.in
-
-echo '========== 88 composabl-dev.in =========='
-sleep 1
-pip-compile composabl-dev.in
-
-echo '========== 89 composabl-train-dev.in =========='
-sleep 1
-pip-compile composabl-train-dev.in
-
-echo '========== 90 conda.in =========='
-sleep 1
-pip-compile conda.in
-
-echo '========== 91 cplex.in =========='
-sleep 1
-pip-compile cplex.in
-
-echo '========== 92 cs18-api-client.in =========='
-sleep 1
-pip-compile cs18-api-client.in
-
-echo '========== 93 ctadirac.in =========='
-sleep 1
-pip-compile ctadirac.in
-
-echo '========== 94 cuda-bindings.in =========='
-sleep 1
-pip-compile cuda-bindings.in
-
-echo '========== 95 cuda-python.in =========='
-sleep 1
-pip-compile cuda-python.in
-
-echo '========== 96 cumm-cu120.in =========='
-sleep 1
-pip-compile cumm-cu120.in
-
-echo '========== 97 cumm-cu124.in =========='
-sleep 1
-pip-compile cumm-cu124.in
-
-echo '========== 98 cupy-cuda11x.in =========='
-sleep 1
-pip-compile cupy-cuda11x.in
-
-echo '========== 99 cupy-cuda12x.in =========='
-sleep 1
-pip-compile cupy-cuda12x.in
-
-echo '========== 100 cupy.in =========='
-sleep 1
-pip-compile cupy.in
-
-echo '========== 101 custatevec-cu12.in =========='
-sleep 1
-pip-compile custatevec-cu12.in
-
-echo '========== 102 cutensor-cu12.in =========='
-sleep 1
-pip-compile cutensor-cu12.in
-
-echo '========== 103 cutensornet-cu12.in =========='
-sleep 1
-pip-compile cutensornet-cu12.in
-
-echo '========== 104 cyclonedds-nightly.in =========='
-sleep 1
-pip-compile cyclonedds-nightly.in
-
-echo '========== 105 d2l.in =========='
-sleep 1
-pip-compile d2l.in
-
-echo '========== 106 daal.in =========='
-sleep 1
-pip-compile daal.in
-
-echo '========== 107 daal4py.in =========='
-sleep 1
-pip-compile daal4py.in
-
-echo '========== 108 databricks-sql.in =========='
-sleep 1
-pip-compile databricks-sql.in
-
-echo '========== 109 datacontract-cli.in =========='
-sleep 1
-pip-compile datacontract-cli.in
-
-echo '========== 110 datashape.in =========='
-sleep 1
-pip-compile datashape.in
-
-echo '========== 111 dbus-python.in =========='
-sleep 1
-pip-compile dbus-python.in
-
-echo '========== 112 dbx.in =========='
-sleep 1
-pip-compile dbx.in
-
-echo '========== 113 decord.in =========='
-sleep 1
-pip-compile decord.in
-
-echo '========== 114 deepdrive.in =========='
-sleep 1
-pip-compile deepdrive.in
-
-echo '========== 115 deepspeech.in =========='
-sleep 1
-pip-compile deepspeech.in
-
-echo '========== 116 deltachat.in =========='
-sleep 1
-pip-compile deltachat.in
-
-echo '========== 117 demjson.in =========='
-sleep 1
-pip-compile demjson.in
-
-echo '========== 118 dipex.in =========='
-sleep 1
-pip-compile dipex.in
-
-echo '========== 119 dirac.in =========='
-sleep 1
-pip-compile dirac.in
-
-echo '========== 120 distribute.in =========='
-sleep 1
-pip-compile distribute.in
-
-echo '========== 121 dithering.in =========='
-sleep 1
-pip-compile dithering.in
-
-echo '========== 122 divik.in =========='
-sleep 1
-pip-compile divik.in
-
-echo '========== 123 dlite-python.in =========='
-sleep 1
-pip-compile dlite-python.in
-
-echo '========== 124 dm-launchpad-nightly.in =========='
-sleep 1
-pip-compile dm-launchpad-nightly.in
-
-echo '========== 125 dm-reverb-nightly.in =========='
-sleep 1
-pip-compile dm-reverb-nightly.in
-
-echo '========== 126 docker-compose.in =========='
-sleep 1
-pip-compile docker-compose.in
-
-echo '========== 127 dolma.in =========='
-sleep 1
-pip-compile dolma.in
-
-echo '========== 128 dotnetcore2.in =========='
-sleep 1
-pip-compile dotnetcore2.in
-
-echo '========== 129 dpcpp-cpp-rt.in =========='
-sleep 1
-pip-compile dpcpp-cpp-rt.in
-
-echo '========== 130 dragnet.in =========='
-sleep 1
-pip-compile dragnet.in
-
-echo '========== 131 drift-python.in =========='
-sleep 1
-pip-compile drift-python.in
-
-echo '========== 132 easysnmp.in =========='
-sleep 1
-pip-compile easysnmp.in
-
-echo '========== 133 ecmwflibs.in =========='
-sleep 1
-pip-compile ecmwflibs.in
-
-echo '========== 134 ed25519.in =========='
-sleep 1
-pip-compile ed25519.in
-
-echo '========== 135 elastiknn-client.in =========='
-sleep 1
-pip-compile elastiknn-client.in
-
-echo '========== 136 email.in =========='
-sleep 1
-pip-compile email.in
-
-echo '========== 137 embreex.in =========='
-sleep 1
-pip-compile embreex.in
-
-echo '========== 138 encoders.in =========='
-sleep 1
-pip-compile encoders.in
-
-echo '========== 139 env-file.in =========='
-sleep 1
-pip-compile env-file.in
-
-echo '========== 140 ethyca-fides.in =========='
-sleep 1
-pip-compile ethyca-fides.in
-
-echo '========== 141 eva-decord.in =========='
-sleep 1
-pip-compile eva-decord.in
-
-echo '========== 142 extractcode-7z.in =========='
-sleep 1
-pip-compile extractcode-7z.in
-
-echo '========== 143 extractcode-libarchive.in =========='
-sleep 1
-pip-compile extractcode-libarchive.in
-
-echo '========== 144 fairseq.in =========='
-sleep 1
-pip-compile fairseq.in
-
-echo '========== 145 faiss-gpu.in =========='
-sleep 1
-pip-compile faiss-gpu.in
-
-echo '========== 146 fastestimator-nightly.in =========='
-sleep 1
-pip-compile fastestimator-nightly.in
-
-echo '========== 147 fbgemm-gpu.in =========='
-sleep 1
-pip-compile fbgemm-gpu.in
-
-echo '========== 148 flash-attn.in =========='
-sleep 1
-pip-compile flash-attn.in
-
-echo '========== 149 flask-mysqldb.in =========='
-sleep 1
-pip-compile flask-mysqldb.in
-
-echo '========== 150 flowtask.in =========='
-sleep 1
-pip-compile flowtask.in
-
-echo '========== 151 followthemoney.in =========='
-sleep 1
-pip-compile followthemoney.in
-
-echo '========== 152 fudstop.in =========='
-sleep 1
-pip-compile fudstop.in
-
-echo '========== 153 functools.in =========='
-sleep 1
-pip-compile functools.in
-
-echo '========== 154 functools32.in =========='
-sleep 1
-pip-compile functools32.in
-
-echo '========== 155 gaussian-splatting.in =========='
-sleep 1
-pip-compile gaussian-splatting.in
-
-echo '========== 156 gcc7.in =========='
-sleep 1
-pip-compile gcc7.in
-
-echo '========== 157 gdal.in =========='
-sleep 1
-pip-compile gdal.in
-
-echo '========== 158 gehomesdk.in =========='
-sleep 1
-pip-compile gehomesdk.in
-
-echo '========== 159 generic-etl.in =========='
-sleep 1
-pip-compile generic-etl.in
-
-echo '========== 160 geode-background.in =========='
-sleep 1
-pip-compile geode-background.in
-
-echo '========== 161 geode-backgroundmesh.in =========='
-sleep 1
-pip-compile geode-backgroundmesh.in
-
-echo '========== 162 geode-common.in =========='
-sleep 1
-pip-compile geode-common.in
-
-echo '========== 163 geode-conversion.in =========='
-sleep 1
-pip-compile geode-conversion.in
-
-echo '========== 164 geode-explicit.in =========='
-sleep 1
-pip-compile geode-explicit.in
-
-echo '========== 165 geode-hybrid.in =========='
-sleep 1
-pip-compile geode-hybrid.in
-
-echo '========== 166 geode-implicit.in =========='
-sleep 1
-pip-compile geode-implicit.in
-
-echo '========== 167 geode-numerics.in =========='
-sleep 1
-pip-compile geode-numerics.in
-
-echo '========== 168 geode-simplex.in =========='
-sleep 1
-pip-compile geode-simplex.in
-
-echo '========== 169 geode-simplexremesh.in =========='
-sleep 1
-pip-compile geode-simplexremesh.in
-
-echo '========== 170 geode-viewables.in =========='
-sleep 1
-pip-compile geode-viewables.in
-
-echo '========== 171 geopyv.in =========='
-sleep 1
-pip-compile geopyv.in
-
-echo '========== 172 gm.in =========='
-sleep 1
-pip-compile gm.in
-
-echo '========== 173 google-fhir.in =========='
-sleep 1
-pip-compile google-fhir.in
-
-echo '========== 174 google-python-cloud-debugger.in =========='
-sleep 1
-pip-compile google-python-cloud-debugger.in
-
-echo '========== 175 gridkit.in =========='
-sleep 1
-pip-compile gridkit.in
-
-echo '========== 176 gym-examples.in =========='
-sleep 1
-pip-compile gym-examples.in
-
-echo '========== 177 harvesters.in =========='
-sleep 1
-pip-compile harvesters.in
-
-echo '========== 178 hello-robot-stretch-body-tools.in =========='
-sleep 1
-pip-compile hello-robot-stretch-body-tools.in
-
-echo '========== 179 hiddifypanel.in =========='
-sleep 1
-pip-compile hiddifypanel.in
-
-echo '========== 180 hierarchical-conf.in =========='
-sleep 1
-pip-compile hierarchical-conf.in
-
-echo '========== 181 hifitime.in =========='
-sleep 1
-pip-compile hifitime.in
-
-echo '========== 182 httpstan.in =========='
-sleep 1
-pip-compile httpstan.in
-
-echo '========== 183 ilcdirac.in =========='
-sleep 1
-pip-compile ilcdirac.in
-
-echo '========== 184 importlib.in =========='
-sleep 1
-pip-compile importlib.in
-
-echo '========== 185 inference-gpu.in =========='
-sleep 1
-pip-compile inference-gpu.in
-
-echo '========== 186 intel-cmplr-lib-rt.in =========='
-sleep 1
-pip-compile intel-cmplr-lib-rt.in
-
-echo '========== 187 intel-cmplr-lib-ur.in =========='
-sleep 1
-pip-compile intel-cmplr-lib-ur.in
-
-echo '========== 188 intel-cmplr-lic-rt.in =========='
-sleep 1
-pip-compile intel-cmplr-lic-rt.in
-
-echo '========== 189 intel-extension-for-pytorch.in =========='
-sleep 1
-pip-compile intel-extension-for-pytorch.in
-
-echo '========== 190 intel-opencl-rt.in =========='
-sleep 1
-pip-compile intel-opencl-rt.in
-
-echo '========== 191 intel-openmp.in =========='
-sleep 1
-pip-compile intel-openmp.in
-
-echo '========== 192 intel-sycl-rt.in =========='
-sleep 1
-pip-compile intel-sycl-rt.in
-
-echo '========== 193 ipex-llm.in =========='
-sleep 1
-pip-compile ipex-llm.in
-
-echo '========== 194 ipyslickgrid.in =========='
-sleep 1
-pip-compile ipyslickgrid.in
-
-echo '========== 195 isystem-connect.in =========='
-sleep 1
-pip-compile isystem-connect.in
-
-echo '========== 196 jax-cuda12-pjrt.in =========='
-sleep 1
-pip-compile jax-cuda12-pjrt.in
-
-echo '========== 197 jax-cuda12-plugin.in =========='
-sleep 1
-pip-compile jax-cuda12-plugin.in
-
-echo '========== 198 jax-triton.in =========='
-sleep 1
-pip-compile jax-triton.in
-
-echo '========== 199 jijzept.in =========='
-sleep 1
-pip-compile jijzept.in
-
-echo '========== 200 jsonslicer.in =========='
-sleep 1
-pip-compile jsonslicer.in
-
-echo '========== 201 kcli.in =========='
-sleep 1
-pip-compile kcli.in
-
-echo '========== 202 kivy-deps-angle.in =========='
-sleep 1
-pip-compile kivy-deps-angle.in
-
-echo '========== 203 kivy-deps-glew.in =========='
-sleep 1
-pip-compile kivy-deps-glew.in
-
-echo '========== 204 kivy-deps-sdl2.in =========='
-sleep 1
-pip-compile kivy-deps-sdl2.in
-
-echo '========== 205 langflow.in =========='
-sleep 1
-pip-compile langflow.in
+# echo '========== 1 accuinsight.in =========='
+# sleep 1
+# pip-compile accuinsight.in
+
+# echo '========== 2 addereq.in =========='
+# sleep 1
+# pip-compile addereq.in
+
+# echo '========== 3 aea-ledger-fetchai.in =========='
+# sleep 1
+# pip-compile aea-ledger-fetchai.in
+
+# echo '========== 4 ai-flow-nightly.in =========='
+# sleep 1
+# pip-compile ai-flow-nightly.in
+
+# echo '========== 5 akida.in =========='
+# sleep 1
+# pip-compile akida.in
+
+# echo '========== 6 alita-sdk.in =========='
+# sleep 1
+# pip-compile alita-sdk.in
+
+# echo '========== 7 allennlp-pvt-nightly.in =========='
+# sleep 1
+# pip-compile allennlp-pvt-nightly.in
+
+# echo '========== 8 allennlp.in =========='
+# sleep 1
+# pip-compile allennlp.in
+
+# echo '========== 9 allianceauth-app-utils.in =========='
+# sleep 1
+# pip-compile allianceauth-app-utils.in
+
+# echo '========== 10 allianceauth.in =========='
+# sleep 1
+# pip-compile allianceauth.in
+
+# echo '========== 11 amplo.in =========='
+# sleep 1
+# pip-compile amplo.in
+
+# echo '========== 12 amr.in =========='
+# sleep 1
+# pip-compile amr.in
+
+# echo '========== 13 anyjson.in =========='
+# sleep 1
+# pip-compile anyjson.in
+
+# echo '========== 14 apache-flink.in =========='
+# sleep 1
+# pip-compile apache-flink.in
+
+# echo '========== 15 apache-superset.in =========='
+# sleep 1
+# pip-compile apache-superset.in
+
+# echo '========== 16 appiumextended.in =========='
+# sleep 1
+# pip-compile appiumextended.in
+
+# echo '========== 17 arcticdb.in =========='
+# sleep 1
+# pip-compile arcticdb.in
+
+# echo '========== 18 arducamdepthcamera.in =========='
+# sleep 1
+# pip-compile arducamdepthcamera.in
+
+# echo '========== 19 arducamevksdk.in =========='
+# sleep 1
+# pip-compile arducamevksdk.in
+
+# echo '========== 20 aria2.in =========='
+# sleep 1
+# pip-compile aria2.in
+
+# echo '========== 21 assemblyline-core.in =========='
+# sleep 1
+# pip-compile assemblyline-core.in
+
+# echo '========== 22 assemblyline-service-client.in =========='
+# sleep 1
+# pip-compile assemblyline-service-client.in
+
+# echo '========== 23 assemblyline-service-server.in =========='
+# sleep 1
+# pip-compile assemblyline-service-server.in
+
+# echo '========== 24 assemblyline-ui.in =========='
+# sleep 1
+# pip-compile assemblyline-ui.in
+
+# echo '========== 25 assemblyline-v4-service.in =========='
+# sleep 1
+# pip-compile assemblyline-v4-service.in
+
+# echo '========== 26 assemblyline.in =========='
+# sleep 1
+# pip-compile assemblyline.in
+
+# echo '========== 27 asyncdb.in =========='
+# sleep 1
+# pip-compile asyncdb.in
+
+# echo '========== 28 audiolm-pytorch.in =========='
+# sleep 1
+# pip-compile audiolm-pytorch.in
+
+# echo '========== 29 audioop-lts.in =========='
+# sleep 1
+# pip-compile audioop-lts.in
+
+# echo '========== 30 auto-gptq.in =========='
+# sleep 1
+# pip-compile auto-gptq.in
+
+# echo '========== 31 autoai-libs.in =========='
+# sleep 1
+# pip-compile autoai-libs.in
+
+# echo '========== 32 autoawq.in =========='
+# sleep 1
+# pip-compile autoawq.in
+
+# echo '========== 33 autogluon-cloud.in =========='
+# sleep 1
+# pip-compile autogluon-cloud.in
+
+# echo '========== 34 autogluon-extra.in =========='
+# sleep 1
+# pip-compile autogluon-extra.in
+
+# echo '========== 35 autogluon-mxnet.in =========='
+# sleep 1
+# pip-compile autogluon-mxnet.in
+
+# echo '========== 36 autogluon-text.in =========='
+# sleep 1
+# pip-compile autogluon-text.in
+
+# echo '========== 37 autogluon-vision.in =========='
+# sleep 1
+# pip-compile autogluon-vision.in
+
+# echo '========== 38 autotorch.in =========='
+# sleep 1
+# pip-compile autotorch.in
+
+# echo '========== 39 azure-mgmt.in =========='
+# sleep 1
+# pip-compile azure-mgmt.in
+
+# echo '========== 40 azure-storage-logging.in =========='
+# sleep 1
+# pip-compile azure-storage-logging.in
+
+# echo '========== 41 azure-storage.in =========='
+# sleep 1
+# pip-compile azure-storage.in
+
+# echo '========== 42 azure.in =========='
+# sleep 1
+# pip-compile azure.in
+
+# echo '========== 43 azureml-automl-core.in =========='
+# sleep 1
+# pip-compile azureml-automl-core.in
+
+# echo '========== 44 azureml-automl-runtime.in =========='
+# sleep 1
+# pip-compile azureml-automl-runtime.in
+
+# echo '========== 45 azureml-dataprep-native.in =========='
+# sleep 1
+# pip-compile azureml-dataprep-native.in
+
+# echo '========== 46 azureml-dataprep-rslex.in =========='
+# sleep 1
+# pip-compile azureml-dataprep-rslex.in
+
+# echo '========== 47 azureml-dataprep.in =========='
+# sleep 1
+# pip-compile azureml-dataprep.in
+
+# echo '========== 48 azureml-dataset-runtime.in =========='
+# sleep 1
+# pip-compile azureml-dataset-runtime.in
+
+# echo '========== 49 azureml-defaults.in =========='
+# sleep 1
+# pip-compile azureml-defaults.in
+
+# echo '========== 50 azureml-designer-serving.in =========='
+# sleep 1
+# pip-compile azureml-designer-serving.in
+
+# echo '========== 51 azureml-featurestore.in =========='
+# sleep 1
+# pip-compile azureml-featurestore.in
+
+# echo '========== 52 azureml-fsspec.in =========='
+# sleep 1
+# pip-compile azureml-fsspec.in
+
+# echo '========== 53 azureml-interpret.in =========='
+# sleep 1
+# pip-compile azureml-interpret.in
+
+# echo '========== 54 azureml-opendatasets.in =========='
+# sleep 1
+# pip-compile azureml-opendatasets.in
+
+# echo '========== 55 azureml-train-automl-client.in =========='
+# sleep 1
+# pip-compile azureml-train-automl-client.in
+
+# echo '========== 56 azureml-train-automl-runtime.in =========='
+# sleep 1
+# pip-compile azureml-train-automl-runtime.in
+
+# echo '========== 57 azureml-train-automl.in =========='
+# sleep 1
+# pip-compile azureml-train-automl.in
+
+# echo '========== 58 basemodel.in =========='
+# sleep 1
+# pip-compile basemodel.in
+
+# echo '========== 59 bcml.in =========='
+# sleep 1
+# pip-compile bcml.in
+
+# echo '========== 60 beautifulsoup.in =========='
+# sleep 1
+# pip-compile beautifulsoup.in
+
+# echo '========== 61 bigdl-chronos-spark2.in =========='
+# sleep 1
+# pip-compile bigdl-chronos-spark2.in
+
+# echo '========== 62 bigdl-chronos-spark3.in =========='
+# sleep 1
+# pip-compile bigdl-chronos-spark3.in
+
+# echo '========== 63 bigdl-chronos.in =========='
+# sleep 1
+# pip-compile bigdl-chronos.in
+
+# echo '========== 64 bigdl-core-cpp.in =========='
+# sleep 1
+# pip-compile bigdl-core-cpp.in
+
+# echo '========== 65 bigdl-core-xe-all.in =========='
+# sleep 1
+# pip-compile bigdl-core-xe-all.in
+
+# echo '========== 66 bigdl-friesian-spark2.in =========='
+# sleep 1
+# pip-compile bigdl-friesian-spark2.in
+
+# echo '========== 67 bigdl-friesian-spark3.in =========='
+# sleep 1
+# pip-compile bigdl-friesian-spark3.in
+
+# echo '========== 68 bigdl-friesian.in =========='
+# sleep 1
+# pip-compile bigdl-friesian.in
+
+# echo '========== 69 bigdl-spark2.in =========='
+# sleep 1
+# pip-compile bigdl-spark2.in
+
+# echo '========== 70 bigdl-spark3.in =========='
+# sleep 1
+# pip-compile bigdl-spark3.in
+
+# echo '========== 71 bigdl.in =========='
+# sleep 1
+# pip-compile bigdl.in
+
+# echo '========== 72 blaze.in =========='
+# sleep 1
+# pip-compile blaze.in
+
+# echo '========== 73 bosch-thermostat-client.in =========='
+# sleep 1
+# pip-compile bosch-thermostat-client.in
+
+# echo '========== 74 bpmn-rpa.in =========='
+# sleep 1
+# pip-compile bpmn-rpa.in
+
+# echo '========== 75 bpy-helper.in =========='
+# sleep 1
+# pip-compile bpy-helper.in
+
+# echo '========== 76 bpy.in =========='
+# sleep 1
+# pip-compile bpy.in
+
+# echo '========== 77 carla.in =========='
+# sleep 1
+# pip-compile carla.in
+
+# echo '========== 78 catboost-dev.in =========='
+# sleep 1
+# pip-compile catboost-dev.in
+
+# echo '========== 79 causal-conv1d.in =========='
+# sleep 1
+# pip-compile causal-conv1d.in
+
+# echo '========== 80 certbot-dns-powerdns.in =========='
+# sleep 1
+# pip-compile certbot-dns-powerdns.in
+
+# echo '========== 81 cicdtest.in =========='
+# sleep 1
+# pip-compile cicdtest.in
+
+# echo '========== 82 click-default-group.in =========='
+# sleep 1
+# pip-compile click-default-group.in
+
+# echo '========== 83 click-didyoumean.in =========='
+# sleep 1
+# pip-compile click-didyoumean.in
+
+# echo '========== 84 cloudrail-knowledge.in =========='
+# sleep 1
+# pip-compile cloudrail-knowledge.in
+
+# echo '========== 85 coala-bears.in =========='
+# sleep 1
+# pip-compile coala-bears.in
+
+# echo '========== 86 composabl-api-dev.in =========='
+# sleep 1
+# pip-compile composabl-api-dev.in
+
+# echo '========== 87 composabl-cli-dev.in =========='
+# sleep 1
+# pip-compile composabl-cli-dev.in
+
+# echo '========== 88 composabl-dev.in =========='
+# sleep 1
+# pip-compile composabl-dev.in
+
+# echo '========== 89 composabl-train-dev.in =========='
+# sleep 1
+# pip-compile composabl-train-dev.in
+
+# echo '========== 90 conda.in =========='
+# sleep 1
+# pip-compile conda.in
+
+# echo '========== 91 cplex.in =========='
+# sleep 1
+# pip-compile cplex.in
+
+# echo '========== 92 cs18-api-client.in =========='
+# sleep 1
+# pip-compile cs18-api-client.in
+
+# echo '========== 93 ctadirac.in =========='
+# sleep 1
+# pip-compile ctadirac.in
+
+# echo '========== 94 cuda-bindings.in =========='
+# sleep 1
+# pip-compile cuda-bindings.in
+
+# echo '========== 95 cuda-python.in =========='
+# sleep 1
+# pip-compile cuda-python.in
+
+# echo '========== 96 cumm-cu120.in =========='
+# sleep 1
+# pip-compile cumm-cu120.in
+
+# echo '========== 97 cumm-cu124.in =========='
+# sleep 1
+# pip-compile cumm-cu124.in
+
+# echo '========== 98 cupy-cuda11x.in =========='
+# sleep 1
+# pip-compile cupy-cuda11x.in
+
+# echo '========== 99 cupy-cuda12x.in =========='
+# sleep 1
+# pip-compile cupy-cuda12x.in
+
+# echo '========== 100 cupy.in =========='
+# sleep 1
+# pip-compile cupy.in
+
+# echo '========== 101 custatevec-cu12.in =========='
+# sleep 1
+# pip-compile custatevec-cu12.in
+
+# echo '========== 102 cutensor-cu12.in =========='
+# sleep 1
+# pip-compile cutensor-cu12.in
+
+# echo '========== 103 cutensornet-cu12.in =========='
+# sleep 1
+# pip-compile cutensornet-cu12.in
+
+# echo '========== 104 cyclonedds-nightly.in =========='
+# sleep 1
+# pip-compile cyclonedds-nightly.in
+
+# echo '========== 105 d2l.in =========='
+# sleep 1
+# pip-compile d2l.in
+
+# echo '========== 106 daal.in =========='
+# sleep 1
+# pip-compile daal.in
+
+# echo '========== 107 daal4py.in =========='
+# sleep 1
+# pip-compile daal4py.in
+
+# echo '========== 108 databricks-sql.in =========='
+# sleep 1
+# pip-compile databricks-sql.in
+
+# echo '========== 109 datacontract-cli.in =========='
+# sleep 1
+# pip-compile datacontract-cli.in
+
+# echo '========== 110 datashape.in =========='
+# sleep 1
+# pip-compile datashape.in
+
+# echo '========== 111 dbus-python.in =========='
+# sleep 1
+# pip-compile dbus-python.in
+
+# echo '========== 112 dbx.in =========='
+# sleep 1
+# pip-compile dbx.in
+
+# echo '========== 113 decord.in =========='
+# sleep 1
+# pip-compile decord.in
+
+# echo '========== 114 deepdrive.in =========='
+# sleep 1
+# pip-compile deepdrive.in
+
+# echo '========== 115 deepspeech.in =========='
+# sleep 1
+# pip-compile deepspeech.in
+
+# echo '========== 116 deltachat.in =========='
+# sleep 1
+# pip-compile deltachat.in
+
+# echo '========== 117 demjson.in =========='
+# sleep 1
+# pip-compile demjson.in
+
+# echo '========== 118 dipex.in =========='
+# sleep 1
+# pip-compile dipex.in
+
+# echo '========== 119 dirac.in =========='
+# sleep 1
+# pip-compile dirac.in
+
+# echo '========== 120 distribute.in =========='
+# sleep 1
+# pip-compile distribute.in
+
+# echo '========== 121 dithering.in =========='
+# sleep 1
+# pip-compile dithering.in
+
+# echo '========== 122 divik.in =========='
+# sleep 1
+# pip-compile divik.in
+
+# echo '========== 123 dlite-python.in =========='
+# sleep 1
+# pip-compile dlite-python.in
+
+# echo '========== 124 dm-launchpad-nightly.in =========='
+# sleep 1
+# pip-compile dm-launchpad-nightly.in
+
+# echo '========== 125 dm-reverb-nightly.in =========='
+# sleep 1
+# pip-compile dm-reverb-nightly.in
+
+# echo '========== 126 docker-compose.in =========='
+# sleep 1
+# pip-compile docker-compose.in
+
+# echo '========== 127 dolma.in =========='
+# sleep 1
+# pip-compile dolma.in
+
+# echo '========== 128 dotnetcore2.in =========='
+# sleep 1
+# pip-compile dotnetcore2.in
+
+# echo '========== 129 dpcpp-cpp-rt.in =========='
+# sleep 1
+# pip-compile dpcpp-cpp-rt.in
+
+# echo '========== 130 dragnet.in =========='
+# sleep 1
+# pip-compile dragnet.in
+
+# echo '========== 131 drift-python.in =========='
+# sleep 1
+# pip-compile drift-python.in
+
+# echo '========== 132 easysnmp.in =========='
+# sleep 1
+# pip-compile easysnmp.in
+
+# echo '========== 133 ecmwflibs.in =========='
+# sleep 1
+# pip-compile ecmwflibs.in
+
+# echo '========== 134 ed25519.in =========='
+# sleep 1
+# pip-compile ed25519.in
+
+# echo '========== 135 elastiknn-client.in =========='
+# sleep 1
+# pip-compile elastiknn-client.in
+
+# echo '========== 136 email.in =========='
+# sleep 1
+# pip-compile email.in
+
+# echo '========== 137 embreex.in =========='
+# sleep 1
+# pip-compile embreex.in
+
+# echo '========== 138 encoders.in =========='
+# sleep 1
+# pip-compile encoders.in
+
+# echo '========== 139 env-file.in =========='
+# sleep 1
+# pip-compile env-file.in
+
+# echo '========== 140 ethyca-fides.in =========='
+# sleep 1
+# pip-compile ethyca-fides.in
+
+# echo '========== 141 eva-decord.in =========='
+# sleep 1
+# pip-compile eva-decord.in
+
+# echo '========== 142 extractcode-7z.in =========='
+# sleep 1
+# pip-compile extractcode-7z.in
+
+# echo '========== 143 extractcode-libarchive.in =========='
+# sleep 1
+# pip-compile extractcode-libarchive.in
+
+# echo '========== 144 fairseq.in =========='
+# sleep 1
+# pip-compile fairseq.in
+
+# echo '========== 145 faiss-gpu.in =========='
+# sleep 1
+# pip-compile faiss-gpu.in
+
+# echo '========== 146 fastestimator-nightly.in =========='
+# sleep 1
+# pip-compile fastestimator-nightly.in
+
+# echo '========== 147 fbgemm-gpu.in =========='
+# sleep 1
+# pip-compile fbgemm-gpu.in
+
+# echo '========== 148 flash-attn.in =========='
+# sleep 1
+# pip-compile flash-attn.in
+
+# echo '========== 149 flask-mysqldb.in =========='
+# sleep 1
+# pip-compile flask-mysqldb.in
+
+# echo '========== 150 flowtask.in =========='
+# sleep 1
+# pip-compile flowtask.in
+
+# echo '========== 151 followthemoney.in =========='
+# sleep 1
+# pip-compile followthemoney.in
+
+# echo '========== 152 fudstop.in =========='
+# sleep 1
+# pip-compile fudstop.in
+
+# echo '========== 153 functools.in =========='
+# sleep 1
+# pip-compile functools.in
+
+# echo '========== 154 functools32.in =========='
+# sleep 1
+# pip-compile functools32.in
+
+# echo '========== 155 gaussian-splatting.in =========='
+# sleep 1
+# pip-compile gaussian-splatting.in
+
+# echo '========== 156 gcc7.in =========='
+# sleep 1
+# pip-compile gcc7.in
+
+# echo '========== 157 gdal.in =========='
+# sleep 1
+# pip-compile gdal.in
+
+# echo '========== 158 gehomesdk.in =========='
+# sleep 1
+# pip-compile gehomesdk.in
+
+# echo '========== 159 generic-etl.in =========='
+# sleep 1
+# pip-compile generic-etl.in
+
+# echo '========== 160 geode-background.in =========='
+# sleep 1
+# pip-compile geode-background.in
+
+# echo '========== 161 geode-backgroundmesh.in =========='
+# sleep 1
+# pip-compile geode-backgroundmesh.in
+
+# echo '========== 162 geode-common.in =========='
+# sleep 1
+# pip-compile geode-common.in
+
+# echo '========== 163 geode-conversion.in =========='
+# sleep 1
+# pip-compile geode-conversion.in
+
+# echo '========== 164 geode-explicit.in =========='
+# sleep 1
+# pip-compile geode-explicit.in
+
+# echo '========== 165 geode-hybrid.in =========='
+# sleep 1
+# pip-compile geode-hybrid.in
+
+# echo '========== 166 geode-implicit.in =========='
+# sleep 1
+# pip-compile geode-implicit.in
+
+# echo '========== 167 geode-numerics.in =========='
+# sleep 1
+# pip-compile geode-numerics.in
+
+# echo '========== 168 geode-simplex.in =========='
+# sleep 1
+# pip-compile geode-simplex.in
+
+# echo '========== 169 geode-simplexremesh.in =========='
+# sleep 1
+# pip-compile geode-simplexremesh.in
+
+# echo '========== 170 geode-viewables.in =========='
+# sleep 1
+# pip-compile geode-viewables.in
+
+# echo '========== 171 geopyv.in =========='
+# sleep 1
+# pip-compile geopyv.in
+
+# echo '========== 172 gm.in =========='
+# sleep 1
+# pip-compile gm.in
+
+# echo '========== 173 google-fhir.in =========='
+# sleep 1
+# pip-compile google-fhir.in
+
+# echo '========== 174 google-python-cloud-debugger.in =========='
+# sleep 1
+# pip-compile google-python-cloud-debugger.in
+
+# echo '========== 175 gridkit.in =========='
+# sleep 1
+# pip-compile gridkit.in
+
+# echo '========== 176 gym-examples.in =========='
+# sleep 1
+# pip-compile gym-examples.in
+
+# echo '========== 177 harvesters.in =========='
+# sleep 1
+# pip-compile harvesters.in
+
+# echo '========== 178 hello-robot-stretch-body-tools.in =========='
+# sleep 1
+# pip-compile hello-robot-stretch-body-tools.in
+
+# echo '========== 179 hiddifypanel.in =========='
+# sleep 1
+# pip-compile hiddifypanel.in
+
+# echo '========== 180 hierarchical-conf.in =========='
+# sleep 1
+# pip-compile hierarchical-conf.in
+
+# echo '========== 181 hifitime.in =========='
+# sleep 1
+# pip-compile hifitime.in
+
+# echo '========== 182 httpstan.in =========='
+# sleep 1
+# pip-compile httpstan.in
+
+# echo '========== 183 ilcdirac.in =========='
+# sleep 1
+# pip-compile ilcdirac.in
+
+# echo '========== 184 importlib.in =========='
+# sleep 1
+# pip-compile importlib.in
+
+# echo '========== 185 inference-gpu.in =========='
+# sleep 1
+# pip-compile inference-gpu.in
+
+# echo '========== 186 intel-cmplr-lib-rt.in =========='
+# sleep 1
+# pip-compile intel-cmplr-lib-rt.in
+
+# echo '========== 187 intel-cmplr-lib-ur.in =========='
+# sleep 1
+# pip-compile intel-cmplr-lib-ur.in
+
+# echo '========== 188 intel-cmplr-lic-rt.in =========='
+# sleep 1
+# pip-compile intel-cmplr-lic-rt.in
+
+# echo '========== 189 intel-extension-for-pytorch.in =========='
+# sleep 1
+# pip-compile intel-extension-for-pytorch.in
+
+# echo '========== 190 intel-opencl-rt.in =========='
+# sleep 1
+# pip-compile intel-opencl-rt.in
+
+# echo '========== 191 intel-openmp.in =========='
+# sleep 1
+# pip-compile intel-openmp.in
+
+# echo '========== 192 intel-sycl-rt.in =========='
+# sleep 1
+# pip-compile intel-sycl-rt.in
+
+# echo '========== 193 ipex-llm.in =========='
+# sleep 1
+# pip-compile ipex-llm.in
+
+# echo '========== 194 ipyslickgrid.in =========='
+# sleep 1
+# pip-compile ipyslickgrid.in
+
+# echo '========== 195 isystem-connect.in =========='
+# sleep 1
+# pip-compile isystem-connect.in
+
+# echo '========== 196 jax-cuda12-pjrt.in =========='
+# sleep 1
+# pip-compile jax-cuda12-pjrt.in
+
+# echo '========== 197 jax-cuda12-plugin.in =========='
+# sleep 1
+# pip-compile jax-cuda12-plugin.in
+
+# echo '========== 198 jax-triton.in =========='
+# sleep 1
+# pip-compile jax-triton.in
+
+# echo '========== 199 jijzept.in =========='
+# sleep 1
+# pip-compile jijzept.in
+
+# echo '========== 200 jsonslicer.in =========='
+# sleep 1
+# pip-compile jsonslicer.in
+
+# echo '========== 201 kcli.in =========='
+# sleep 1
+# pip-compile kcli.in
+
+# echo '========== 202 kivy-deps-angle.in =========='
+# sleep 1
+# pip-compile kivy-deps-angle.in
+
+# echo '========== 203 kivy-deps-glew.in =========='
+# sleep 1
+# pip-compile kivy-deps-glew.in
+
+# echo '========== 204 kivy-deps-sdl2.in =========='
+# sleep 1
+# pip-compile kivy-deps-sdl2.in
+
+# echo '========== 205 langflow.in =========='
+# sleep 1
+# pip-compile langflow.in
 
 echo '========== 206 large-image-source-gdal.in =========='
 sleep 1
