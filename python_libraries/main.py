@@ -3,7 +3,7 @@ Usage:
   python main.py <func>
   python main.py seed_from_15k_csv 16000
   python main.py gen_pip_compiles_script
-  python main.py parse_pip_compiles 1
+  python main.py parse_pip_compiles
   python main.py get_pypi_html_pages
   python main.py parse_pypi_html_pages
 Options:
@@ -106,7 +106,7 @@ def parse_pip_compiles():
     print("{} files in pip_filenames_dict".format(len(pip_filenames_dict)))
 
     # second loop, the parsing loop, parse a file if not yet parsed
-    for f in files:
+    for f in sorted(files):
         filename = f.strip()
         if filename.endswith(".txt"):  # the output of a pip-compile
             libname = filename.split(".")[0]
@@ -114,14 +114,13 @@ def parse_pip_compiles():
             if jsonfile in pip_filenames_dict.keys():
                 print("already parsed: {}".format(filename))
             else:
-                if "boto3.txt" in filename:
-                    outfile = "data/pip/{}".format(jsonfile)
-                    print("===")
-                    print("parsing: {}".format(filename))
-                    rtp = RequirementsTxtParser()
-                    results = rtp.parse(filename)
-                    #print(json.dumps(results, sort_keys=False, indent=2))
-                    FS.write_json(results, outfile, sort_keys=False)
+                outfile = "data/pip/{}".format(jsonfile)
+                print("===")
+                print("parsing: {}".format(filename))
+                rtp = RequirementsTxtParser()
+                results = rtp.parse(filename)
+                #print(json.dumps(results, sort_keys=False, indent=2))
+                FS.write_json(results, outfile, sort_keys=False)
 
 def is_pip_processing_file(filename):
     if filename.endswith(".in"):
