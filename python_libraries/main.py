@@ -4,6 +4,7 @@ Usage:
   python main.py seed_from_15k_csv 16000
   python main.py gen_pip_compiles_script
   python main.py parse_pip_compiles
+  python main.py merge_parsed_libs
   python main.py get_pypi_html_pages
   python main.py parse_pypi_html_pages
 Options:
@@ -131,6 +132,31 @@ def is_pip_processing_file(filename):
         return True
     return False 
 
+def merge_parsed_libs():
+    json_filenames = list()
+    merged_dict = dict()
+    files = FS.list_files_in_dir("data/pip")
+
+    # first get a list of all the *.in, *.txt, and *.json files in the pip 
+    # directory to determine which files need to be parsed.
+    for f in files:
+        stripped = f.strip()
+        if stripped.endswith(".json"):
+            json_filenames.append(stripped)
+
+    # second loop, the parsing loop, parse a file if not yet parsed
+    for f in sorted(json_filenames):
+        infile = "data/pip/{}".format(f.strip())
+        print("reading {}".format(infile))
+        obj = FS.read_json(infile)
+        print(obj)
+        libname = obj["libname"]
+        merged_dict[libname] = obj 
+
+    outfile = "data/pip_merged/merged_libs.json"
+    FS.write_json(merged_dict, outfile, sort_keys=True)
+    print("{} merged libs".format(len(merged_dict.keys())))
+
 def get_pypi_html_pages():
     pass 
 
@@ -149,6 +175,8 @@ if __name__ == "__main__":
             gen_pip_compiles_script()
         elif func == "parse_pip_compiles":
             parse_pip_compiles()
+        elif func == "merge_parsed_libs":
+            merge_parsed_libs()
         elif func == "get_pypi_html_pages":
             get_pypi_html_pages()
         elif func == "parse_pypi_html_pages":
