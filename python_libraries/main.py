@@ -12,6 +12,9 @@ Options:
   --version     Show version.
 """
 
+# TODO - the data directory has been move to data/python_libs/pip/
+# in this repo.  Therefore need to refactor this code accordingly.
+
 import base64
 import json
 import logging
