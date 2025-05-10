@@ -1,0 +1,2440 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="defaultLanguage" content="en">
+    <meta name="availableLanguages" content="en, es, fr, ja, pt_BR, uk, el, de, zh_Hans, zh_Hant, ru, he, eo, ko">
+
+
+    <title>3lc · PyPI</title>
+    <meta name="description" content="3LC Python Package - A tool for model-guided, interactive data debugging and enhancements">
+
+    <link rel="stylesheet" href="/static/css/warehouse-ltr.4afe342a.css">
+    <link rel="stylesheet" href="/static/css/fontawesome.080e1050.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+3:400,400italic,600,600italic,700,700italic%7CSource+Code+Pro:500">
+    <noscript>
+      <link rel="stylesheet" href="/static/css/noscript.0673c9ea.css">
+    </noscript>
+
+
+    <link rel="icon" href="/static/images/favicon.35549fe8.ico" type="image/x-icon">
+
+    <link rel="alternate" type="application/rss+xml" title="RSS: 40 latest updates" href="/rss/updates.xml">
+    <link rel="alternate" type="application/rss+xml" title="RSS: 40 newest packages" href="/rss/packages.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS: latest releases for 3lc" href="/rss/project/3lc/releases.xml">    <link rel="canonical" href="https://pypi.org/project/3lc/">
+
+    <meta property="og:url" content="https://pypi.org/project/3lc/">
+    <meta property="og:site_name" content="PyPI">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://pypi.org/static/images/twitter.abaf4b19.webp">
+    <meta property="og:title" content="3lc">
+    <meta property="og:description" content="3LC Python Package - A tool for model-guided, interactive data debugging and enhancements">
+
+    <link rel="search" type="application/opensearchdescription+xml" title="PyPI" href="/opensearch.xml">
+
+    <script async
+            src="/static/js/warehouse.2bdb8179.js">
+    </script>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  },
+};
+</script>
+<script async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-svg.js"
+  integrity="sha256-1CldwzdEg2k1wTmf7s5RWVd7NMXI/7nxxjJM2C4DqII="
+  crossorigin="anonymous"
+></script>
+    <script defer data-domain="pypi.org" src="https://analytics.python.org/js/script.js"></script>
+    <script defer src="https://www.fastly-insights.com/insights.js?k=6a52360a-f306-421e-8ed5-7417d0d4a4e9&dnt=true"></script>
+    <script async
+        src="https://media.ethicalads.io/media/client/v1.4.0/ethicalads.min.js"
+        integrity="sha256-U3hKDidudIaxBDEzwGJApJgPEf2mWk6cfMWghrAa6i0= sha384-UcmsCqcNRSLW/dV3Lo1oCi2/VaurXbib6p4HyUEOeIa/4OpsrnucrugAefzVZJfI sha512-q4t1L4xEjGV2R4hzqCa41P8jrgFUS8xTb8rdNv4FGvw7FpydVj/kkxBJHOiaoxHa8olCcx1Slk9K+3sNbsM4ug=="
+        crossorigin="anonymous"
+    ></script>
+
+  </head>
+
+  <body data-controller="viewport-toggle">
+
+    <!-- Accessibility: this link should always be the first piece of content inside the body-->
+    <a href="#content" class="skip-to-content">Skip to main content</a>
+
+    <button type="button" class="button button--primary button--switch-to-mobile hidden" data-viewport-toggle-target="switchToMobile" data-action="viewport-toggle#switchToMobile">
+Switch to mobile version    </button>
+
+    <div id="sticky-notifications" class="stick-to-top js-stick-to-top">
+      <!-- Add browser warning. Will show for ie9 and below -->
+      <!--[if IE]>
+      <div class="notification-bar notification-bar--warning" role="status">
+        <span class="notification-bar__icon">
+          <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+          <span class="sr-only">Warning</span>
+        </span>
+        <span class="notification-bar__message">You are using an unsupported browser, upgrade to a newer version.</span>
+      </div>
+      <![endif]-->
+      <noscript>
+      <div class="notification-bar notification-bar--warning" role="status">
+        <span class="notification-bar__icon">
+          <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+          <span class="sr-only">Warning</span>
+        </span>
+        <span class="notification-bar__message">Some features may not work without JavaScript. Please try enabling it if you encounter problems.</span>
+      </div>
+      </noscript>
+
+<div data-html-include="/_includes/unauthed/notification-banners/"></div>    </div>
+
+<div data-html-include="/_includes/unauthed/flash-messages/"></div>
+
+<div data-html-include="/_includes/authed/session-notifications/"></div>
+    <header class="site-header ">
+      <div class="site-container">
+        <div class="split-layout">
+          <div class="split-layout">
+            <div>
+              <a class="site-header__logo" href="/">
+                <img alt="PyPI" src="/static/images/logo-small.8998e9d1.svg">
+              </a>
+            </div>
+
+            <form class="search-form search-form--primary" action="/search/" role="search">
+              <label for="search" class="sr-only">Search PyPI</label>
+              <input id="search" class="search-form__search" type="text" name="q" placeholder="Search projects" value="" autocomplete="off" autocapitalize="off" spellcheck="false" data-controller="search-focus" data-action="keydown@window->search-focus#focusSearchField" data-search-focus-target="searchField">
+              <button type="submit" class="search-form__button">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <span class="sr-only">Search</span>
+              </button>
+            </form>
+          </div>
+
+<div data-html-include="/_includes/authed/current-user-indicator/">            <div id="user-indicator" class="horizontal-menu horizontal-menu--light horizontal-menu--tall">
+  <nav class="horizontal-menu horizontal-menu--light horizontal-menu--tall hide-on-tablet" aria-label="Main navigation">
+    <ul>
+      <li class="horizontal-menu__item"><a href="/help/" class="horizontal-menu__link">Help</a></li>
+      <li class="horizontal-menu__item"><a href="/sponsors/" class="horizontal-menu__link">Sponsors</a></li>
+      <li class="horizontal-menu__item"><a href="/account/login/" class="horizontal-menu__link">Log in</a></li>
+      <li class="horizontal-menu__item"><a href="/account/register/" class="horizontal-menu__link">Register</a></li>
+    </ul>
+  </nav>
+  <nav class="dropdown dropdown--on-menu hidden show-on-tablet" aria-label="Main navigation">
+    <button type="button" class="horizontal-menu__link dropdown__trigger" aria-haspopup="true" aria-expanded="false" aria-label="View menu">
+Menu      <span class="dropdown__trigger-caret">
+        <i class="fa fa-caret-down" aria-hidden="true"></i>
+      </span>
+    </button>
+    <ul class="dropdown__content" aria-hidden="true" aria-label="Main menu">
+      <li><a class="dropdown__link" href="/help/">Help</a></li>
+      <li><a class="dropdown__link" href="/sponsors/">Sponsors</a></li>
+      <li><a class="dropdown__link" href="/account/login/">Log in</a></li>
+      <li><a class="dropdown__link" href="/account/register/">Register</a></li>
+    </ul>
+  </nav>
+</div>
+</div>        </div>
+      </div>
+    </header>
+
+    <div class="mobile-search">
+      <form class="search-form search-form--fullwidth" action="/search/" role="search">
+        <label for="mobile-search" class="sr-only">Search PyPI</label>
+        <input id="mobile-search" class="search-form__search" type="text" name="q" placeholder="Search projects" value="" autocomplete="off" autocapitalize="off" spellcheck="false">
+        
+        <button type="submit" class="search-form__button">
+          <i class="fa fa-search" aria-hidden="true"></i>
+          <span class="sr-only">Search</span>
+        </button>
+      </form>
+    </div>
+
+    <main id="content">
+
+<div class="banner">
+  <div class="package-header">
+    <div class="package-header__left">
+      <h1 class="package-header__name">
+        3lc 2.13.2
+      </h1>
+
+      <div data-controller="clipboard">
+        <p class="package-header__pip-instructions">
+          <span id="pip-command" data-clipboard-target="source">pip install 3lc</span>
+          <button type="button" class="copy-tooltip copy-tooltip-s" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+            <i class="fa fa-copy" aria-hidden="true"></i>
+            <span class="sr-only">Copy PIP instructions</span>
+          </button>
+        </p>
+      </div>
+    </div>
+
+    <div class="package-header__right">
+      <a class="status-badge status-badge--good" href="/project/3lc/">
+        <span>Latest version</span>
+      </a>
+      <p class="package-header__date">
+Released: <time datetime="2025-04-23T13:58:12+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Apr 23, 2025
+</time>      </p>
+    </div>
+  </div>
+</div>
+
+<div class="horizontal-section horizontal-section--grey horizontal-section--thin">
+  <div class="site-container">
+<div data-html-include="/_includes/authed/administer-project-include/3lc"></div>    <div class="split-layout split-layout--middle package-description">
+      <p class="package-description__summary">3LC Python Package - A tool for model-guided, interactive data debugging and enhancements</p>
+<div data-html-include="/_includes/authed/edit-project-button/3lc"></div>    </div>
+  </div>
+</div>
+
+<div data-controller="project-tabs">
+  <div class="tabs-container">
+    <div class="vertical-tabs">
+      <div class="vertical-tabs__tabs">
+        <div class="sidebar-section">
+          <h3 class="sidebar-section__title">Navigation</h3>
+          <nav aria-label="Navigation for 3lc">
+            <ul class="vertical-tabs__list" role="tablist">
+              <li role="tab">
+                <a id="description-tab" href="#description" data-project-tabs-target="tab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--is-active" aria-selected="true" aria-label="Project description. Focus will be moved to the description.">
+                  <i class="fa fa-align-left" aria-hidden="true"></i>
+Project description                </a>
+              </li>
+              <li role="tab">
+                <a id="history-tab" href="#history" data-project-tabs-target="tab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon" aria-label="Release history. Focus will be moved to the history panel.">
+                  <i class="fa fa-history" aria-hidden="true"></i>
+Release history                </a>
+              </li>
+              <li role="tab">
+                <a id="files-tab" href="#files" data-project-tabs-target="tab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon" aria-label="Download files. Focus will be moved to the project files.">
+                  <i class="fa fa-download" aria-hidden="true"></i>
+Download files                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+<div class="sidebar-section verified">
+  <h3 class="sidebar-section__title">
+Verified details    <i class="fa fa-circle-check check" title="Verified by PyPI on 2025-04-23"></i>
+</h3>
+  <small><i>These details have been <a href="https://docs.pypi.org/project_metadata/#verified-details">verified by PyPI</a></i></small>
+
+
+
+    <h6>Maintainers</h6>
+      <span class="sidebar-section__maintainer">
+        <a href="/user/3lc/" aria-label="">
+          <span class="sidebar-section__user-gravatar">
+            <img src="https://pypi-camo.freetls.fastly.net/3cdc0e84543217856b80aacdbb5fe3d1f88b9b41/68747470733a2f2f7365637572652e67726176617461722e636f6d2f6176617461722f35333236636163336337656661393938373835383334623333363134313765393f73697a653d3530" height="50" width="50" alt="Avatar for 3lc from gravatar.com" title="Avatar for 3lc from gravatar.com">
+          </span>
+          <span class="sidebar-section__user-gravatar-text">
+            3lc
+          </span>
+        </a>
+      </span>
+</div>
+
+<div class="sidebar-section unverified">
+  <h3 class="sidebar-section__title">Unverified details</h3>
+  <small><i>These details have <b>not</b> been verified by PyPI</i></small>
+  <h6>Project links</h6>
+  <ul class="vertical-tabs__list">
+    <li>
+      <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed" href="https://docs.3lc.ai" rel="nofollow">
+        
+
+<i class="fas fa-book" aria-hidden="true"></i>documentation
+      </a>
+    </li>
+    <li>
+      <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed" href="https://3lc.ai" rel="nofollow">
+        
+
+<i class="fas fa-home" aria-hidden="true"></i>homepage
+      </a>
+    </li>
+  </ul>
+
+<div class="sidebar-section unverified">
+  <h6>Meta</h6>
+  <ul>
+    <li>
+      <span>
+        <strong>License:</strong> Other/Proprietary License (Proprietary)
+      </span>
+    </li>
+    <li>
+      <span>
+        <strong>Author:</strong> <a href="mailto:pypi-admins@3lc.ai">3LC</a>
+      </span>
+    </li>
+  <li>
+    <span>
+      <strong>Requires:</strong> Python &lt;3.13, &lt;4.0, &gt;=3.9
+    </span>
+  </li>
+  </ul>
+</div>
+
+<div class="sidebar-section unverified">
+  <h6 class="sidebar-section__title">Classifiers</h6>
+  <ul class="sidebar-section__classifiers">
+    <li>
+      <strong>Development Status</strong>
+      <ul>
+        <li>
+          <a href="/search/?c=Development+Status+%3A%3A+5+-+Production%2FStable">
+            5 - Production/Stable
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <strong>Intended Audience</strong>
+      <ul>
+        <li>
+          <a href="/search/?c=Intended+Audience+%3A%3A+Developers">
+            Developers
+          </a>
+        </li>
+        <li>
+          <a href="/search/?c=Intended+Audience+%3A%3A+Science%2FResearch">
+            Science/Research
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <strong>License</strong>
+      <ul>
+        <li>
+          <a href="/search/?c=License+%3A%3A+Other%2FProprietary+License">
+            Other/Proprietary License
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <strong>Natural Language</strong>
+      <ul>
+        <li>
+          <a href="/search/?c=Natural+Language+%3A%3A+English">
+            English
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <strong>Operating System</strong>
+      <ul>
+        <li>
+          <a href="/search/?c=Operating+System+%3A%3A+MacOS">
+            MacOS
+          </a>
+        </li>
+        <li>
+          <a href="/search/?c=Operating+System+%3A%3A+Microsoft+%3A%3A+Windows">
+            Microsoft :: Windows
+          </a>
+        </li>
+        <li>
+          <a href="/search/?c=Operating+System+%3A%3A+POSIX+%3A%3A+Linux">
+            POSIX :: Linux
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <strong>Topic</strong>
+      <ul>
+        <li>
+          <a href="/search/?c=Topic+%3A%3A+Scientific%2FEngineering+%3A%3A+Artificial+Intelligence">
+            Scientific/Engineering :: Artificial Intelligence
+          </a>
+        </li>
+        <li>
+          <a href="/search/?c=Topic+%3A%3A+Software+Development+%3A%3A+Libraries+%3A%3A+Python+Modules">
+            Software Development :: Libraries :: Python Modules
+          </a>
+        </li>
+        <li>
+          <a href="/search/?c=Topic+%3A%3A+System+%3A%3A+Monitoring">
+            System :: Monitoring
+          </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+</div><div class="sidebar-section" data-ea-publisher="psf" data-ea-type="psf" data-ea-keywords="pypi-sidebar"></div>
+        <div class="sidebar-section">
+          <a class="button button--full-width button--warning"
+             href="https://pypi.org/project/3lc/submit-malware-report/"
+             role="button">Report project as malware</a>
+        </div>
+      </div>
+      <div class="vertical-tabs__panel">
+        <!-- mobile menu -->
+        <nav aria-label="Navigation for 3lc">
+          <ul class="vertical-tabs__list" role="tablist">
+            <li role="tab">
+              <a id="mobile-description-tab" href="#description" data-project-tabs-target="mobileTab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--mobile vertical-tabs__tab--no-top-border vertical-tabs__tab--is-active" aria-selected="true" aria-label="Project description. Focus will be moved to the description.">
+                <i class="fa fa-align-left" aria-hidden="true"></i>
+Project description              </a>
+            </li>
+            <li role="tab">
+              <a id="mobile-data-tab" href="#data" data-project-tabs-target="mobileTab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--mobile" aria-label="Project details. Focus will be moved to the project details.">
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+Project details              </a>
+            </li>
+            <li role="tab">
+              <a id="mobile-history-tab" href="#history" data-project-tabs-target="mobileTab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--mobile" aria-label="Release history. Focus will be moved to the history panel.">
+              <i class="fa fa-history" aria-hidden="true"></i>
+Release history            </a>
+            </li>
+            <li role="tab">
+              <a id="mobile-files-tab" href="#files" data-project-tabs-target="mobileTab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--mobile" aria-label="Download files. Focus will be moved to the project files.">
+                <i class="fa fa-download" aria-hidden="true"></i>
+Download files              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div id="description" data-project-tabs-target="content" class="vertical-tabs__content" role="tabpanel" aria-labelledby="description-tab mobile-description-tab" tabindex="-1">
+          <h2 class="page-title">Project description</h2>
+          <div class="project-description">
+            <h1 align=center>
+<img src="https://pypi-camo.freetls.fastly.net/00a21a03b2f4102b607b3d4c87d32aa36c1ca13e/68747470733a2f2f336c632e61692f77702d636f6e74656e742f75706c6f6164732f323032342f30352f334c432d526567756c61724c6768742e737667" width=300>
+</h1><br>
+<h2>Model-guided, interactive data debugging and enhancements</h2>
+<p><a href="https://3lc.ai" rel=nofollow>3LC →</a> is an ML tool that lets you see your dataset through your model’s eyes!</p>
+<ul>
+<li>Find important or inefficient samples</li>
+<li>Understand what samples work and where your model struggles</li>
+<li>Improve your model in different ways by weighting your data</li>
+</ul>
+<h2>Features</h2>
+<ul>
+<li>Python library, local environment and web-based UI</li>
+<li>No data duplication</li>
+<li>No upload of data to SaaS</li>
+<li>High-end visualization, insights, and real-time editing of data</li>
+<li>Get massive amounts of intelligence with just a few lines of code</li>
+<li>Works seamlessly with your model training and listens to every data point</li>
+</ul>
+<p><a href="https://docs.3lc.ai/" rel=nofollow>3LC Documentation →</a></p>
+<h2>Quickstart</h2>
+<pre><code>pip install 3lc 
+</code></pre>
+<p>Optionally clone the demo notebooks:</p>
+<pre><code>git clone https://github.com/3lc-ai/3lc-examples.git
+</code></pre>
+<h3>Start the 3LC Object Service</h3>
+<p>The 3LC Object Service facilitates the sharing of samples and metrics between the different components in 3LC, including
+your notebooks and the 3LC Dashboard. It needs to be explicitly started from the terminal in order to use 3LC. The
+Object Service can be terminated by pressing <code>Q</code> from the terminal window.</p>
+<pre><code>3lc service
+</code></pre>
+<p><strong>We provide some sample projects, so you can explore the Dashboard before providing your own data.</strong></p>
+<h3>Launch 3LC Dashboard</h3>
+<p>Launch the 3LC Dashboard to explore your training runs and training data.</p>
+<p><a href="https://dashboard.3lc.ai/" rel=nofollow>3LC Dashboard →</a></p>
+<h1 align=center>
+<img src="https://pypi-camo.freetls.fastly.net/9908e2f36b4bcae5cab3a3f19dbd4303e1d0251c/68747470733a2f2f336c632e61692f77702d636f6e74656e742f75706c6f6164732f323032342f30332f426574614c616e64696e67506167655f496e74726f2d496d6167652d7363616c65642e6a706567">
+</h1><br>
+<h2>Video Tutorial</h2>
+<p>Check out this short introduction on 3LC on our <a href="https://www.youtube.com/@3LCai" rel=nofollow>YouTube channel →</a>:</p>
+<p><a href="https://www.youtube.com/playlist?list=PLFOZfHCPrAhDbgmxYcu9Qq5UUVMf7YLFy" rel=nofollow>Getting Started with 3LC – YouTube →</a></p>
+<h2>Support</h2>
+<p>Please join our <a href="https://3lc.ai/join/discord" rel=nofollow>Discord →</a> for support and discussion!</p>
+<h2>Privacy</h2>
+<p>Please see our <a href="https://3lc.ai/privacy-notice/" rel=nofollow>Privacy Notice →</a> for details about your privacy.</p>
+
+          </div>
+        </div>
+
+        <div id="data" data-project-tabs-target="content" class="vertical-tabs__content" role="tabpanel" aria-labelledby="mobile-data-tab" tabindex="-1">
+          <h2 class="page-title">Project details</h2>
+<div class="sidebar-section verified">
+  <h3 class="sidebar-section__title">
+Verified details    <i class="fa fa-circle-check check" title="Verified by PyPI on 2025-04-23"></i>
+</h3>
+  <small><i>These details have been <a href="https://docs.pypi.org/project_metadata/#verified-details">verified by PyPI</a></i></small>
+
+
+
+    <h6>Maintainers</h6>
+      <span class="sidebar-section__maintainer">
+        <a href="/user/3lc/" aria-label="">
+          <span class="sidebar-section__user-gravatar">
+            <img src="https://pypi-camo.freetls.fastly.net/3cdc0e84543217856b80aacdbb5fe3d1f88b9b41/68747470733a2f2f7365637572652e67726176617461722e636f6d2f6176617461722f35333236636163336337656661393938373835383334623333363134313765393f73697a653d3530" height="50" width="50" alt="Avatar for 3lc from gravatar.com" title="Avatar for 3lc from gravatar.com">
+          </span>
+          <span class="sidebar-section__user-gravatar-text">
+            3lc
+          </span>
+        </a>
+      </span>
+</div>
+
+<div class="sidebar-section unverified">
+  <h3 class="sidebar-section__title">Unverified details</h3>
+  <small><i>These details have <b>not</b> been verified by PyPI</i></small>
+  <h6>Project links</h6>
+  <ul class="vertical-tabs__list">
+    <li>
+      <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed" href="https://docs.3lc.ai" rel="nofollow">
+        
+
+<i class="fas fa-book" aria-hidden="true"></i>documentation
+      </a>
+    </li>
+    <li>
+      <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed" href="https://3lc.ai" rel="nofollow">
+        
+
+<i class="fas fa-home" aria-hidden="true"></i>homepage
+      </a>
+    </li>
+  </ul>
+
+<div class="sidebar-section unverified">
+  <h6>Meta</h6>
+  <ul>
+    <li>
+      <span>
+        <strong>License:</strong> Other/Proprietary License (Proprietary)
+      </span>
+    </li>
+    <li>
+      <span>
+        <strong>Author:</strong> <a href="mailto:pypi-admins@3lc.ai">3LC</a>
+      </span>
+    </li>
+  <li>
+    <span>
+      <strong>Requires:</strong> Python &lt;3.13, &lt;4.0, &gt;=3.9
+    </span>
+  </li>
+  </ul>
+</div>
+
+<div class="sidebar-section unverified">
+  <h6 class="sidebar-section__title">Classifiers</h6>
+  <ul class="sidebar-section__classifiers">
+    <li>
+      <strong>Development Status</strong>
+      <ul>
+        <li>
+          <a href="/search/?c=Development+Status+%3A%3A+5+-+Production%2FStable">
+            5 - Production/Stable
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <strong>Intended Audience</strong>
+      <ul>
+        <li>
+          <a href="/search/?c=Intended+Audience+%3A%3A+Developers">
+            Developers
+          </a>
+        </li>
+        <li>
+          <a href="/search/?c=Intended+Audience+%3A%3A+Science%2FResearch">
+            Science/Research
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <strong>License</strong>
+      <ul>
+        <li>
+          <a href="/search/?c=License+%3A%3A+Other%2FProprietary+License">
+            Other/Proprietary License
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <strong>Natural Language</strong>
+      <ul>
+        <li>
+          <a href="/search/?c=Natural+Language+%3A%3A+English">
+            English
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <strong>Operating System</strong>
+      <ul>
+        <li>
+          <a href="/search/?c=Operating+System+%3A%3A+MacOS">
+            MacOS
+          </a>
+        </li>
+        <li>
+          <a href="/search/?c=Operating+System+%3A%3A+Microsoft+%3A%3A+Windows">
+            Microsoft :: Windows
+          </a>
+        </li>
+        <li>
+          <a href="/search/?c=Operating+System+%3A%3A+POSIX+%3A%3A+Linux">
+            POSIX :: Linux
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <strong>Topic</strong>
+      <ul>
+        <li>
+          <a href="/search/?c=Topic+%3A%3A+Scientific%2FEngineering+%3A%3A+Artificial+Intelligence">
+            Scientific/Engineering :: Artificial Intelligence
+          </a>
+        </li>
+        <li>
+          <a href="/search/?c=Topic+%3A%3A+Software+Development+%3A%3A+Libraries+%3A%3A+Python+Modules">
+            Software Development :: Libraries :: Python Modules
+          </a>
+        </li>
+        <li>
+          <a href="/search/?c=Topic+%3A%3A+System+%3A%3A+Monitoring">
+            System :: Monitoring
+          </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+</div>          <br>
+        </div>
+
+        <div id="history" data-project-tabs-target="content" class="vertical-tabs__content" role="tabpanel" aria-labelledby="history-tab mobile-history-tab" tabindex="-1">
+          <h2 class="page-title split-layout">
+            <span>Release history</span>
+            <span class="reset-text margin-top">
+              <a href="/help/#project-release-notifications">Release notifications</a> |
+              <a href="/rss/project/3lc/releases.xml">RSS feed <i class="fa fa-rss" aria-hidden="true"></i></a>
+            </span>
+          </h2>
+
+          <div class="release-timeline">
+            <div class="release release--latest release--current">
+              <div class="release__meta">
+                <span class="badge">This version</span>
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/blue-cube.572a5bfb.svg">
+              </div>
+
+              <a class="card release__card" href="/project/3lc/2.13.2/">
+                <p class="release__version">
+                  2.13.2
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2025-04-23T13:58:12+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Apr 23, 2025
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/3lc/2.13.1/">
+                <p class="release__version">
+                  2.13.1
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2025-04-01T01:46:42+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Apr 1, 2025
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/3lc/2.13.0/">
+                <p class="release__version">
+                  2.13.0
+                  <span class="badge badge--danger">
+yanked                  </span>
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2025-03-31T19:55:46+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Mar 31, 2025
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/3lc/2.12.1/">
+                <p class="release__version">
+                  2.12.1
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2025-03-06T18:03:17+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Mar 6, 2025
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/3lc/2.12.0/">
+                <p class="release__version">
+                  2.12.0
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2025-02-18T23:18:40+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Feb 18, 2025
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/3lc/2.11.2/">
+                <p class="release__version">
+                  2.11.2
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2025-01-20T20:09:42+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jan 20, 2025
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/3lc/2.11.1/">
+                <p class="release__version">
+                  2.11.1
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2024-12-14T02:03:58+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Dec 14, 2024
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/3lc/2.11.0/">
+                <p class="release__version">
+                  2.11.0
+                  <span class="badge badge--danger">
+yanked                  </span>
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2024-12-12T17:08:30+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Dec 12, 2024
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/3lc/2.10.2/">
+                <p class="release__version">
+                  2.10.2
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2024-11-07T20:27:00+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Nov 7, 2024
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/3lc/2.10.1/">
+                <p class="release__version">
+                  2.10.1
+                  <span class="badge badge--danger">
+yanked                  </span>
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2024-11-04T19:30:16+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Nov 4, 2024
+</time>
+                </p>
+                  <div class="callout-block callout-block--danger release__yanked-reason">
+                    <p>Reason this release was yanked:</p>
+                    <p>Performance issues with indexing network storage</p>
+                  </div>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/3lc/2.10.0/">
+                <p class="release__version">
+                  2.10.0
+                  <span class="badge badge--danger">
+yanked                  </span>
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2024-10-25T19:07:27+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Oct 25, 2024
+</time>
+                </p>
+                  <div class="callout-block callout-block--danger release__yanked-reason">
+                    <p>Reason this release was yanked:</p>
+                    <p>Performance issues with indexing network storage</p>
+                  </div>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/3lc/2.9.0/">
+                <p class="release__version">
+                  2.9.0
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2024-10-08T21:18:42+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Oct 8, 2024
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/3lc/2.8.0/">
+                <p class="release__version">
+                  2.8.0
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2024-09-11T16:06:15+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Sep 11, 2024
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/3lc/2.7.1/">
+                <p class="release__version">
+                  2.7.1
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2024-08-21T19:28:12+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Aug 21, 2024
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/3lc/2.7.0/">
+                <p class="release__version">
+                  2.7.0
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2024-08-20T22:36:49+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Aug 20, 2024
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/3lc/2.6.4/">
+                <p class="release__version">
+                  2.6.4
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2024-08-02T20:17:11+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Aug 2, 2024
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/3lc/2.6.3/">
+                <p class="release__version">
+                  2.6.3
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2024-07-23T21:47:01+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jul 23, 2024
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/3lc/2.6.2/">
+                <p class="release__version">
+                  2.6.2
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2024-07-12T22:40:48+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jul 12, 2024
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/3lc/2.6.1/">
+                <p class="release__version">
+                  2.6.1
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2024-07-04T20:48:14+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jul 4, 2024
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/3lc/2.6.0/">
+                <p class="release__version">
+                  2.6.0
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2024-07-01T22:31:45+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jul 1, 2024
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/3lc/2.5.1/">
+                <p class="release__version">
+                  2.5.1
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2024-05-16T19:49:22+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  May 16, 2024
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/3lc/2.5.0/">
+                <p class="release__version">
+                  2.5.0
+                  <span class="badge badge--danger">
+yanked                  </span>
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2024-05-15T21:44:31+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  May 15, 2024
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/3lc/2.3.92/">
+                <p class="release__version">
+                  2.3.92
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2024-04-26T02:58:08+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Apr 26, 2024
+</time>
+                </p>
+              </a>
+            </div>
+            <div class="release release--oldest">
+              <div class="release__meta">
+              </div>
+
+              <div class="release__graphic">
+                <div class="release__line"></div>
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+              </div>
+
+              <a class="card release__card" href="/project/3lc/2.3.84/">
+                <p class="release__version">
+                  2.3.84
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2024-04-22T23:29:39+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Apr 22, 2024
+</time>
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+          <div id="files" data-project-tabs-target="content" class="vertical-tabs__content" role="tabpanel" aria-labelledby="files-tab mobile-files-tab" tabindex="-1">
+            <h2 class="page-title">Download files</h2>
+            <p>Download the file for your platform. If you're not sure which to choose, learn more about <a href="https://packaging.python.org/tutorials/installing-packages/" title="External link" target="_blank" rel="noopener">installing packages</a>.</p>
+
+            <h3>
+Source Distributions            </h3>
+
+              <div class="file">
+                <div class="file__graphic">
+                  <i class="fas fa-exclamation-circle" aria-hidden="true"></i>
+                </div>
+
+                <div class="card">
+No source distribution files available for this release.See tutorial on <a href="https://packaging.python.org/tutorials/packaging-projects/#generating-distribution-archives" title="External link" target="_blank" rel="noopener">generating distribution archives</a>.                </div>
+              </div>
+
+            <h3>
+Built Distributions            </h3>
+
+                <div class="file">
+      <div class="file__graphic">
+        <i class="far fa-file" aria-hidden="true"></i>
+      </div>
+
+      <div class="card file__card">
+        <a href="https://files.pythonhosted.org/packages/31/bb/a05b5497ed1e1282c48ca5707ac75a12bc838c4fefca10f7cf12ed6fd8e2/3lc-2.13.2-cp312-cp312-win_amd64.whl">
+          3lc-2.13.2-cp312-cp312-win_amd64.whl
+        </a>
+        (4.5 MB
+        <a href="#3lc-2.13.2-cp312-cp312-win_amd64.whl" data-project-tabs-target="tab" data-action="project-tabs#onTabClick">view details</a>)
+        <p class="file__meta">
+          Uploaded <time datetime="2025-04-23T13:58:25+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Apr 23, 2025
+</time>
+          <code>CPython 3.12</code>
+          <code>Windows x86-64</code>
+        </p>
+      </div>
+    </div>
+    <div class="file">
+      <div class="file__graphic">
+        <i class="far fa-file" aria-hidden="true"></i>
+      </div>
+
+      <div class="card file__card">
+        <a href="https://files.pythonhosted.org/packages/81/80/71dc3c9d3da471d9204110224661bb904c1e627939b6074132cd2a75a94f/3lc-2.13.2-cp312-cp312-manylinux2014_x86_64.whl">
+          3lc-2.13.2-cp312-cp312-manylinux2014_x86_64.whl
+        </a>
+        (4.5 MB
+        <a href="#3lc-2.13.2-cp312-cp312-manylinux2014_x86_64.whl" data-project-tabs-target="tab" data-action="project-tabs#onTabClick">view details</a>)
+        <p class="file__meta">
+          Uploaded <time datetime="2025-04-23T13:58:23+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Apr 23, 2025
+</time>
+          <code>CPython 3.12</code>
+        </p>
+      </div>
+    </div>
+    <div class="file">
+      <div class="file__graphic">
+        <i class="far fa-file" aria-hidden="true"></i>
+      </div>
+
+      <div class="card file__card">
+        <a href="https://files.pythonhosted.org/packages/be/73/cec6d6bdf3bde483c6d854aad72da620ca97dffb8f6c0a6eb6ab53fd0a00/3lc-2.13.2-cp312-cp312-macosx_13_0_arm64.whl">
+          3lc-2.13.2-cp312-cp312-macosx_13_0_arm64.whl
+        </a>
+        (4.5 MB
+        <a href="#3lc-2.13.2-cp312-cp312-macosx_13_0_arm64.whl" data-project-tabs-target="tab" data-action="project-tabs#onTabClick">view details</a>)
+        <p class="file__meta">
+          Uploaded <time datetime="2025-04-23T13:58:22+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Apr 23, 2025
+</time>
+          <code>CPython 3.12</code>
+          <code>macOS 13.0+ ARM64</code>
+        </p>
+      </div>
+    </div>
+    <div class="file">
+      <div class="file__graphic">
+        <i class="far fa-file" aria-hidden="true"></i>
+      </div>
+
+      <div class="card file__card">
+        <a href="https://files.pythonhosted.org/packages/75/73/327c4462e7bae42a1540c9d005fff9d9572caab342c821a1e19f2cb58332/3lc-2.13.2-cp311-cp311-win_amd64.whl">
+          3lc-2.13.2-cp311-cp311-win_amd64.whl
+        </a>
+        (5.0 MB
+        <a href="#3lc-2.13.2-cp311-cp311-win_amd64.whl" data-project-tabs-target="tab" data-action="project-tabs#onTabClick">view details</a>)
+        <p class="file__meta">
+          Uploaded <time datetime="2025-04-23T13:58:20+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Apr 23, 2025
+</time>
+          <code>CPython 3.11</code>
+          <code>Windows x86-64</code>
+        </p>
+      </div>
+    </div>
+    <div class="file">
+      <div class="file__graphic">
+        <i class="far fa-file" aria-hidden="true"></i>
+      </div>
+
+      <div class="card file__card">
+        <a href="https://files.pythonhosted.org/packages/39/06/b9acf16b1f89fcc1196c861dd7f11d0686948af1ab8c03b1b0af959eb271/3lc-2.13.2-cp311-cp311-manylinux2014_x86_64.whl">
+          3lc-2.13.2-cp311-cp311-manylinux2014_x86_64.whl
+        </a>
+        (5.0 MB
+        <a href="#3lc-2.13.2-cp311-cp311-manylinux2014_x86_64.whl" data-project-tabs-target="tab" data-action="project-tabs#onTabClick">view details</a>)
+        <p class="file__meta">
+          Uploaded <time datetime="2025-04-23T13:58:19+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Apr 23, 2025
+</time>
+          <code>CPython 3.11</code>
+        </p>
+      </div>
+    </div>
+    <div class="file">
+      <div class="file__graphic">
+        <i class="far fa-file" aria-hidden="true"></i>
+      </div>
+
+      <div class="card file__card">
+        <a href="https://files.pythonhosted.org/packages/78/a8/61a113970439f45b2b3c8b9d46dc9503befd33d3f5e6726b8ae4f7c11b00/3lc-2.13.2-cp311-cp311-macosx_13_0_arm64.whl">
+          3lc-2.13.2-cp311-cp311-macosx_13_0_arm64.whl
+        </a>
+        (5.0 MB
+        <a href="#3lc-2.13.2-cp311-cp311-macosx_13_0_arm64.whl" data-project-tabs-target="tab" data-action="project-tabs#onTabClick">view details</a>)
+        <p class="file__meta">
+          Uploaded <time datetime="2025-04-23T13:58:17+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Apr 23, 2025
+</time>
+          <code>CPython 3.11</code>
+          <code>macOS 13.0+ ARM64</code>
+        </p>
+      </div>
+    </div>
+    <div class="file">
+      <div class="file__graphic">
+        <i class="far fa-file" aria-hidden="true"></i>
+      </div>
+
+      <div class="card file__card">
+        <a href="https://files.pythonhosted.org/packages/3a/38/906a7fde4d38eb05368122d48dd6e499278f82c6b3b5c1fd97c193d1ed8d/3lc-2.13.2-cp310-cp310-win_amd64.whl">
+          3lc-2.13.2-cp310-cp310-win_amd64.whl
+        </a>
+        (3.6 MB
+        <a href="#3lc-2.13.2-cp310-cp310-win_amd64.whl" data-project-tabs-target="tab" data-action="project-tabs#onTabClick">view details</a>)
+        <p class="file__meta">
+          Uploaded <time datetime="2025-04-23T13:58:15+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Apr 23, 2025
+</time>
+          <code>CPython 3.10</code>
+          <code>Windows x86-64</code>
+        </p>
+      </div>
+    </div>
+    <div class="file">
+      <div class="file__graphic">
+        <i class="far fa-file" aria-hidden="true"></i>
+      </div>
+
+      <div class="card file__card">
+        <a href="https://files.pythonhosted.org/packages/39/ac/9644e5da128b46936799af226f8ccfbcb0b2d7d56d2bd15233011c9e5566/3lc-2.13.2-cp310-cp310-manylinux2014_x86_64.whl">
+          3lc-2.13.2-cp310-cp310-manylinux2014_x86_64.whl
+        </a>
+        (3.6 MB
+        <a href="#3lc-2.13.2-cp310-cp310-manylinux2014_x86_64.whl" data-project-tabs-target="tab" data-action="project-tabs#onTabClick">view details</a>)
+        <p class="file__meta">
+          Uploaded <time datetime="2025-04-23T13:58:14+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Apr 23, 2025
+</time>
+          <code>CPython 3.10</code>
+        </p>
+      </div>
+    </div>
+    <div class="file">
+      <div class="file__graphic">
+        <i class="far fa-file" aria-hidden="true"></i>
+      </div>
+
+      <div class="card file__card">
+        <a href="https://files.pythonhosted.org/packages/1d/c6/e0db93ea523e5103fcca6c2742fc008c9023aa4368d59fdec5874c32d181/3lc-2.13.2-cp310-cp310-macosx_13_0_arm64.whl">
+          3lc-2.13.2-cp310-cp310-macosx_13_0_arm64.whl
+        </a>
+        (3.6 MB
+        <a href="#3lc-2.13.2-cp310-cp310-macosx_13_0_arm64.whl" data-project-tabs-target="tab" data-action="project-tabs#onTabClick">view details</a>)
+        <p class="file__meta">
+          Uploaded <time datetime="2025-04-23T13:58:12+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Apr 23, 2025
+</time>
+          <code>CPython 3.10</code>
+          <code>macOS 13.0+ ARM64</code>
+        </p>
+      </div>
+    </div>
+    <div class="file">
+      <div class="file__graphic">
+        <i class="far fa-file" aria-hidden="true"></i>
+      </div>
+
+      <div class="card file__card">
+        <a href="https://files.pythonhosted.org/packages/88/3c/59ebe1e9eb4bda7f9b11ccd37c44f63ec6643dea84196065301813aede6e/3lc-2.13.2-cp39-cp39-win_amd64.whl">
+          3lc-2.13.2-cp39-cp39-win_amd64.whl
+        </a>
+        (3.5 MB
+        <a href="#3lc-2.13.2-cp39-cp39-win_amd64.whl" data-project-tabs-target="tab" data-action="project-tabs#onTabClick">view details</a>)
+        <p class="file__meta">
+          Uploaded <time datetime="2025-04-23T13:58:29+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Apr 23, 2025
+</time>
+          <code>CPython 3.9</code>
+          <code>Windows x86-64</code>
+        </p>
+      </div>
+    </div>
+    <div class="file">
+      <div class="file__graphic">
+        <i class="far fa-file" aria-hidden="true"></i>
+      </div>
+
+      <div class="card file__card">
+        <a href="https://files.pythonhosted.org/packages/9b/20/5ef6989715e623466c6695a36fa551875fa5224b5a2c59cab451cf4cddb2/3lc-2.13.2-cp39-cp39-manylinux2014_x86_64.whl">
+          3lc-2.13.2-cp39-cp39-manylinux2014_x86_64.whl
+        </a>
+        (3.6 MB
+        <a href="#3lc-2.13.2-cp39-cp39-manylinux2014_x86_64.whl" data-project-tabs-target="tab" data-action="project-tabs#onTabClick">view details</a>)
+        <p class="file__meta">
+          Uploaded <time datetime="2025-04-23T13:58:28+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Apr 23, 2025
+</time>
+          <code>CPython 3.9</code>
+        </p>
+      </div>
+    </div>
+    <div class="file">
+      <div class="file__graphic">
+        <i class="far fa-file" aria-hidden="true"></i>
+      </div>
+
+      <div class="card file__card">
+        <a href="https://files.pythonhosted.org/packages/a1/0e/3887113aab16e18a6d1124894af529015e42fc8812b806f444f1b54a033e/3lc-2.13.2-cp39-cp39-macosx_13_0_arm64.whl">
+          3lc-2.13.2-cp39-cp39-macosx_13_0_arm64.whl
+        </a>
+        (3.5 MB
+        <a href="#3lc-2.13.2-cp39-cp39-macosx_13_0_arm64.whl" data-project-tabs-target="tab" data-action="project-tabs#onTabClick">view details</a>)
+        <p class="file__meta">
+          Uploaded <time datetime="2025-04-23T13:58:26+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Apr 23, 2025
+</time>
+          <code>CPython 3.9</code>
+          <code>macOS 13.0+ ARM64</code>
+        </p>
+      </div>
+    </div>
+
+          </div>
+
+
+<div id="3lc-2.13.2-cp312-cp312-win_amd64.whl" data-project-tabs-target="content" class="vertical-tabs__content" role="tabpanel" aria-labelledby="file-tab mobile-file-tab" tabindex="-1">
+  <h2 class="page-title">File details</h2>
+  <p>Details for the file <code>3lc-2.13.2-cp312-cp312-win_amd64.whl</code>.</p>
+
+  <h3>File metadata</h3>
+  <div>
+    <ul>
+      <li>
+        Download URL: <a href="https://files.pythonhosted.org/packages/31/bb/a05b5497ed1e1282c48ca5707ac75a12bc838c4fefca10f7cf12ed6fd8e2/3lc-2.13.2-cp312-cp312-win_amd64.whl">
+          3lc-2.13.2-cp312-cp312-win_amd64.whl
+        </a>
+      </li>
+      <li>Upload date: <time datetime="2025-04-23T13:58:25+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Apr 23, 2025
+</time></li>
+      <li>Size: 4.5 MB</li>
+      <li>Tags: CPython 3.12, Windows x86-64</li>
+      <li>
+Uploaded using Trusted Publishing? No      </li>
+      <li>Uploaded via: twine/4.0.2 CPython/3.10.11</li>
+    </ul>
+  </div>
+
+  <h3>File hashes</h3>
+  <div>
+    <table class="table table--hashes">
+      <caption class="sr-only">Hashes for 3lc-2.13.2-cp312-cp312-win_amd64.whl</caption>
+      <thead>
+        <tr>
+          <th scope="col">Algorithm</th>
+          <th scope="col">Hash digest</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-controller="clipboard">
+          <th scope="row">SHA256</th>
+          <td><code data-clipboard-target="source">711c1f11c0528367a6334a6df2f5d95d68ac77c834f524435853f51e9b3e88b5</code></td>
+          <td class="table__align-right">
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+Copy            </button>
+          </td>
+        </tr>
+        <tr data-controller="clipboard">
+          <th scope="row">MD5</th>
+          <td><code data-clipboard-target="source">033a504a751b3e1337bd88864cc34cf4</code></td>
+          <td class="table__align-right">
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+Copy            </button>
+          </td>
+        </tr>
+        <tr data-controller="clipboard">
+          <th scope="row">BLAKE2b-256</th>
+          <td><code data-clipboard-target="source">31bba05b5497ed1e1282c48ca5707ac75a12bc838c4fefca10f7cf12ed6fd8e2</code></td>
+          <td class="table__align-right">
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+Copy            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+<a href="https://pip.pypa.io/en/stable/topics/secure-installs/#hash-checking-mode" title="External link" target="_blank" rel="noopener">See more details on using hashes here.</a>    </p>
+  </div>
+
+</div>
+<div id="3lc-2.13.2-cp312-cp312-manylinux2014_x86_64.whl" data-project-tabs-target="content" class="vertical-tabs__content" role="tabpanel" aria-labelledby="file-tab mobile-file-tab" tabindex="-1">
+  <h2 class="page-title">File details</h2>
+  <p>Details for the file <code>3lc-2.13.2-cp312-cp312-manylinux2014_x86_64.whl</code>.</p>
+
+  <h3>File metadata</h3>
+  <div>
+    <ul>
+      <li>
+        Download URL: <a href="https://files.pythonhosted.org/packages/81/80/71dc3c9d3da471d9204110224661bb904c1e627939b6074132cd2a75a94f/3lc-2.13.2-cp312-cp312-manylinux2014_x86_64.whl">
+          3lc-2.13.2-cp312-cp312-manylinux2014_x86_64.whl
+        </a>
+      </li>
+      <li>Upload date: <time datetime="2025-04-23T13:58:23+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Apr 23, 2025
+</time></li>
+      <li>Size: 4.5 MB</li>
+      <li>Tags: CPython 3.12</li>
+      <li>
+Uploaded using Trusted Publishing? No      </li>
+      <li>Uploaded via: twine/4.0.2 CPython/3.10.11</li>
+    </ul>
+  </div>
+
+  <h3>File hashes</h3>
+  <div>
+    <table class="table table--hashes">
+      <caption class="sr-only">Hashes for 3lc-2.13.2-cp312-cp312-manylinux2014_x86_64.whl</caption>
+      <thead>
+        <tr>
+          <th scope="col">Algorithm</th>
+          <th scope="col">Hash digest</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-controller="clipboard">
+          <th scope="row">SHA256</th>
+          <td><code data-clipboard-target="source">b615854482ada637f6c4ed9f76cdb388476375e1cc6a7c22e6a574e21ec9bcae</code></td>
+          <td class="table__align-right">
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+Copy            </button>
+          </td>
+        </tr>
+        <tr data-controller="clipboard">
+          <th scope="row">MD5</th>
+          <td><code data-clipboard-target="source">ef203915e461707cb880ac75a8bfc773</code></td>
+          <td class="table__align-right">
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+Copy            </button>
+          </td>
+        </tr>
+        <tr data-controller="clipboard">
+          <th scope="row">BLAKE2b-256</th>
+          <td><code data-clipboard-target="source">818071dc3c9d3da471d9204110224661bb904c1e627939b6074132cd2a75a94f</code></td>
+          <td class="table__align-right">
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+Copy            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+<a href="https://pip.pypa.io/en/stable/topics/secure-installs/#hash-checking-mode" title="External link" target="_blank" rel="noopener">See more details on using hashes here.</a>    </p>
+  </div>
+
+</div>
+<div id="3lc-2.13.2-cp312-cp312-macosx_13_0_arm64.whl" data-project-tabs-target="content" class="vertical-tabs__content" role="tabpanel" aria-labelledby="file-tab mobile-file-tab" tabindex="-1">
+  <h2 class="page-title">File details</h2>
+  <p>Details for the file <code>3lc-2.13.2-cp312-cp312-macosx_13_0_arm64.whl</code>.</p>
+
+  <h3>File metadata</h3>
+  <div>
+    <ul>
+      <li>
+        Download URL: <a href="https://files.pythonhosted.org/packages/be/73/cec6d6bdf3bde483c6d854aad72da620ca97dffb8f6c0a6eb6ab53fd0a00/3lc-2.13.2-cp312-cp312-macosx_13_0_arm64.whl">
+          3lc-2.13.2-cp312-cp312-macosx_13_0_arm64.whl
+        </a>
+      </li>
+      <li>Upload date: <time datetime="2025-04-23T13:58:22+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Apr 23, 2025
+</time></li>
+      <li>Size: 4.5 MB</li>
+      <li>Tags: CPython 3.12, macOS 13.0+ ARM64</li>
+      <li>
+Uploaded using Trusted Publishing? No      </li>
+      <li>Uploaded via: twine/4.0.2 CPython/3.10.11</li>
+    </ul>
+  </div>
+
+  <h3>File hashes</h3>
+  <div>
+    <table class="table table--hashes">
+      <caption class="sr-only">Hashes for 3lc-2.13.2-cp312-cp312-macosx_13_0_arm64.whl</caption>
+      <thead>
+        <tr>
+          <th scope="col">Algorithm</th>
+          <th scope="col">Hash digest</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-controller="clipboard">
+          <th scope="row">SHA256</th>
+          <td><code data-clipboard-target="source">4a5c42dfd93836d8eb8b76183dd893640f1e1fe777650d07dfa454cd55b8e6dc</code></td>
+          <td class="table__align-right">
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+Copy            </button>
+          </td>
+        </tr>
+        <tr data-controller="clipboard">
+          <th scope="row">MD5</th>
+          <td><code data-clipboard-target="source">32070eeeeffe93ae795669f2e568b3ac</code></td>
+          <td class="table__align-right">
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+Copy            </button>
+          </td>
+        </tr>
+        <tr data-controller="clipboard">
+          <th scope="row">BLAKE2b-256</th>
+          <td><code data-clipboard-target="source">be73cec6d6bdf3bde483c6d854aad72da620ca97dffb8f6c0a6eb6ab53fd0a00</code></td>
+          <td class="table__align-right">
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+Copy            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+<a href="https://pip.pypa.io/en/stable/topics/secure-installs/#hash-checking-mode" title="External link" target="_blank" rel="noopener">See more details on using hashes here.</a>    </p>
+  </div>
+
+</div>
+<div id="3lc-2.13.2-cp311-cp311-win_amd64.whl" data-project-tabs-target="content" class="vertical-tabs__content" role="tabpanel" aria-labelledby="file-tab mobile-file-tab" tabindex="-1">
+  <h2 class="page-title">File details</h2>
+  <p>Details for the file <code>3lc-2.13.2-cp311-cp311-win_amd64.whl</code>.</p>
+
+  <h3>File metadata</h3>
+  <div>
+    <ul>
+      <li>
+        Download URL: <a href="https://files.pythonhosted.org/packages/75/73/327c4462e7bae42a1540c9d005fff9d9572caab342c821a1e19f2cb58332/3lc-2.13.2-cp311-cp311-win_amd64.whl">
+          3lc-2.13.2-cp311-cp311-win_amd64.whl
+        </a>
+      </li>
+      <li>Upload date: <time datetime="2025-04-23T13:58:20+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Apr 23, 2025
+</time></li>
+      <li>Size: 5.0 MB</li>
+      <li>Tags: CPython 3.11, Windows x86-64</li>
+      <li>
+Uploaded using Trusted Publishing? No      </li>
+      <li>Uploaded via: twine/4.0.2 CPython/3.10.11</li>
+    </ul>
+  </div>
+
+  <h3>File hashes</h3>
+  <div>
+    <table class="table table--hashes">
+      <caption class="sr-only">Hashes for 3lc-2.13.2-cp311-cp311-win_amd64.whl</caption>
+      <thead>
+        <tr>
+          <th scope="col">Algorithm</th>
+          <th scope="col">Hash digest</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-controller="clipboard">
+          <th scope="row">SHA256</th>
+          <td><code data-clipboard-target="source">58718eb052f4ccd0199b9b54d75539b1c3dc91f2ed11d3e0049930b7f7fcd7c7</code></td>
+          <td class="table__align-right">
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+Copy            </button>
+          </td>
+        </tr>
+        <tr data-controller="clipboard">
+          <th scope="row">MD5</th>
+          <td><code data-clipboard-target="source">dd54bee4ca315f5aeda469b7d1c1f8c9</code></td>
+          <td class="table__align-right">
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+Copy            </button>
+          </td>
+        </tr>
+        <tr data-controller="clipboard">
+          <th scope="row">BLAKE2b-256</th>
+          <td><code data-clipboard-target="source">7573327c4462e7bae42a1540c9d005fff9d9572caab342c821a1e19f2cb58332</code></td>
+          <td class="table__align-right">
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+Copy            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+<a href="https://pip.pypa.io/en/stable/topics/secure-installs/#hash-checking-mode" title="External link" target="_blank" rel="noopener">See more details on using hashes here.</a>    </p>
+  </div>
+
+</div>
+<div id="3lc-2.13.2-cp311-cp311-manylinux2014_x86_64.whl" data-project-tabs-target="content" class="vertical-tabs__content" role="tabpanel" aria-labelledby="file-tab mobile-file-tab" tabindex="-1">
+  <h2 class="page-title">File details</h2>
+  <p>Details for the file <code>3lc-2.13.2-cp311-cp311-manylinux2014_x86_64.whl</code>.</p>
+
+  <h3>File metadata</h3>
+  <div>
+    <ul>
+      <li>
+        Download URL: <a href="https://files.pythonhosted.org/packages/39/06/b9acf16b1f89fcc1196c861dd7f11d0686948af1ab8c03b1b0af959eb271/3lc-2.13.2-cp311-cp311-manylinux2014_x86_64.whl">
+          3lc-2.13.2-cp311-cp311-manylinux2014_x86_64.whl
+        </a>
+      </li>
+      <li>Upload date: <time datetime="2025-04-23T13:58:19+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Apr 23, 2025
+</time></li>
+      <li>Size: 5.0 MB</li>
+      <li>Tags: CPython 3.11</li>
+      <li>
+Uploaded using Trusted Publishing? No      </li>
+      <li>Uploaded via: twine/4.0.2 CPython/3.10.11</li>
+    </ul>
+  </div>
+
+  <h3>File hashes</h3>
+  <div>
+    <table class="table table--hashes">
+      <caption class="sr-only">Hashes for 3lc-2.13.2-cp311-cp311-manylinux2014_x86_64.whl</caption>
+      <thead>
+        <tr>
+          <th scope="col">Algorithm</th>
+          <th scope="col">Hash digest</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-controller="clipboard">
+          <th scope="row">SHA256</th>
+          <td><code data-clipboard-target="source">65ed5885aa57d31c11c5cac3133d4cfd3a25b8fbf14953451ccce770cd24a719</code></td>
+          <td class="table__align-right">
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+Copy            </button>
+          </td>
+        </tr>
+        <tr data-controller="clipboard">
+          <th scope="row">MD5</th>
+          <td><code data-clipboard-target="source">8ce3d1b9c937186ae25634ca3f320e17</code></td>
+          <td class="table__align-right">
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+Copy            </button>
+          </td>
+        </tr>
+        <tr data-controller="clipboard">
+          <th scope="row">BLAKE2b-256</th>
+          <td><code data-clipboard-target="source">3906b9acf16b1f89fcc1196c861dd7f11d0686948af1ab8c03b1b0af959eb271</code></td>
+          <td class="table__align-right">
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+Copy            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+<a href="https://pip.pypa.io/en/stable/topics/secure-installs/#hash-checking-mode" title="External link" target="_blank" rel="noopener">See more details on using hashes here.</a>    </p>
+  </div>
+
+</div>
+<div id="3lc-2.13.2-cp311-cp311-macosx_13_0_arm64.whl" data-project-tabs-target="content" class="vertical-tabs__content" role="tabpanel" aria-labelledby="file-tab mobile-file-tab" tabindex="-1">
+  <h2 class="page-title">File details</h2>
+  <p>Details for the file <code>3lc-2.13.2-cp311-cp311-macosx_13_0_arm64.whl</code>.</p>
+
+  <h3>File metadata</h3>
+  <div>
+    <ul>
+      <li>
+        Download URL: <a href="https://files.pythonhosted.org/packages/78/a8/61a113970439f45b2b3c8b9d46dc9503befd33d3f5e6726b8ae4f7c11b00/3lc-2.13.2-cp311-cp311-macosx_13_0_arm64.whl">
+          3lc-2.13.2-cp311-cp311-macosx_13_0_arm64.whl
+        </a>
+      </li>
+      <li>Upload date: <time datetime="2025-04-23T13:58:17+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Apr 23, 2025
+</time></li>
+      <li>Size: 5.0 MB</li>
+      <li>Tags: CPython 3.11, macOS 13.0+ ARM64</li>
+      <li>
+Uploaded using Trusted Publishing? No      </li>
+      <li>Uploaded via: twine/4.0.2 CPython/3.10.11</li>
+    </ul>
+  </div>
+
+  <h3>File hashes</h3>
+  <div>
+    <table class="table table--hashes">
+      <caption class="sr-only">Hashes for 3lc-2.13.2-cp311-cp311-macosx_13_0_arm64.whl</caption>
+      <thead>
+        <tr>
+          <th scope="col">Algorithm</th>
+          <th scope="col">Hash digest</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-controller="clipboard">
+          <th scope="row">SHA256</th>
+          <td><code data-clipboard-target="source">16c15ebbfb150ff9284d77610b5ec807eae63deadfbc63a109a1364c71e1c8c4</code></td>
+          <td class="table__align-right">
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+Copy            </button>
+          </td>
+        </tr>
+        <tr data-controller="clipboard">
+          <th scope="row">MD5</th>
+          <td><code data-clipboard-target="source">dfe2f6fca10ba35e3ed50b521048145e</code></td>
+          <td class="table__align-right">
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+Copy            </button>
+          </td>
+        </tr>
+        <tr data-controller="clipboard">
+          <th scope="row">BLAKE2b-256</th>
+          <td><code data-clipboard-target="source">78a861a113970439f45b2b3c8b9d46dc9503befd33d3f5e6726b8ae4f7c11b00</code></td>
+          <td class="table__align-right">
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+Copy            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+<a href="https://pip.pypa.io/en/stable/topics/secure-installs/#hash-checking-mode" title="External link" target="_blank" rel="noopener">See more details on using hashes here.</a>    </p>
+  </div>
+
+</div>
+<div id="3lc-2.13.2-cp310-cp310-win_amd64.whl" data-project-tabs-target="content" class="vertical-tabs__content" role="tabpanel" aria-labelledby="file-tab mobile-file-tab" tabindex="-1">
+  <h2 class="page-title">File details</h2>
+  <p>Details for the file <code>3lc-2.13.2-cp310-cp310-win_amd64.whl</code>.</p>
+
+  <h3>File metadata</h3>
+  <div>
+    <ul>
+      <li>
+        Download URL: <a href="https://files.pythonhosted.org/packages/3a/38/906a7fde4d38eb05368122d48dd6e499278f82c6b3b5c1fd97c193d1ed8d/3lc-2.13.2-cp310-cp310-win_amd64.whl">
+          3lc-2.13.2-cp310-cp310-win_amd64.whl
+        </a>
+      </li>
+      <li>Upload date: <time datetime="2025-04-23T13:58:15+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Apr 23, 2025
+</time></li>
+      <li>Size: 3.6 MB</li>
+      <li>Tags: CPython 3.10, Windows x86-64</li>
+      <li>
+Uploaded using Trusted Publishing? No      </li>
+      <li>Uploaded via: twine/4.0.2 CPython/3.10.11</li>
+    </ul>
+  </div>
+
+  <h3>File hashes</h3>
+  <div>
+    <table class="table table--hashes">
+      <caption class="sr-only">Hashes for 3lc-2.13.2-cp310-cp310-win_amd64.whl</caption>
+      <thead>
+        <tr>
+          <th scope="col">Algorithm</th>
+          <th scope="col">Hash digest</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-controller="clipboard">
+          <th scope="row">SHA256</th>
+          <td><code data-clipboard-target="source">5dc8b0cf36da91e274671d5e9c7c47af562a67b1fdcef3f9b0e66887f2d1524d</code></td>
+          <td class="table__align-right">
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+Copy            </button>
+          </td>
+        </tr>
+        <tr data-controller="clipboard">
+          <th scope="row">MD5</th>
+          <td><code data-clipboard-target="source">94b9d1b43f4e6f984163644fb174a8f4</code></td>
+          <td class="table__align-right">
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+Copy            </button>
+          </td>
+        </tr>
+        <tr data-controller="clipboard">
+          <th scope="row">BLAKE2b-256</th>
+          <td><code data-clipboard-target="source">3a38906a7fde4d38eb05368122d48dd6e499278f82c6b3b5c1fd97c193d1ed8d</code></td>
+          <td class="table__align-right">
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+Copy            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+<a href="https://pip.pypa.io/en/stable/topics/secure-installs/#hash-checking-mode" title="External link" target="_blank" rel="noopener">See more details on using hashes here.</a>    </p>
+  </div>
+
+</div>
+<div id="3lc-2.13.2-cp310-cp310-manylinux2014_x86_64.whl" data-project-tabs-target="content" class="vertical-tabs__content" role="tabpanel" aria-labelledby="file-tab mobile-file-tab" tabindex="-1">
+  <h2 class="page-title">File details</h2>
+  <p>Details for the file <code>3lc-2.13.2-cp310-cp310-manylinux2014_x86_64.whl</code>.</p>
+
+  <h3>File metadata</h3>
+  <div>
+    <ul>
+      <li>
+        Download URL: <a href="https://files.pythonhosted.org/packages/39/ac/9644e5da128b46936799af226f8ccfbcb0b2d7d56d2bd15233011c9e5566/3lc-2.13.2-cp310-cp310-manylinux2014_x86_64.whl">
+          3lc-2.13.2-cp310-cp310-manylinux2014_x86_64.whl
+        </a>
+      </li>
+      <li>Upload date: <time datetime="2025-04-23T13:58:14+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Apr 23, 2025
+</time></li>
+      <li>Size: 3.6 MB</li>
+      <li>Tags: CPython 3.10</li>
+      <li>
+Uploaded using Trusted Publishing? No      </li>
+      <li>Uploaded via: twine/4.0.2 CPython/3.10.11</li>
+    </ul>
+  </div>
+
+  <h3>File hashes</h3>
+  <div>
+    <table class="table table--hashes">
+      <caption class="sr-only">Hashes for 3lc-2.13.2-cp310-cp310-manylinux2014_x86_64.whl</caption>
+      <thead>
+        <tr>
+          <th scope="col">Algorithm</th>
+          <th scope="col">Hash digest</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-controller="clipboard">
+          <th scope="row">SHA256</th>
+          <td><code data-clipboard-target="source">f754f21659877c05f5b4aab6268990331702ff9cceb87cb35faa9dd56f8302e0</code></td>
+          <td class="table__align-right">
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+Copy            </button>
+          </td>
+        </tr>
+        <tr data-controller="clipboard">
+          <th scope="row">MD5</th>
+          <td><code data-clipboard-target="source">4e29cfa37b1bdd68acbb0745964008ff</code></td>
+          <td class="table__align-right">
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+Copy            </button>
+          </td>
+        </tr>
+        <tr data-controller="clipboard">
+          <th scope="row">BLAKE2b-256</th>
+          <td><code data-clipboard-target="source">39ac9644e5da128b46936799af226f8ccfbcb0b2d7d56d2bd15233011c9e5566</code></td>
+          <td class="table__align-right">
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+Copy            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+<a href="https://pip.pypa.io/en/stable/topics/secure-installs/#hash-checking-mode" title="External link" target="_blank" rel="noopener">See more details on using hashes here.</a>    </p>
+  </div>
+
+</div>
+<div id="3lc-2.13.2-cp310-cp310-macosx_13_0_arm64.whl" data-project-tabs-target="content" class="vertical-tabs__content" role="tabpanel" aria-labelledby="file-tab mobile-file-tab" tabindex="-1">
+  <h2 class="page-title">File details</h2>
+  <p>Details for the file <code>3lc-2.13.2-cp310-cp310-macosx_13_0_arm64.whl</code>.</p>
+
+  <h3>File metadata</h3>
+  <div>
+    <ul>
+      <li>
+        Download URL: <a href="https://files.pythonhosted.org/packages/1d/c6/e0db93ea523e5103fcca6c2742fc008c9023aa4368d59fdec5874c32d181/3lc-2.13.2-cp310-cp310-macosx_13_0_arm64.whl">
+          3lc-2.13.2-cp310-cp310-macosx_13_0_arm64.whl
+        </a>
+      </li>
+      <li>Upload date: <time datetime="2025-04-23T13:58:12+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Apr 23, 2025
+</time></li>
+      <li>Size: 3.6 MB</li>
+      <li>Tags: CPython 3.10, macOS 13.0+ ARM64</li>
+      <li>
+Uploaded using Trusted Publishing? No      </li>
+      <li>Uploaded via: twine/4.0.2 CPython/3.10.11</li>
+    </ul>
+  </div>
+
+  <h3>File hashes</h3>
+  <div>
+    <table class="table table--hashes">
+      <caption class="sr-only">Hashes for 3lc-2.13.2-cp310-cp310-macosx_13_0_arm64.whl</caption>
+      <thead>
+        <tr>
+          <th scope="col">Algorithm</th>
+          <th scope="col">Hash digest</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-controller="clipboard">
+          <th scope="row">SHA256</th>
+          <td><code data-clipboard-target="source">3f4c3a8506fd882b68cde75965c3eaefddfa617af5ffd055c37715dff1fa88b3</code></td>
+          <td class="table__align-right">
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+Copy            </button>
+          </td>
+        </tr>
+        <tr data-controller="clipboard">
+          <th scope="row">MD5</th>
+          <td><code data-clipboard-target="source">230e3dc81ab9d6127a2efd77fe3a8432</code></td>
+          <td class="table__align-right">
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+Copy            </button>
+          </td>
+        </tr>
+        <tr data-controller="clipboard">
+          <th scope="row">BLAKE2b-256</th>
+          <td><code data-clipboard-target="source">1dc6e0db93ea523e5103fcca6c2742fc008c9023aa4368d59fdec5874c32d181</code></td>
+          <td class="table__align-right">
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+Copy            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+<a href="https://pip.pypa.io/en/stable/topics/secure-installs/#hash-checking-mode" title="External link" target="_blank" rel="noopener">See more details on using hashes here.</a>    </p>
+  </div>
+
+</div>
+<div id="3lc-2.13.2-cp39-cp39-win_amd64.whl" data-project-tabs-target="content" class="vertical-tabs__content" role="tabpanel" aria-labelledby="file-tab mobile-file-tab" tabindex="-1">
+  <h2 class="page-title">File details</h2>
+  <p>Details for the file <code>3lc-2.13.2-cp39-cp39-win_amd64.whl</code>.</p>
+
+  <h3>File metadata</h3>
+  <div>
+    <ul>
+      <li>
+        Download URL: <a href="https://files.pythonhosted.org/packages/88/3c/59ebe1e9eb4bda7f9b11ccd37c44f63ec6643dea84196065301813aede6e/3lc-2.13.2-cp39-cp39-win_amd64.whl">
+          3lc-2.13.2-cp39-cp39-win_amd64.whl
+        </a>
+      </li>
+      <li>Upload date: <time datetime="2025-04-23T13:58:29+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Apr 23, 2025
+</time></li>
+      <li>Size: 3.5 MB</li>
+      <li>Tags: CPython 3.9, Windows x86-64</li>
+      <li>
+Uploaded using Trusted Publishing? No      </li>
+      <li>Uploaded via: twine/4.0.2 CPython/3.10.11</li>
+    </ul>
+  </div>
+
+  <h3>File hashes</h3>
+  <div>
+    <table class="table table--hashes">
+      <caption class="sr-only">Hashes for 3lc-2.13.2-cp39-cp39-win_amd64.whl</caption>
+      <thead>
+        <tr>
+          <th scope="col">Algorithm</th>
+          <th scope="col">Hash digest</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-controller="clipboard">
+          <th scope="row">SHA256</th>
+          <td><code data-clipboard-target="source">5ccc356e4e168ec7a35fc878b07304201ea456afda6862b26d73a024f0ca2b9a</code></td>
+          <td class="table__align-right">
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+Copy            </button>
+          </td>
+        </tr>
+        <tr data-controller="clipboard">
+          <th scope="row">MD5</th>
+          <td><code data-clipboard-target="source">a3cc22f4b6ed31b5311a72c4a3479dd5</code></td>
+          <td class="table__align-right">
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+Copy            </button>
+          </td>
+        </tr>
+        <tr data-controller="clipboard">
+          <th scope="row">BLAKE2b-256</th>
+          <td><code data-clipboard-target="source">883c59ebe1e9eb4bda7f9b11ccd37c44f63ec6643dea84196065301813aede6e</code></td>
+          <td class="table__align-right">
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+Copy            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+<a href="https://pip.pypa.io/en/stable/topics/secure-installs/#hash-checking-mode" title="External link" target="_blank" rel="noopener">See more details on using hashes here.</a>    </p>
+  </div>
+
+</div>
+<div id="3lc-2.13.2-cp39-cp39-manylinux2014_x86_64.whl" data-project-tabs-target="content" class="vertical-tabs__content" role="tabpanel" aria-labelledby="file-tab mobile-file-tab" tabindex="-1">
+  <h2 class="page-title">File details</h2>
+  <p>Details for the file <code>3lc-2.13.2-cp39-cp39-manylinux2014_x86_64.whl</code>.</p>
+
+  <h3>File metadata</h3>
+  <div>
+    <ul>
+      <li>
+        Download URL: <a href="https://files.pythonhosted.org/packages/9b/20/5ef6989715e623466c6695a36fa551875fa5224b5a2c59cab451cf4cddb2/3lc-2.13.2-cp39-cp39-manylinux2014_x86_64.whl">
+          3lc-2.13.2-cp39-cp39-manylinux2014_x86_64.whl
+        </a>
+      </li>
+      <li>Upload date: <time datetime="2025-04-23T13:58:28+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Apr 23, 2025
+</time></li>
+      <li>Size: 3.6 MB</li>
+      <li>Tags: CPython 3.9</li>
+      <li>
+Uploaded using Trusted Publishing? No      </li>
+      <li>Uploaded via: twine/4.0.2 CPython/3.10.11</li>
+    </ul>
+  </div>
+
+  <h3>File hashes</h3>
+  <div>
+    <table class="table table--hashes">
+      <caption class="sr-only">Hashes for 3lc-2.13.2-cp39-cp39-manylinux2014_x86_64.whl</caption>
+      <thead>
+        <tr>
+          <th scope="col">Algorithm</th>
+          <th scope="col">Hash digest</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-controller="clipboard">
+          <th scope="row">SHA256</th>
+          <td><code data-clipboard-target="source">35ebd8e096b9bb1ac6e35fc0626c16f82be784aca8103b007189304f31359e24</code></td>
+          <td class="table__align-right">
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+Copy            </button>
+          </td>
+        </tr>
+        <tr data-controller="clipboard">
+          <th scope="row">MD5</th>
+          <td><code data-clipboard-target="source">5eff4a561e43c40f4a9e6b9459cca92a</code></td>
+          <td class="table__align-right">
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+Copy            </button>
+          </td>
+        </tr>
+        <tr data-controller="clipboard">
+          <th scope="row">BLAKE2b-256</th>
+          <td><code data-clipboard-target="source">9b205ef6989715e623466c6695a36fa551875fa5224b5a2c59cab451cf4cddb2</code></td>
+          <td class="table__align-right">
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+Copy            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+<a href="https://pip.pypa.io/en/stable/topics/secure-installs/#hash-checking-mode" title="External link" target="_blank" rel="noopener">See more details on using hashes here.</a>    </p>
+  </div>
+
+</div>
+<div id="3lc-2.13.2-cp39-cp39-macosx_13_0_arm64.whl" data-project-tabs-target="content" class="vertical-tabs__content" role="tabpanel" aria-labelledby="file-tab mobile-file-tab" tabindex="-1">
+  <h2 class="page-title">File details</h2>
+  <p>Details for the file <code>3lc-2.13.2-cp39-cp39-macosx_13_0_arm64.whl</code>.</p>
+
+  <h3>File metadata</h3>
+  <div>
+    <ul>
+      <li>
+        Download URL: <a href="https://files.pythonhosted.org/packages/a1/0e/3887113aab16e18a6d1124894af529015e42fc8812b806f444f1b54a033e/3lc-2.13.2-cp39-cp39-macosx_13_0_arm64.whl">
+          3lc-2.13.2-cp39-cp39-macosx_13_0_arm64.whl
+        </a>
+      </li>
+      <li>Upload date: <time datetime="2025-04-23T13:58:26+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Apr 23, 2025
+</time></li>
+      <li>Size: 3.5 MB</li>
+      <li>Tags: CPython 3.9, macOS 13.0+ ARM64</li>
+      <li>
+Uploaded using Trusted Publishing? No      </li>
+      <li>Uploaded via: twine/4.0.2 CPython/3.10.11</li>
+    </ul>
+  </div>
+
+  <h3>File hashes</h3>
+  <div>
+    <table class="table table--hashes">
+      <caption class="sr-only">Hashes for 3lc-2.13.2-cp39-cp39-macosx_13_0_arm64.whl</caption>
+      <thead>
+        <tr>
+          <th scope="col">Algorithm</th>
+          <th scope="col">Hash digest</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-controller="clipboard">
+          <th scope="row">SHA256</th>
+          <td><code data-clipboard-target="source">0c651ba6bf2c0dddaa53ec89fe8917a0254a3080b63e4d6c565e1bed01d955d0</code></td>
+          <td class="table__align-right">
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+Copy            </button>
+          </td>
+        </tr>
+        <tr data-controller="clipboard">
+          <th scope="row">MD5</th>
+          <td><code data-clipboard-target="source">6f00294e0a2894f6580cd31855877597</code></td>
+          <td class="table__align-right">
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+Copy            </button>
+          </td>
+        </tr>
+        <tr data-controller="clipboard">
+          <th scope="row">BLAKE2b-256</th>
+          <td><code data-clipboard-target="source">a10e3887113aab16e18a6d1124894af529015e42fc8812b806f444f1b54a033e</code></td>
+          <td class="table__align-right">
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+Copy            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+<a href="https://pip.pypa.io/en/stable/topics/secure-installs/#hash-checking-mode" title="External link" target="_blank" rel="noopener">See more details on using hashes here.</a>    </p>
+  </div>
+
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__logo">
+        <img src="/static/images/white-cube.2351a86c.svg" alt="" class="-js-white-cube">
+      </div>
+
+      <div class="footer__menus">
+        <div class="footer__menu">
+          <h2>Help</h2>
+          <nav aria-label="Help navigation">
+            <ul>
+              <li><a href="https://packaging.python.org/tutorials/installing-packages/" title="External link" target="_blank" rel="noopener">Installing packages</a></li>
+              <li><a href="https://packaging.python.org/tutorials/packaging-projects/" title="External link" target="_blank" rel="noopener">Uploading packages</a></li>
+              <li><a href="https://packaging.python.org/" title="External link" target="_blank" rel="noopener">User guide</a></li>
+              <li><a href="https://www.python.org/dev/peps/pep-0541/" title="External link" target="_blank" rel="noopener">Project name retention</a></li>
+              <li><a href="/help/">FAQs</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer__menu">
+          <h2>About PyPI</h2>
+          <nav aria-label="About PyPI navigation">
+            <ul>
+              <li><a href="https://blog.pypi.org" title="External link" target="_blank" rel="noopener">PyPI Blog</a></li>
+              <li><a href="https://dtdg.co/pypi" title="External link" target="_blank" rel="noopener">Infrastructure dashboard</a></li>
+              <li><a href="/stats/">Statistics</a></li>
+              <li><a href="/trademarks/">Logos & trademarks</a></li>
+              <li><a href="/sponsors/">Our sponsors</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer__menu">
+          <h2>Contributing to PyPI</h2>
+          <nav aria-label="How to contribute navigation">
+            <ul>
+              <li><a href="/help/#feedback">Bugs and feedback</a></li>
+              <li><a href="https://github.com/pypi/warehouse" title="External link" target="_blank" rel="noopener">Contribute on GitHub</a></li>
+              <li><a href="https://hosted.weblate.org/projects/pypa/warehouse/" title="External link" target="_blank" rel="noopener">Translate PyPI</a></li>
+              <li><a href="/sponsors/">Sponsor PyPI</a></li>
+              <li><a href="https://github.com/pypi/warehouse/graphs/contributors" title="External link" target="_blank" rel="noopener">Development credits</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer__menu">
+          <h2>Using PyPI</h2>
+          <nav aria-label="Using PyPI navigation">
+            <ul>
+              <li><a href="https://policies.python.org/pypi.org/Terms-of-Service/" title="External link" target="_blank" rel="noopener">Terms of Service</a></li>
+              <li><a href="/security/">Report security issue</a></li>
+              <li><a href="https://policies.python.org/python.org/code-of-conduct/" title="External link" target="_blank" rel="noopener">Code of conduct</a></li>
+              <li><a href="https://policies.python.org/pypi.org/Privacy-Notice/" title="External link" target="_blank" rel="noopener">Privacy Notice</a></li>
+              <li><a href="https://policies.python.org/pypi.org/Acceptable-Use-Policy/" title="External link" target="_blank" rel="noopener">Acceptable Use Policy</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <hr class="footer__divider">
+
+      <div class="footer__text">
+        <p>Status:<a href="https://status.python.org/" title="External link" target="_blank" rel="noopener">
+          <span data-statuspage-domain="https://2p66nmmycsj3.statuspage.io">all systems operational</span></a>
+        </p>
+        <p>
+Developed and maintained by the Python community, for the Python community.          <br>
+          <a href="https://donate.pypi.org">Donate today!</a>
+        </p>
+        <p>
+          "PyPI", "Python Package Index", and the blocks logos are registered <a href="/trademarks/">trademarks</a> of the <a href="https://www.python.org/psf-landing" target="_blank" rel="noopener">Python Software Foundation</a>.<br>
+        </p>
+        <p>
+          © 2025 <a href="https://www.python.org/psf-landing/" title="External link" target="_blank" rel="noopener">Python Software Foundation</a><br>
+          <a href="/sitemap/">Site map</a>
+        </p>
+      </div>
+
+      <div class="centered hide-on-desktop">
+        <button type="button" class="button button--switch-to-desktop hidden" data-viewport-toggle-target="switchToDesktop" data-action="viewport-toggle#switchToDesktop">
+Switch to desktop version        </button>
+      </div>
+    </footer>
+
+
+    <div class="language-switcher">
+      <form action="/locale/">
+        <ul>
+          <li>
+            <button
+              class="language-switcher__selected"
+              name="locale_id" value="en" type="submit"
+            >
+              English
+            </button>
+          </li>
+          <li>
+            <button
+              name="locale_id" value="es" type="submit"
+            >
+              español
+            </button>
+          </li>
+          <li>
+            <button
+              name="locale_id" value="fr" type="submit"
+            >
+              français
+            </button>
+          </li>
+          <li>
+            <button
+              name="locale_id" value="ja" type="submit"
+            >
+              日本語
+            </button>
+          </li>
+          <li>
+            <button
+              name="locale_id" value="pt_BR" type="submit"
+            >
+              português (Brasil)
+            </button>
+          </li>
+          <li>
+            <button
+              name="locale_id" value="uk" type="submit"
+            >
+              українська
+            </button>
+          </li>
+          <li>
+            <button
+              name="locale_id" value="el" type="submit"
+            >
+              Ελληνικά
+            </button>
+          </li>
+          <li>
+            <button
+              name="locale_id" value="de" type="submit"
+            >
+              Deutsch
+            </button>
+          </li>
+          <li>
+            <button
+              name="locale_id" value="zh_Hans" type="submit"
+            >
+              中文 (简体)
+            </button>
+          </li>
+          <li>
+            <button
+              name="locale_id" value="zh_Hant" type="submit"
+            >
+              中文 (繁體)
+            </button>
+          </li>
+          <li>
+            <button
+              name="locale_id" value="ru" type="submit"
+            >
+              русский
+            </button>
+          </li>
+          <li>
+            <button
+              name="locale_id" value="he" type="submit"
+            >
+              עברית
+            </button>
+          </li>
+          <li>
+            <button
+              name="locale_id" value="eo" type="submit"
+            >
+              Esperanto
+            </button>
+          </li>
+          <li>
+            <button
+              name="locale_id" value="ko" type="submit"
+            >
+              한국어
+            </button>
+          </li>
+        </ul>
+      </form>
+    </div>
+
+
+<div class="sponsors">
+  <p class="sponsors__title">Supported by</p>
+  <div class="sponsors__divider"></div>
+        <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://aws.amazon.com/">
+          <img class=sponsors__image src="https://pypi-camo.freetls.fastly.net/ed7074cadad1a06f56bc520ad9bd3e00d0704c5b/68747470733a2f2f73746f726167652e676f6f676c65617069732e636f6d2f707970692d6173736574732f73706f6e736f726c6f676f732f6177732d77686974652d6c6f676f2d7443615473387a432e706e67" alt="" loading=lazy>
+          <span class="sponsors__name">AWS</span>
+          <span class="sponsors__service">
+            Cloud computing and Security Sponsor
+          </span>
+        </a>
+        <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://www.datadoghq.com/">
+          <img class=sponsors__image src="https://pypi-camo.freetls.fastly.net/8855f7c063a3bdb5b0ce8d91bfc50cf851cc5c51/68747470733a2f2f73746f726167652e676f6f676c65617069732e636f6d2f707970692d6173736574732f73706f6e736f726c6f676f732f64617461646f672d77686974652d6c6f676f2d6668644c4e666c6f2e706e67" alt="" loading=lazy>
+          <span class="sponsors__name">Datadog</span>
+          <span class="sponsors__service">
+            Monitoring
+          </span>
+        </a>
+        <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://www.fastly.com/">
+          <img class=sponsors__image src="https://pypi-camo.freetls.fastly.net/df6fe8829cbff2d7f668d98571df1fd011f36192/68747470733a2f2f73746f726167652e676f6f676c65617069732e636f6d2f707970692d6173736574732f73706f6e736f726c6f676f732f666173746c792d77686974652d6c6f676f2d65684d3077735f6f2e706e67" alt="" loading=lazy>
+          <span class="sponsors__name">Fastly</span>
+          <span class="sponsors__service">
+            CDN
+          </span>
+        </a>
+        <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://careers.google.com/">
+          <img class=sponsors__image src="https://pypi-camo.freetls.fastly.net/420cc8cf360bac879e24c923b2f50ba7d1314fb0/68747470733a2f2f73746f726167652e676f6f676c65617069732e636f6d2f707970692d6173736574732f73706f6e736f726c6f676f732f676f6f676c652d77686974652d6c6f676f2d616734424e3774332e706e67" alt="" loading=lazy>
+          <span class="sponsors__name">Google</span>
+          <span class="sponsors__service">
+            Download Analytics
+          </span>
+        </a>
+        <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://www.pingdom.com/">
+          <img class=sponsors__image src="https://pypi-camo.freetls.fastly.net/d01053c02f3a626b73ffcb06b96367fdbbf9e230/68747470733a2f2f73746f726167652e676f6f676c65617069732e636f6d2f707970692d6173736574732f73706f6e736f726c6f676f732f70696e67646f6d2d77686974652d6c6f676f2d67355831547546362e706e67" alt="" loading=lazy>
+          <span class="sponsors__name">Pingdom</span>
+          <span class="sponsors__service">
+            Monitoring
+          </span>
+        </a>
+        <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://getsentry.com/for/python">
+          <img class=sponsors__image src="https://pypi-camo.freetls.fastly.net/67af7117035e2345bacb5a82e9aa8b5b3e70701d/68747470733a2f2f73746f726167652e676f6f676c65617069732e636f6d2f707970692d6173736574732f73706f6e736f726c6f676f732f73656e7472792d77686974652d6c6f676f2d4a2d6b64742d706e2e706e67" alt="" loading=lazy>
+          <span class="sponsors__name">Sentry</span>
+          <span class="sponsors__service">
+            Error logging
+          </span>
+        </a>
+        <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://statuspage.io">
+          <img class=sponsors__image src="https://pypi-camo.freetls.fastly.net/b611884ff90435a0575dbab7d9b0d3e60f136466/68747470733a2f2f73746f726167652e676f6f676c65617069732e636f6d2f707970692d6173736574732f73706f6e736f726c6f676f732f737461747573706167652d77686974652d6c6f676f2d5467476c6a4a2d502e706e67" alt="" loading=lazy>
+          <span class="sponsors__name">StatusPage</span>
+          <span class="sponsors__service">
+            Status page
+          </span>
+        </a>
+</div>
+  </body>
+
+</html>

@@ -8,10 +8,18 @@
 
 Faker
 Jinja2
+beautifulsoup4
 black
 docopt
 duckdb
 httpx
+
+langchain==0.3.25
+langchain-core==0.3.58
+langchain-community==0.3.23
+langchain-text-splitters==0.3.8
+langchain-openai==0.3.16
+
 psutil
 
 pytest>= 8.3.5

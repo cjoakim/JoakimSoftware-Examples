@@ -21,13 +21,15 @@ import os
 import traceback
 
 import duckdb 
+import httpx
 
 from pprint import pprint
 
 from docopt import docopt
 from dotenv import load_dotenv
 
-#from six import moves 
+from langchain_core.prompts import ChatPromptTemplate
+from langchain_community.document_loaders import WebBaseLoader
 
 from src.util.bytes import Bytes
 from src.util.counter import Counter
@@ -157,12 +159,50 @@ def merge_parsed_libs():
     FS.write_json(merged_dict, outfile, sort_keys=True)
     print("{} merged libs".format(len(merged_dict.keys())))
 
+# def get_pypi_html_pages():
+#     url = "https://pypi.org/project/ageqrp/"
+#     loader = WebBaseLoader(url)
+#     text = loader.load()
+#     print(text)
+#     # This method doesn't work because the WebBaseLoader is not designed to handle JavaScript.
+#     # WebBaseLoader Client Challenge - JavaScript is disabled in your browser
+
 def get_pypi_html_pages():
-    pass 
+    files = pip_files_list([".in"])
+    for idx, filename in enumerate(files):
+        time.sleep(1)
+        libname = filename.split(".")[0]
+        capture_pypi_html(idx, libname)
+
+def capture_pypi_html(idx, libname):
+    # this approach also doesn't work because the client is expected to implement JS
+    # alternative is to selenium webdriver
+    try:
+        url = "https://pypi.org/project/{}/".format(libname.strip())
+        print("idx: {} url: {}".format(idx, url))
+        response = httpx.get(url)
+        text = response.text
+        outfile = "data/pypi_html/{}.html".format(libname.strip())
+        FS.write(text, outfile)
+    except Exception as e:
+        print(str(e))
+        print(traceback.format_exc())
 
 def parse_pypi_html_pages():
+    # use beautifulsoup4
     pass 
 
+
+def pip_files_list(suffixes: list):
+    files = FS.list_files_in_dir("data/pip")
+    filtered_list = list()
+
+    for f in files:
+        stripped = f.strip()
+        for suffix in suffixes:
+            if stripped.endswith(suffix):
+                filtered_list.append(stripped)
+    return sorted(filtered_list)
 
 
 if __name__ == "__main__":
