@@ -1,6 +1,0 @@
-{
-  "libname": "testing-common-database",
-  "libvers": "2.0.3",
-  "infile": "data/pip/testing-common-database.txt",
-  "dependencies": {}
-}

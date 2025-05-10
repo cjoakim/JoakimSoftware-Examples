@@ -1,9 +1,0 @@
-{
-  "libname": "graylint",
-  "libvers": "2.0.0",
-  "infile": "data/pip/graylint.txt",
-  "dependencies": {
-    "darkgraylib": "2.0.1",
-    "toml": "0.10.2"
-  }
-}

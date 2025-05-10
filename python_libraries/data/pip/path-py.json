@@ -1,8 +1,0 @@
-{
-  "libname": "path-py",
-  "libvers": "12.5.0",
-  "infile": "data/pip/path-py.txt",
-  "dependencies": {
-    "path": "17.1.0"
-  }
-}

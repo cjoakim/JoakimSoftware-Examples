@@ -1,6 +1,0 @@
-{
-  "libname": "kdtree",
-  "libvers": "0.16",
-  "infile": "data/pip/kdtree.txt",
-  "dependencies": {}
-}

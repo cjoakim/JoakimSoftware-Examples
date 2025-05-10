@@ -1,6 +1,0 @@
-{
-  "libname": "expiringdict",
-  "libvers": "1.2.2",
-  "infile": "data/pip/expiringdict.txt",
-  "dependencies": {}
-}

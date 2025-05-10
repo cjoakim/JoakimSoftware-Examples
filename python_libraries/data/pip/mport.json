@@ -1,6 +1,0 @@
-{
-  "libname": "mport",
-  "libvers": "0.1.1",
-  "infile": "data/pip/mport.txt",
-  "dependencies": {}
-}

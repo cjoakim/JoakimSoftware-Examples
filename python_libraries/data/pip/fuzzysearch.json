@@ -1,8 +1,0 @@
-{
-  "libname": "fuzzysearch",
-  "libvers": "0.7.3",
-  "infile": "data/pip/fuzzysearch.txt",
-  "dependencies": {
-    "attrs": "25.3.0"
-  }
-}

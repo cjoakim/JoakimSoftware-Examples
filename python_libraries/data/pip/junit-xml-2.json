@@ -1,8 +1,0 @@
-{
-  "libname": "junit-xml-2",
-  "libvers": "1.9",
-  "infile": "data/pip/junit-xml-2.txt",
-  "dependencies": {
-    "six": "1.17.0"
-  }
-}

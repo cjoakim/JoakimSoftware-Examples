@@ -1,6 +1,0 @@
-{
-  "libname": "texttable",
-  "libvers": "1.7.0",
-  "infile": "data/pip/texttable.txt",
-  "dependencies": {}
-}

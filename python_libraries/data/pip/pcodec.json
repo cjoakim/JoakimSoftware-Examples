@@ -1,8 +1,0 @@
-{
-  "libname": "pcodec",
-  "libvers": "0.3.3",
-  "infile": "data/pip/pcodec.txt",
-  "dependencies": {
-    "numpy": "2.2.5"
-  }
-}

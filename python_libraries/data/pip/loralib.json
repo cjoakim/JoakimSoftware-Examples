@@ -1,6 +1,0 @@
-{
-  "libname": "loralib",
-  "libvers": "0.1.2",
-  "infile": "data/pip/loralib.txt",
-  "dependencies": {}
-}

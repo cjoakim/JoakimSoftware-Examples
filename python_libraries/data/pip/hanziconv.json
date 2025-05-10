@@ -1,6 +1,0 @@
-{
-  "libname": "hanziconv",
-  "libvers": "0.3.2",
-  "infile": "data/pip/hanziconv.txt",
-  "dependencies": {}
-}

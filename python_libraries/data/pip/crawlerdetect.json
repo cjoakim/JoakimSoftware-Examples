@@ -1,6 +1,0 @@
-{
-  "libname": "crawlerdetect",
-  "libvers": "0.3.0",
-  "infile": "data/pip/crawlerdetect.txt",
-  "dependencies": {}
-}

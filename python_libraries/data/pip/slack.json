@@ -1,6 +1,0 @@
-{
-  "libname": "slack",
-  "libvers": "0.0.2",
-  "infile": "data/pip/slack.txt",
-  "dependencies": {}
-}

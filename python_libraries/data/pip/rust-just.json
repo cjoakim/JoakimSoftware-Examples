@@ -1,6 +1,0 @@
-{
-  "libname": "rust-just",
-  "libvers": "1.40.0",
-  "infile": "data/pip/rust-just.txt",
-  "dependencies": {}
-}

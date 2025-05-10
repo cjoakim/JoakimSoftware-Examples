@@ -1,6 +1,0 @@
-{
-  "libname": "argparse-dataclass",
-  "libvers": "2.0.0",
-  "infile": "data/pip/argparse-dataclass.txt",
-  "dependencies": {}
-}

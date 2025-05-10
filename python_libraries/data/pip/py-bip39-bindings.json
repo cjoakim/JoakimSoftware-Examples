@@ -1,6 +1,0 @@
-{
-  "libname": "py-bip39-bindings",
-  "libvers": "0.2.0",
-  "infile": "data/pip/py-bip39-bindings.txt",
-  "dependencies": {}
-}

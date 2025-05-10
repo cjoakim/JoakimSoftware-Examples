@@ -1,6 +1,0 @@
-{
-  "libname": "textfsm",
-  "libvers": "2.1.0",
-  "infile": "data/pip/textfsm.txt",
-  "dependencies": {}
-}

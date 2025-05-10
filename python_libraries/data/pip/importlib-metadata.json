@@ -1,8 +1,0 @@
-{
-  "libname": "importlib-metadata",
-  "libvers": "8.7.0",
-  "infile": "data/pip/importlib-metadata.txt",
-  "dependencies": {
-    "zipp": "3.21.0"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "libname": "msg-parser",
-  "libvers": "1.2.0",
-  "infile": "data/pip/msg-parser.txt",
-  "dependencies": {
-    "olefile": "0.47"
-  }
-}

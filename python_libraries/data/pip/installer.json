@@ -1,6 +1,0 @@
-{
-  "libname": "installer",
-  "libvers": "0.7.0",
-  "infile": "data/pip/installer.txt",
-  "dependencies": {}
-}

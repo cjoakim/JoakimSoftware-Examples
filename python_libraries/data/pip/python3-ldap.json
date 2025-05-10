@@ -1,8 +1,0 @@
-{
-  "libname": "python3-ldap",
-  "libvers": "0.9.8.4",
-  "infile": "data/pip/python3-ldap.txt",
-  "dependencies": {
-    "pyasn1": "0.6.1"
-  }
-}

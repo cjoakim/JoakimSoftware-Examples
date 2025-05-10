@@ -1,8 +1,0 @@
-{
-  "libname": "packvers",
-  "libvers": "21.5",
-  "infile": "data/pip/packvers.txt",
-  "dependencies": {
-    "pyparsing": "3.2.3"
-  }
-}

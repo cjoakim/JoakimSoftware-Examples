@@ -1,8 +1,0 @@
-{
-  "libname": "envolved",
-  "libvers": "1.7.0",
-  "infile": "data/pip/envolved.txt",
-  "dependencies": {
-    "typing-extensions": "4.13.2"
-  }
-}

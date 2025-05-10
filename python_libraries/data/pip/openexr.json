@@ -1,8 +1,0 @@
-{
-  "libname": "openexr",
-  "libvers": "3.3.3",
-  "infile": "data/pip/openexr.txt",
-  "dependencies": {
-    "numpy": "2.2.5"
-  }
-}

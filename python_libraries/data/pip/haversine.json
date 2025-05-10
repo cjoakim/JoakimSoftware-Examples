@@ -1,6 +1,0 @@
-{
-  "libname": "haversine",
-  "libvers": "2.9.0",
-  "infile": "data/pip/haversine.txt",
-  "dependencies": {}
-}

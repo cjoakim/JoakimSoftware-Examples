@@ -1,9 +1,0 @@
-{
-  "libname": "datafusion",
-  "libvers": "46.0.0",
-  "infile": "data/pip/datafusion.txt",
-  "dependencies": {
-    "pyarrow": "20.0.0",
-    "typing-extensions": "4.13.2"
-  }
-}

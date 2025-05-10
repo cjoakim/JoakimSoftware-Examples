@@ -1,6 +1,0 @@
-{
-  "libname": "xxtea",
-  "libvers": "3.3.0",
-  "infile": "data/pip/xxtea.txt",
-  "dependencies": {}
-}

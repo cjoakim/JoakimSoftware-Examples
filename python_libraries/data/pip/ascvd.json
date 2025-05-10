@@ -1,6 +1,0 @@
-{
-  "libname": "ascvd",
-  "libvers": "0.5",
-  "infile": "data/pip/ascvd.txt",
-  "dependencies": {}
-}

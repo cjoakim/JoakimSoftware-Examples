@@ -1,6 +1,0 @@
-{
-  "libname": "defusedcsv",
-  "libvers": "2.0.0",
-  "infile": "data/pip/defusedcsv.txt",
-  "dependencies": {}
-}

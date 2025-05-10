@@ -1,6 +1,0 @@
-{
-  "libname": "iso4217",
-  "libvers": "1.12.20240625",
-  "infile": "data/pip/iso4217.txt",
-  "dependencies": {}
-}

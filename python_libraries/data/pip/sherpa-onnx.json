@@ -1,6 +1,0 @@
-{
-  "libname": "sherpa-onnx",
-  "libvers": "1.11.4",
-  "infile": "data/pip/sherpa-onnx.txt",
-  "dependencies": {}
-}

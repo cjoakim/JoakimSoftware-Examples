@@ -1,8 +1,0 @@
-{
-  "libname": "gmssl",
-  "libvers": "3.2.2",
-  "infile": "data/pip/gmssl.txt",
-  "dependencies": {
-    "pycryptodomex": "3.22.0"
-  }
-}

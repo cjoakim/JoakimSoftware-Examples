@@ -1,6 +1,0 @@
-{
-  "libname": "aiosmtplib",
-  "libvers": "4.0.1",
-  "infile": "data/pip/aiosmtplib.txt",
-  "dependencies": {}
-}

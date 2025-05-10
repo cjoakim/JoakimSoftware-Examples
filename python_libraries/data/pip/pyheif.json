@@ -1,9 +1,0 @@
-{
-  "libname": "pyheif",
-  "libvers": "0.8.0",
-  "infile": "data/pip/pyheif.txt",
-  "dependencies": {
-    "cffi": "1.17.1",
-    "pycparser": "2.22"
-  }
-}

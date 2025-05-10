@@ -1,6 +1,0 @@
-{
-  "libname": "jamo",
-  "libvers": "0.4.1",
-  "infile": "data/pip/jamo.txt",
-  "dependencies": {}
-}

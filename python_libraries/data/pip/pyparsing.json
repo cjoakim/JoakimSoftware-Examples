@@ -1,6 +1,0 @@
-{
-  "libname": "pyparsing",
-  "libvers": "3.2.3",
-  "infile": "data/pip/pyparsing.txt",
-  "dependencies": {}
-}

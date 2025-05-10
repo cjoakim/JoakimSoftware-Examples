@@ -1,9 +1,0 @@
-{
-  "libname": "pipmaster",
-  "libvers": "0.7.2",
-  "infile": "data/pip/pipmaster.txt",
-  "dependencies": {
-    "ascii-colors": "0.11.2",
-    "packaging": "25.0"
-  }
-}

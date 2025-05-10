@@ -1,8 +1,0 @@
-{
-  "libname": "nano-vectordb",
-  "libvers": "0.0.4.3",
-  "infile": "data/pip/nano-vectordb.txt",
-  "dependencies": {
-    "numpy": "2.2.5"
-  }
-}

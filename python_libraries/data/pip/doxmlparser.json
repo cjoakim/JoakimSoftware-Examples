@@ -1,9 +1,0 @@
-{
-  "libname": "doxmlparser",
-  "libvers": "1.13.2",
-  "infile": "data/pip/doxmlparser.txt",
-  "dependencies": {
-    "lxml": "5.4.0",
-    "six": "1.17.0"
-  }
-}

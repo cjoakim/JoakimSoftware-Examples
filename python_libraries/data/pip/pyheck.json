@@ -1,6 +1,0 @@
-{
-  "libname": "pyheck",
-  "libvers": "0.1.5",
-  "infile": "data/pip/pyheck.txt",
-  "dependencies": {}
-}

@@ -1,8 +1,0 @@
-{
-  "libname": "anchorpy-core",
-  "libvers": "0.2.0",
-  "infile": "data/pip/anchorpy-core.txt",
-  "dependencies": {
-    "jsonalias": "0.1.1"
-  }
-}

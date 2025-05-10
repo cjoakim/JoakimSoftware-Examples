@@ -1,6 +1,0 @@
-{
-  "libname": "flawfinder",
-  "libvers": "2.0.19",
-  "infile": "data/pip/flawfinder.txt",
-  "dependencies": {}
-}

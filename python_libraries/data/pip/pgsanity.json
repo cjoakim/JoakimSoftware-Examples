@@ -1,6 +1,0 @@
-{
-  "libname": "pgsanity",
-  "libvers": "0.2.9",
-  "infile": "data/pip/pgsanity.txt",
-  "dependencies": {}
-}

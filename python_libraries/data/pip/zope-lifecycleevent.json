@@ -1,9 +1,0 @@
-{
-  "libname": "zope-lifecycleevent",
-  "libvers": "5.1",
-  "infile": "data/pip/zope-lifecycleevent.txt",
-  "dependencies": {
-    "zope-event": "5.0",
-    "zope-interface": "7.2"
-  }
-}

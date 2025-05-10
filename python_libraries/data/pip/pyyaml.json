@@ -1,6 +1,0 @@
-{
-  "libname": "pyyaml",
-  "libvers": "6.0.2",
-  "infile": "data/pip/pyyaml.txt",
-  "dependencies": {}
-}

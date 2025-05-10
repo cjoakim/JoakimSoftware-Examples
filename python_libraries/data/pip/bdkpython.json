@@ -1,6 +1,0 @@
-{
-  "libname": "bdkpython",
-  "libvers": "1.2.0",
-  "infile": "data/pip/bdkpython.txt",
-  "dependencies": {}
-}

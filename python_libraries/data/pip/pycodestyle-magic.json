@@ -1,6 +1,0 @@
-{
-  "libname": "pycodestyle-magic",
-  "libvers": "0.5",
-  "infile": "data/pip/pycodestyle-magic.txt",
-  "dependencies": {}
-}

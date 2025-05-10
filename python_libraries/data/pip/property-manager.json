@@ -1,9 +1,0 @@
-{
-  "libname": "property-manager",
-  "libvers": "3.0",
-  "infile": "data/pip/property-manager.txt",
-  "dependencies": {
-    "humanfriendly": "10.0",
-    "verboselogs": "1.7"
-  }
-}

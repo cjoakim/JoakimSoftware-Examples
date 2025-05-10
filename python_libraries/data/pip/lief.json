@@ -1,6 +1,0 @@
-{
-  "libname": "lief",
-  "libvers": "0.16.5",
-  "infile": "data/pip/lief.txt",
-  "dependencies": {}
-}

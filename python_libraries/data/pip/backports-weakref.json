@@ -1,6 +1,0 @@
-{
-  "libname": "backports-weakref",
-  "libvers": "1.0.post1",
-  "infile": "data/pip/backports-weakref.txt",
-  "dependencies": {}
-}

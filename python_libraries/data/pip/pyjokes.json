@@ -1,6 +1,0 @@
-{
-  "libname": "pyjokes",
-  "libvers": "0.8.3",
-  "infile": "data/pip/pyjokes.txt",
-  "dependencies": {}
-}

@@ -1,6 +1,0 @@
-{
-  "libname": "macaddress",
-  "libvers": "2.0.2",
-  "infile": "data/pip/macaddress.txt",
-  "dependencies": {}
-}

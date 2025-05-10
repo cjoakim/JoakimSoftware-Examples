@@ -1,6 +1,0 @@
-{
-  "libname": "django-discover-runner",
-  "libvers": "1.0",
-  "infile": "data/pip/django-discover-runner.txt",
-  "dependencies": {}
-}

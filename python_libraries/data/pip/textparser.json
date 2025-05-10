@@ -1,6 +1,0 @@
-{
-  "libname": "textparser",
-  "libvers": "0.24.0",
-  "infile": "data/pip/textparser.txt",
-  "dependencies": {}
-}

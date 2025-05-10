@@ -1,6 +1,0 @@
-{
-  "libname": "primp",
-  "libvers": "0.15.0",
-  "infile": "data/pip/primp.txt",
-  "dependencies": {}
-}

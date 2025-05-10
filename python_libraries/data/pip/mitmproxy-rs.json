@@ -1,8 +1,0 @@
-{
-  "libname": "mitmproxy-rs",
-  "libvers": "0.12.3",
-  "infile": "data/pip/mitmproxy-rs.txt",
-  "dependencies": {
-    "mitmproxy-macos": "0.12.3"
-  }
-}

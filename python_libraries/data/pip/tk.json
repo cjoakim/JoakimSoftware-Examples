@@ -1,6 +1,0 @@
-{
-  "libname": "tk",
-  "libvers": "0.1.0",
-  "infile": "data/pip/tk.txt",
-  "dependencies": {}
-}

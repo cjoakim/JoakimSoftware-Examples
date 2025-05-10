@@ -1,6 +1,0 @@
-{
-  "libname": "primefac",
-  "libvers": "2.0.12",
-  "infile": "data/pip/primefac.txt",
-  "dependencies": {}
-}

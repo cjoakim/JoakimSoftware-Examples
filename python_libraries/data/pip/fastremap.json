@@ -1,8 +1,0 @@
-{
-  "libname": "fastremap",
-  "libvers": "1.16.0",
-  "infile": "data/pip/fastremap.txt",
-  "dependencies": {
-    "numpy": "2.2.5"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "libname": "unittest-xml-reporting",
-  "libvers": "3.2.0",
-  "infile": "data/pip/unittest-xml-reporting.txt",
-  "dependencies": {
-    "lxml": "5.4.0"
-  }
-}

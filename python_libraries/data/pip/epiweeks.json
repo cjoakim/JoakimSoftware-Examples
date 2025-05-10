@@ -1,6 +1,0 @@
-{
-  "libname": "epiweeks",
-  "libvers": "2.3.0",
-  "infile": "data/pip/epiweeks.txt",
-  "dependencies": {}
-}

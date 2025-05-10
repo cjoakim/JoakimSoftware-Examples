@@ -1,6 +1,0 @@
-{
-  "libname": "memory-tempfile",
-  "libvers": "2.2.3",
-  "infile": "data/pip/memory-tempfile.txt",
-  "dependencies": {}
-}

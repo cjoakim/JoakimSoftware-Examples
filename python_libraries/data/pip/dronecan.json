@@ -1,6 +1,0 @@
-{
-  "libname": "dronecan",
-  "libvers": "1.0.26",
-  "infile": "data/pip/dronecan.txt",
-  "dependencies": {}
-}

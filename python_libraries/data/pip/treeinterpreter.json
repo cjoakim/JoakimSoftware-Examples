@@ -1,6 +1,0 @@
-{
-  "libname": "treeinterpreter",
-  "libvers": "0.2.3",
-  "infile": "data/pip/treeinterpreter.txt",
-  "dependencies": {}
-}

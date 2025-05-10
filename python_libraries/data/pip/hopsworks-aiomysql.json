@@ -1,8 +1,0 @@
-{
-  "libname": "hopsworks-aiomysql",
-  "libvers": "0.2.1",
-  "infile": "data/pip/hopsworks-aiomysql.txt",
-  "dependencies": {
-    "pymysql": "1.1.1"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "libname": "python3-openid",
-  "libvers": "3.2.0",
-  "infile": "data/pip/python3-openid.txt",
-  "dependencies": {
-    "defusedxml": "0.7.1"
-  }
-}

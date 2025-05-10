@@ -1,8 +1,0 @@
-{
-  "libname": "mariadb",
-  "libvers": "1.1.12",
-  "infile": "data/pip/mariadb.txt",
-  "dependencies": {
-    "packaging": "25.0"
-  }
-}

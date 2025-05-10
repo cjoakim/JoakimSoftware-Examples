@@ -1,6 +1,0 @@
-{
-  "libname": "wsgiserver",
-  "libvers": "1.3",
-  "infile": "data/pip/wsgiserver.txt",
-  "dependencies": {}
-}

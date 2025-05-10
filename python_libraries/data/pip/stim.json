@@ -1,8 +1,0 @@
-{
-  "libname": "stim",
-  "libvers": "1.15.0",
-  "infile": "data/pip/stim.txt",
-  "dependencies": {
-    "numpy": "2.2.5"
-  }
-}

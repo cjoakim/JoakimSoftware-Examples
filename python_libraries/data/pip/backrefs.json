@@ -1,6 +1,0 @@
-{
-  "libname": "backrefs",
-  "libvers": "5.8",
-  "infile": "data/pip/backrefs.txt",
-  "dependencies": {}
-}

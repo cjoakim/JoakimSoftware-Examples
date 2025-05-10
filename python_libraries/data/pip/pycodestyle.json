@@ -1,6 +1,0 @@
-{
-  "libname": "pycodestyle",
-  "libvers": "2.13.0",
-  "infile": "data/pip/pycodestyle.txt",
-  "dependencies": {}
-}

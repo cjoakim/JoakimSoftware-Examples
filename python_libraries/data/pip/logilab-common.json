@@ -1,9 +1,0 @@
-{
-  "libname": "logilab-common",
-  "libvers": "2.1.0",
-  "infile": "data/pip/logilab-common.txt",
-  "dependencies": {
-    "mypy-extensions": "1.1.0",
-    "typing-extensions": "4.13.2"
-  }
-}

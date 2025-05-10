@@ -1,8 +1,0 @@
-{
-  "libname": "faker",
-  "libvers": "37.1.0",
-  "infile": "data/pip/faker.txt",
-  "dependencies": {
-    "tzdata": "2025.2"
-  }
-}

@@ -1,6 +1,0 @@
-{
-  "libname": "lambda-multiprocessing",
-  "libvers": "1.0",
-  "infile": "data/pip/lambda-multiprocessing.txt",
-  "dependencies": {}
-}

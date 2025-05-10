@@ -1,6 +1,0 @@
-{
-  "libname": "sphinxcontrib-qthelp",
-  "libvers": "2.0.0",
-  "infile": "data/pip/sphinxcontrib-qthelp.txt",
-  "dependencies": {}
-}

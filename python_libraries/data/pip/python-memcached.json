@@ -1,6 +1,0 @@
-{
-  "libname": "python-memcached",
-  "libvers": "1.62",
-  "infile": "data/pip/python-memcached.txt",
-  "dependencies": {}
-}

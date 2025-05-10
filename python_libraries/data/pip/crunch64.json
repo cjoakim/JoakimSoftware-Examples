@@ -1,6 +1,0 @@
-{
-  "libname": "crunch64",
-  "libvers": "0.5.3",
-  "infile": "data/pip/crunch64.txt",
-  "dependencies": {}
-}

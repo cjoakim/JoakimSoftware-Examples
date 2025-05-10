@@ -1,8 +1,0 @@
-{
-  "libname": "iocextract",
-  "libvers": "1.16.1",
-  "infile": "data/pip/iocextract.txt",
-  "dependencies": {
-    "regex": "2024.11.6"
-  }
-}

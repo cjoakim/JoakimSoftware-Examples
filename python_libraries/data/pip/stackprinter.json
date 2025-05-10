@@ -1,6 +1,0 @@
-{
-  "libname": "stackprinter",
-  "libvers": "0.2.12",
-  "infile": "data/pip/stackprinter.txt",
-  "dependencies": {}
-}

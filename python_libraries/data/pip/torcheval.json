@@ -1,8 +1,0 @@
-{
-  "libname": "torcheval",
-  "libvers": "0.0.7",
-  "infile": "data/pip/torcheval.txt",
-  "dependencies": {
-    "typing-extensions": "4.13.2"
-  }
-}

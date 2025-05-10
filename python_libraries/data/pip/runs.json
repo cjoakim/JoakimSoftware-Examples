@@ -1,8 +1,0 @@
-{
-  "libname": "runs",
-  "libvers": "1.2.2",
-  "infile": "data/pip/runs.txt",
-  "dependencies": {
-    "xmod": "1.8.1"
-  }
-}

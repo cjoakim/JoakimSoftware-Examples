@@ -1,8 +1,0 @@
-{
-  "libname": "wadllib",
-  "libvers": "2.0.0",
-  "infile": "data/pip/wadllib.txt",
-  "dependencies": {
-    "lazr-uri": "1.0.7"
-  }
-}

@@ -1,6 +1,0 @@
-{
-  "libname": "zope-structuredtext",
-  "libvers": "5.0",
-  "infile": "data/pip/zope-structuredtext.txt",
-  "dependencies": {}
-}

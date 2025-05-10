@@ -1,6 +1,0 @@
-{
-  "libname": "picobox",
-  "libvers": "4.0.0",
-  "infile": "data/pip/picobox.txt",
-  "dependencies": {}
-}

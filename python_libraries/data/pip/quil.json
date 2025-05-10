@@ -1,8 +1,0 @@
-{
-  "libname": "quil",
-  "libvers": "0.16.0",
-  "infile": "data/pip/quil.txt",
-  "dependencies": {
-    "numpy": "2.2.5"
-  }
-}

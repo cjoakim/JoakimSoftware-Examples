@@ -1,8 +1,0 @@
-{
-  "libname": "pyobjc-framework-cocoa",
-  "libvers": "11.0",
-  "infile": "data/pip/pyobjc-framework-cocoa.txt",
-  "dependencies": {
-    "pyobjc-core": "11.0"
-  }
-}

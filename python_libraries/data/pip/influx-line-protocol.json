@@ -1,6 +1,0 @@
-{
-  "libname": "influx-line-protocol",
-  "libvers": "0.1.5",
-  "infile": "data/pip/influx-line-protocol.txt",
-  "dependencies": {}
-}

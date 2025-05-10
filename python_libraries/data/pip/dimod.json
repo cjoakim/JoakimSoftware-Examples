@@ -1,8 +1,0 @@
-{
-  "libname": "dimod",
-  "libvers": "0.12.20",
-  "infile": "data/pip/dimod.txt",
-  "dependencies": {
-    "numpy": "2.2.5"
-  }
-}

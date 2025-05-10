@@ -1,6 +1,0 @@
-{
-  "libname": "libgravatar",
-  "libvers": "1.0.4",
-  "infile": "data/pip/libgravatar.txt",
-  "dependencies": {}
-}

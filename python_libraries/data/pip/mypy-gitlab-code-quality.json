@@ -1,6 +1,0 @@
-{
-  "libname": "mypy-gitlab-code-quality",
-  "libvers": "1.3.0",
-  "infile": "data/pip/mypy-gitlab-code-quality.txt",
-  "dependencies": {}
-}

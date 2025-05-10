@@ -1,6 +1,0 @@
-{
-  "libname": "mouse",
-  "libvers": "0.7.1",
-  "infile": "data/pip/mouse.txt",
-  "dependencies": {}
-}

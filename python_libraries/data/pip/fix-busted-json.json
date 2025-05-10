@@ -1,6 +1,0 @@
-{
-  "libname": "fix-busted-json",
-  "libvers": "0.0.18",
-  "infile": "data/pip/fix-busted-json.txt",
-  "dependencies": {}
-}

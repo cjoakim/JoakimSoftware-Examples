@@ -1,8 +1,0 @@
-{
-  "libname": "barcodenumber",
-  "libvers": "0.5.0",
-  "infile": "data/pip/barcodenumber.txt",
-  "dependencies": {
-    "python-stdnum": "2.0"
-  }
-}

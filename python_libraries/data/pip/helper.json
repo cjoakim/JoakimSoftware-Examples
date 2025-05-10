@@ -1,8 +1,0 @@
-{
-  "libname": "helper",
-  "libvers": "2.5.0",
-  "infile": "data/pip/helper.txt",
-  "dependencies": {
-    "pyyaml": "6.0.2"
-  }
-}

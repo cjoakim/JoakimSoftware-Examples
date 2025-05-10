@@ -1,8 +1,0 @@
-{
-  "libname": "fxpmath",
-  "libvers": "0.4.9",
-  "infile": "data/pip/fxpmath.txt",
-  "dependencies": {
-    "numpy": "2.2.5"
-  }
-}

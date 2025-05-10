@@ -1,8 +1,0 @@
-{
-  "libname": "flexparser",
-  "libvers": "0.4",
-  "infile": "data/pip/flexparser.txt",
-  "dependencies": {
-    "typing-extensions": "4.13.2"
-  }
-}

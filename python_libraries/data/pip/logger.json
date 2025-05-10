@@ -1,6 +1,0 @@
-{
-  "libname": "logger",
-  "libvers": "1.4",
-  "infile": "data/pip/logger.txt",
-  "dependencies": {}
-}

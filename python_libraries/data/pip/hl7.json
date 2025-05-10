@@ -1,6 +1,0 @@
-{
-  "libname": "hl7",
-  "libvers": "0.4.5",
-  "infile": "data/pip/hl7.txt",
-  "dependencies": {}
-}

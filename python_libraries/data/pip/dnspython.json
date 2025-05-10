@@ -1,6 +1,0 @@
-{
-  "libname": "dnspython",
-  "libvers": "2.7.0",
-  "infile": "data/pip/dnspython.txt",
-  "dependencies": {}
-}

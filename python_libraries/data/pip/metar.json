@@ -1,6 +1,0 @@
-{
-  "libname": "metar",
-  "libvers": "1.11.0",
-  "infile": "data/pip/metar.txt",
-  "dependencies": {}
-}

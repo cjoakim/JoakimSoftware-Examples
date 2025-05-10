@@ -1,6 +1,0 @@
-{
-  "libname": "tree-sitter-embedded-template",
-  "libvers": "0.23.2",
-  "infile": "data/pip/tree-sitter-embedded-template.txt",
-  "dependencies": {}
-}

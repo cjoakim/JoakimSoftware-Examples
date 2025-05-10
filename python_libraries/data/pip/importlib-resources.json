@@ -1,6 +1,0 @@
-{
-  "libname": "importlib-resources",
-  "libvers": "6.5.2",
-  "infile": "data/pip/importlib-resources.txt",
-  "dependencies": {}
-}

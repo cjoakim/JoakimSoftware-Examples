@@ -1,8 +1,0 @@
-{
-  "libname": "binpacking",
-  "libvers": "1.5.2",
-  "infile": "data/pip/binpacking.txt",
-  "dependencies": {
-    "future": "1.0.0"
-  }
-}

@@ -1,6 +1,0 @@
-{
-  "libname": "dockerflow",
-  "libvers": "2024.4.2",
-  "infile": "data/pip/dockerflow.txt",
-  "dependencies": {}
-}

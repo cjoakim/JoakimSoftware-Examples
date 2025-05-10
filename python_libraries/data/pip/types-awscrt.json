@@ -1,6 +1,0 @@
-{
-  "libname": "types-awscrt",
-  "libvers": "0.26.1",
-  "infile": "data/pip/types-awscrt.txt",
-  "dependencies": {}
-}

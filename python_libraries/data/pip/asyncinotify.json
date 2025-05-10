@@ -1,6 +1,0 @@
-{
-  "libname": "asyncinotify",
-  "libvers": "4.2.1",
-  "infile": "data/pip/asyncinotify.txt",
-  "dependencies": {}
-}

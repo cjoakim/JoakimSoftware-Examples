@@ -1,6 +1,0 @@
-{
-  "libname": "libopencv",
-  "libvers": "0.0.1",
-  "infile": "data/pip/libopencv.txt",
-  "dependencies": {}
-}

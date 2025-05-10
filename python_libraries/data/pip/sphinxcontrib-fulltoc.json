@@ -1,6 +1,0 @@
-{
-  "libname": "sphinxcontrib-fulltoc",
-  "libvers": "1.2.0",
-  "infile": "data/pip/sphinxcontrib-fulltoc.txt",
-  "dependencies": {}
-}

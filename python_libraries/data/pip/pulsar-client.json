@@ -1,8 +1,0 @@
-{
-  "libname": "pulsar-client",
-  "libvers": "3.6.1",
-  "infile": "data/pip/pulsar-client.txt",
-  "dependencies": {
-    "certifi": "2025.4.26"
-  }
-}

@@ -1,6 +1,0 @@
-{
-  "libname": "mock-open",
-  "libvers": "1.4.0",
-  "infile": "data/pip/mock-open.txt",
-  "dependencies": {}
-}

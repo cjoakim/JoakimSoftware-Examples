@@ -1,6 +1,0 @@
-{
-  "libname": "fake-bpy-module",
-  "libvers": "20250505",
-  "infile": "data/pip/fake-bpy-module.txt",
-  "dependencies": {}
-}

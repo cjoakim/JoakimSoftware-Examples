@@ -1,6 +1,0 @@
-{
-  "libname": "compoundfiles",
-  "libvers": "0.3",
-  "infile": "data/pip/compoundfiles.txt",
-  "dependencies": {}
-}

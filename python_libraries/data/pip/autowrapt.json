@@ -1,8 +1,0 @@
-{
-  "libname": "autowrapt",
-  "libvers": "1.0",
-  "infile": "data/pip/autowrapt.txt",
-  "dependencies": {
-    "wrapt": "1.17.2"
-  }
-}

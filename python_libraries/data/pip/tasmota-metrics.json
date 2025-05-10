@@ -1,8 +1,0 @@
-{
-  "libname": "tasmota-metrics",
-  "libvers": "0.4.3",
-  "infile": "data/pip/tasmota-metrics.txt",
-  "dependencies": {
-    "pyyaml": "6.0.2"
-  }
-}

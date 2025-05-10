@@ -1,6 +1,0 @@
-{
-  "libname": "einops",
-  "libvers": "0.8.1",
-  "infile": "data/pip/einops.txt",
-  "dependencies": {}
-}

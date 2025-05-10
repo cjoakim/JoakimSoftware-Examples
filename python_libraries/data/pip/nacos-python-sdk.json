@@ -1,6 +1,0 @@
-{
-  "libname": "nacos-python-sdk",
-  "libvers": "0.2",
-  "infile": "data/pip/nacos-python-sdk.txt",
-  "dependencies": {}
-}

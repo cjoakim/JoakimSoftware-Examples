@@ -1,6 +1,0 @@
-{
-  "libname": "ifcfg",
-  "libvers": "0.24",
-  "infile": "data/pip/ifcfg.txt",
-  "dependencies": {}
-}

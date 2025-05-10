@@ -1,8 +1,0 @@
-{
-  "libname": "aiodataloader",
-  "libvers": "0.4.2",
-  "infile": "data/pip/aiodataloader.txt",
-  "dependencies": {
-    "typing-extensions": "4.13.2"
-  }
-}

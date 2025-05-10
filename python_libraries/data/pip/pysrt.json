@@ -1,8 +1,0 @@
-{
-  "libname": "pysrt",
-  "libvers": "1.1.2",
-  "infile": "data/pip/pysrt.txt",
-  "dependencies": {
-    "chardet": "5.2.0"
-  }
-}

@@ -1,6 +1,0 @@
-{
-  "libname": "aredis",
-  "libvers": "1.1.8",
-  "infile": "data/pip/aredis.txt",
-  "dependencies": {}
-}

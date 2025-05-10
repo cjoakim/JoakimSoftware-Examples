@@ -1,6 +1,0 @@
-{
-  "libname": "google-cloud",
-  "libvers": "0.34.0",
-  "infile": "data/pip/google-cloud.txt",
-  "dependencies": {}
-}

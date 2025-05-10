@@ -1,6 +1,0 @@
-{
-  "libname": "universal-startfile",
-  "libvers": "0.2",
-  "infile": "data/pip/universal-startfile.txt",
-  "dependencies": {}
-}

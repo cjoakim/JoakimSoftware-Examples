@@ -1,6 +1,0 @@
-{
-  "libname": "pycowsay",
-  "libvers": "0.0.0.2",
-  "infile": "data/pip/pycowsay.txt",
-  "dependencies": {}
-}

@@ -1,6 +1,0 @@
-{
-  "libname": "python-status",
-  "libvers": "1.0.1",
-  "infile": "data/pip/python-status.txt",
-  "dependencies": {}
-}

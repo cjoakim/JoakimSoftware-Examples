@@ -1,8 +1,0 @@
-{
-  "libname": "syntok",
-  "libvers": "1.4.4",
-  "infile": "data/pip/syntok.txt",
-  "dependencies": {
-    "regex": "2024.11.6"
-  }
-}

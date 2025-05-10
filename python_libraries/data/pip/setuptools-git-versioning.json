@@ -1,8 +1,0 @@
-{
-  "libname": "setuptools-git-versioning",
-  "libvers": "2.1.0",
-  "infile": "data/pip/setuptools-git-versioning.txt",
-  "dependencies": {
-    "packaging": "25.0"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "libname": "zope-exceptions",
-  "libvers": "5.2",
-  "infile": "data/pip/zope-exceptions.txt",
-  "dependencies": {
-    "zope-interface": "7.2"
-  }
-}

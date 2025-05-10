@@ -1,6 +1,0 @@
-{
-  "libname": "virtualenv-clone",
-  "libvers": "0.5.7",
-  "infile": "data/pip/virtualenv-clone.txt",
-  "dependencies": {}
-}

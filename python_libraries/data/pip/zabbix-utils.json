@@ -1,6 +1,0 @@
-{
-  "libname": "zabbix-utils",
-  "libvers": "2.0.2",
-  "infile": "data/pip/zabbix-utils.txt",
-  "dependencies": {}
-}

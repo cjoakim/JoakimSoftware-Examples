@@ -1,6 +1,0 @@
-{
-  "libname": "robotframework-pythonlibcore",
-  "libvers": "4.4.1",
-  "infile": "data/pip/robotframework-pythonlibcore.txt",
-  "dependencies": {}
-}

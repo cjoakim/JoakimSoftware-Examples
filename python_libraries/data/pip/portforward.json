@@ -1,6 +1,0 @@
-{
-  "libname": "portforward",
-  "libvers": "0.7.3",
-  "infile": "data/pip/portforward.txt",
-  "dependencies": {}
-}

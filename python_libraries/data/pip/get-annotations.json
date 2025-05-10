@@ -1,6 +1,0 @@
-{
-  "libname": "get-annotations",
-  "libvers": "0.1.2",
-  "infile": "data/pip/get-annotations.txt",
-  "dependencies": {}
-}

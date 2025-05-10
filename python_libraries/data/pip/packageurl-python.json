@@ -1,6 +1,0 @@
-{
-  "libname": "packageurl-python",
-  "libvers": "0.16.0",
-  "infile": "data/pip/packageurl-python.txt",
-  "dependencies": {}
-}

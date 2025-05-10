@@ -1,8 +1,0 @@
-{
-  "libname": "varname",
-  "libvers": "0.14.0",
-  "infile": "data/pip/varname.txt",
-  "dependencies": {
-    "executing": "2.2.0"
-  }
-}

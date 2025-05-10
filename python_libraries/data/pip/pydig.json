@@ -1,6 +1,0 @@
-{
-  "libname": "pydig",
-  "libvers": "0.4.0",
-  "infile": "data/pip/pydig.txt",
-  "dependencies": {}
-}

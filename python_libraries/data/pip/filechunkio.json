@@ -1,6 +1,0 @@
-{
-  "libname": "filechunkio",
-  "libvers": "1.8",
-  "infile": "data/pip/filechunkio.txt",
-  "dependencies": {}
-}

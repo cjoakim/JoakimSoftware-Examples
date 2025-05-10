@@ -1,6 +1,0 @@
-{
-  "libname": "flock",
-  "libvers": "0.1",
-  "infile": "data/pip/flock.txt",
-  "dependencies": {}
-}

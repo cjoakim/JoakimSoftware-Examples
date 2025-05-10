@@ -1,6 +1,0 @@
-{
-  "libname": "wonderwords",
-  "libvers": "2.2.0",
-  "infile": "data/pip/wonderwords.txt",
-  "dependencies": {}
-}

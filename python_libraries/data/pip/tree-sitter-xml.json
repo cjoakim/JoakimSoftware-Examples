@@ -1,6 +1,0 @@
-{
-  "libname": "tree-sitter-xml",
-  "libvers": "0.7.0",
-  "infile": "data/pip/tree-sitter-xml.txt",
-  "dependencies": {}
-}

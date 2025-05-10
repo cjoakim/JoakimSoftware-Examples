@@ -1,6 +1,0 @@
-{
-  "libname": "inputs",
-  "libvers": "0.5",
-  "infile": "data/pip/inputs.txt",
-  "dependencies": {}
-}

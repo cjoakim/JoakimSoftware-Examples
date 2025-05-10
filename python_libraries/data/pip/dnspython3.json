@@ -1,8 +1,0 @@
-{
-  "libname": "dnspython3",
-  "libvers": "1.15.0",
-  "infile": "data/pip/dnspython3.txt",
-  "dependencies": {
-    "dnspython": "1.15.0"
-  }
-}

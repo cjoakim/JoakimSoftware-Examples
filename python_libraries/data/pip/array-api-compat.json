@@ -1,6 +1,0 @@
-{
-  "libname": "array-api-compat",
-  "libvers": "1.11.2",
-  "infile": "data/pip/array-api-compat.txt",
-  "dependencies": {}
-}

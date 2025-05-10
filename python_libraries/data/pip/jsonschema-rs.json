@@ -1,6 +1,0 @@
-{
-  "libname": "jsonschema-rs",
-  "libvers": "0.30.0",
-  "infile": "data/pip/jsonschema-rs.txt",
-  "dependencies": {}
-}

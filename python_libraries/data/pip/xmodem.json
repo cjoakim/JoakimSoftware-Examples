@@ -1,6 +1,0 @@
-{
-  "libname": "xmodem",
-  "libvers": "0.4.7",
-  "infile": "data/pip/xmodem.txt",
-  "dependencies": {}
-}

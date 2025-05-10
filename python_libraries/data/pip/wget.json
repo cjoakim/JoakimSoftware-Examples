@@ -1,6 +1,0 @@
-{
-  "libname": "wget",
-  "libvers": "3.2",
-  "infile": "data/pip/wget.txt",
-  "dependencies": {}
-}

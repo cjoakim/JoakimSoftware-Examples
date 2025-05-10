@@ -1,6 +1,0 @@
-{
-  "libname": "backports-tarfile",
-  "libvers": "1.2.0",
-  "infile": "data/pip/backports-tarfile.txt",
-  "dependencies": {}
-}

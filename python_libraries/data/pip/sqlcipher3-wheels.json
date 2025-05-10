@@ -1,6 +1,0 @@
-{
-  "libname": "sqlcipher3-wheels",
-  "libvers": "0.5.4.post0",
-  "infile": "data/pip/sqlcipher3-wheels.txt",
-  "dependencies": {}
-}

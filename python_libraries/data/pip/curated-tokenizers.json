@@ -1,8 +1,0 @@
-{
-  "libname": "curated-tokenizers",
-  "libvers": "2.0.0",
-  "infile": "data/pip/curated-tokenizers.txt",
-  "dependencies": {
-    "regex": "2024.11.6"
-  }
-}

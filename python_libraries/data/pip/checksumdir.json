@@ -1,6 +1,0 @@
-{
-  "libname": "checksumdir",
-  "libvers": "1.2.0",
-  "infile": "data/pip/checksumdir.txt",
-  "dependencies": {}
-}

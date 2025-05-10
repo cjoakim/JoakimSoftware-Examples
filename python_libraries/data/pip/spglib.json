@@ -1,9 +1,0 @@
-{
-  "libname": "spglib",
-  "libvers": "2.6.0",
-  "infile": "data/pip/spglib.txt",
-  "dependencies": {
-    "numpy": "2.2.5",
-    "typing-extensions": "4.13.2"
-  }
-}

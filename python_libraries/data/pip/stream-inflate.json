@@ -1,6 +1,0 @@
-{
-  "libname": "stream-inflate",
-  "libvers": "0.0.42",
-  "infile": "data/pip/stream-inflate.txt",
-  "dependencies": {}
-}

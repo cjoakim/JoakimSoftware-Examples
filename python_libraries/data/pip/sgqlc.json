@@ -1,8 +1,0 @@
-{
-  "libname": "sgqlc",
-  "libvers": "16.4",
-  "infile": "data/pip/sgqlc.txt",
-  "dependencies": {
-    "graphql-core": "3.2.6"
-  }
-}

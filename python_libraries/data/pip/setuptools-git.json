@@ -1,6 +1,0 @@
-{
-  "libname": "setuptools-git",
-  "libvers": "1.2",
-  "infile": "data/pip/setuptools-git.txt",
-  "dependencies": {}
-}

@@ -1,6 +1,0 @@
-{
-  "libname": "unpaddedbase64",
-  "libvers": "2.1.0",
-  "infile": "data/pip/unpaddedbase64.txt",
-  "dependencies": {}
-}

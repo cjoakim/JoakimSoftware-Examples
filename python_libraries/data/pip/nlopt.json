@@ -1,8 +1,0 @@
-{
-  "libname": "nlopt",
-  "libvers": "2.9.1",
-  "infile": "data/pip/nlopt.txt",
-  "dependencies": {
-    "numpy": "2.2.5"
-  }
-}

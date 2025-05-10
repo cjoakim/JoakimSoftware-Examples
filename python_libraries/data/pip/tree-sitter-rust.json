@@ -1,6 +1,0 @@
-{
-  "libname": "tree-sitter-rust",
-  "libvers": "0.24.0",
-  "infile": "data/pip/tree-sitter-rust.txt",
-  "dependencies": {}
-}

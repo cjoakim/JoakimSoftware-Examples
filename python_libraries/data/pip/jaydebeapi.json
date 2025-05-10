@@ -1,9 +1,0 @@
-{
-  "libname": "jaydebeapi",
-  "libvers": "1.2.3",
-  "infile": "data/pip/jaydebeapi.txt",
-  "dependencies": {
-    "jpype1": "1.5.2",
-    "packaging": "25.0"
-  }
-}

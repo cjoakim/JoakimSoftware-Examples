@@ -1,8 +1,0 @@
-{
-  "libname": "djangorestframework-xml",
-  "libvers": "2.0.0",
-  "infile": "data/pip/djangorestframework-xml.txt",
-  "dependencies": {
-    "defusedxml": "0.7.1"
-  }
-}

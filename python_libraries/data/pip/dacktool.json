@@ -1,6 +1,0 @@
-{
-  "libname": "dacktool",
-  "libvers": "0.0.7",
-  "infile": "data/pip/dacktool.txt",
-  "dependencies": {}
-}

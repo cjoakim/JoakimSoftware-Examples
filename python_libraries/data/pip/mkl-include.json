@@ -1,6 +1,0 @@
-{
-  "libname": "mkl-include",
-  "libvers": "2025.1.0",
-  "infile": "data/pip/mkl-include.txt",
-  "dependencies": {}
-}

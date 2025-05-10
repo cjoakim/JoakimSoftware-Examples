@@ -1,6 +1,0 @@
-{
-  "libname": "sphinxcontrib-htmlhelp",
-  "libvers": "2.1.0",
-  "infile": "data/pip/sphinxcontrib-htmlhelp.txt",
-  "dependencies": {}
-}

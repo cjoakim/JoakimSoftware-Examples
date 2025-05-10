@@ -1,6 +1,0 @@
-{
-  "libname": "jellyfish",
-  "libvers": "1.2.0",
-  "infile": "data/pip/jellyfish.txt",
-  "dependencies": {}
-}

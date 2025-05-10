@@ -1,6 +1,0 @@
-{
-  "libname": "pydeprecate",
-  "libvers": "0.3.2",
-  "infile": "data/pip/pydeprecate.txt",
-  "dependencies": {}
-}

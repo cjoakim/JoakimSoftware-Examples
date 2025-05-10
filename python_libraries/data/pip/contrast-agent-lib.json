@@ -1,6 +1,0 @@
-{
-  "libname": "contrast-agent-lib",
-  "libvers": "0.10.0",
-  "infile": "data/pip/contrast-agent-lib.txt",
-  "dependencies": {}
-}

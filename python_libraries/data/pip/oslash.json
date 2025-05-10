@@ -1,8 +1,0 @@
-{
-  "libname": "oslash",
-  "libvers": "0.6.3",
-  "infile": "data/pip/oslash.txt",
-  "dependencies": {
-    "typing-extensions": "4.13.2"
-  }
-}

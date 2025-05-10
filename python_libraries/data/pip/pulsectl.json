@@ -1,6 +1,0 @@
-{
-  "libname": "pulsectl",
-  "libvers": "24.12.0",
-  "infile": "data/pip/pulsectl.txt",
-  "dependencies": {}
-}

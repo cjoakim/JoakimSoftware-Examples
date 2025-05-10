@@ -1,9 +1,0 @@
-{
-  "libname": "crcengine",
-  "libvers": "0.4.0.post1",
-  "infile": "data/pip/crcengine.txt",
-  "dependencies": {
-    "jinja2": "3.1.6",
-    "markupsafe": "3.0.2"
-  }
-}

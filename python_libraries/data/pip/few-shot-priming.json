@@ -1,6 +1,0 @@
-{
-  "libname": "few-shot-priming",
-  "libvers": "0.3.950",
-  "infile": "data/pip/few-shot-priming.txt",
-  "dependencies": {}
-}

@@ -1,6 +1,0 @@
-{
-  "libname": "ndjson",
-  "libvers": "0.3.1",
-  "infile": "data/pip/ndjson.txt",
-  "dependencies": {}
-}

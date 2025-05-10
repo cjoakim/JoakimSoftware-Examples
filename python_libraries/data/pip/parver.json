@@ -1,9 +1,0 @@
-{
-  "libname": "parver",
-  "libvers": "0.5",
-  "infile": "data/pip/parver.txt",
-  "dependencies": {
-    "arpeggio": "2.0.2",
-    "attrs": "25.3.0"
-  }
-}

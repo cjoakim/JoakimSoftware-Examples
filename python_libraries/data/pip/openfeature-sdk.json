@@ -1,6 +1,0 @@
-{
-  "libname": "openfeature-sdk",
-  "libvers": "0.8.1",
-  "infile": "data/pip/openfeature-sdk.txt",
-  "dependencies": {}
-}

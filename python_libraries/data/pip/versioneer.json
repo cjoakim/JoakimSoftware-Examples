@@ -1,6 +1,0 @@
-{
-  "libname": "versioneer",
-  "libvers": "0.29",
-  "infile": "data/pip/versioneer.txt",
-  "dependencies": {}
-}

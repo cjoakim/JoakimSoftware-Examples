@@ -1,6 +1,0 @@
-{
-  "libname": "emojis",
-  "libvers": "0.7.0",
-  "infile": "data/pip/emojis.txt",
-  "dependencies": {}
-}

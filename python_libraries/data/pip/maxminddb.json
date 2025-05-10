@@ -1,6 +1,0 @@
-{
-  "libname": "maxminddb",
-  "libvers": "2.7.0",
-  "infile": "data/pip/maxminddb.txt",
-  "dependencies": {}
-}

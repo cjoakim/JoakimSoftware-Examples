@@ -1,6 +1,0 @@
-{
-  "libname": "gpiod",
-  "libvers": "2.3.0",
-  "infile": "data/pip/gpiod.txt",
-  "dependencies": {}
-}

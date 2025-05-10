@@ -1,8 +1,0 @@
-{
-  "libname": "sanic-jwt",
-  "libvers": "1.8.0",
-  "infile": "data/pip/sanic-jwt.txt",
-  "dependencies": {
-    "pyjwt": "2.10.1"
-  }
-}

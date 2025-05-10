@@ -1,6 +1,0 @@
-{
-  "libname": "python-math",
-  "libvers": "0.0.1",
-  "infile": "data/pip/python-math.txt",
-  "dependencies": {}
-}

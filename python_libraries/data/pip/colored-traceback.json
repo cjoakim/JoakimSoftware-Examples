@@ -1,8 +1,0 @@
-{
-  "libname": "colored-traceback",
-  "libvers": "0.4.2",
-  "infile": "data/pip/colored-traceback.txt",
-  "dependencies": {
-    "pygments": "2.19.1"
-  }
-}

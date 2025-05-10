@@ -1,8 +1,0 @@
-{
-  "libname": "rncryptor",
-  "libvers": "3.3.0",
-  "infile": "data/pip/rncryptor.txt",
-  "dependencies": {
-    "pycryptodome": "3.22.0"
-  }
-}

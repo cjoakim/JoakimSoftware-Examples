@@ -1,8 +1,0 @@
-{
-  "libname": "marshmallow-annotations",
-  "libvers": "2.4.0",
-  "infile": "data/pip/marshmallow-annotations.txt",
-  "dependencies": {
-    "marshmallow": "2.21.0"
-  }
-}

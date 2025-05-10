@@ -1,8 +1,0 @@
-{
-  "libname": "delimited-protobuf",
-  "libvers": "1.0.0",
-  "infile": "data/pip/delimited-protobuf.txt",
-  "dependencies": {
-    "protobuf": "6.30.2"
-  }
-}

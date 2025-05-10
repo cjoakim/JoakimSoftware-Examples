@@ -1,6 +1,0 @@
-{
-  "libname": "fdt",
-  "libvers": "0.3.3",
-  "infile": "data/pip/fdt.txt",
-  "dependencies": {}
-}

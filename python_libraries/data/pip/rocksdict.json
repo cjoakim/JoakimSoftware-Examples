@@ -1,6 +1,0 @@
-{
-  "libname": "rocksdict",
-  "libvers": "0.3.26",
-  "infile": "data/pip/rocksdict.txt",
-  "dependencies": {}
-}

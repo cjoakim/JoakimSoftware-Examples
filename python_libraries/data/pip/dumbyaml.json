@@ -1,8 +1,0 @@
-{
-  "libname": "dumbyaml",
-  "libvers": "0.9.3",
-  "infile": "data/pip/dumbyaml.txt",
-  "dependencies": {
-    "pyyaml": "6.0.2"
-  }
-}

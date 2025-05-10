@@ -1,6 +1,0 @@
-{
-  "libname": "resolvelib",
-  "libvers": "1.1.0",
-  "infile": "data/pip/resolvelib.txt",
-  "dependencies": {}
-}

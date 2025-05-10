@@ -1,6 +1,0 @@
-{
-  "libname": "unoserver",
-  "libvers": "3.2",
-  "infile": "data/pip/unoserver.txt",
-  "dependencies": {}
-}

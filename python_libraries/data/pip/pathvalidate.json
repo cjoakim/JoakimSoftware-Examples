@@ -1,6 +1,0 @@
-{
-  "libname": "pathvalidate",
-  "libvers": "3.2.3",
-  "infile": "data/pip/pathvalidate.txt",
-  "dependencies": {}
-}

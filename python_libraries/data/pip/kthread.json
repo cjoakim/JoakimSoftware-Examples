@@ -1,6 +1,0 @@
-{
-  "libname": "kthread",
-  "libvers": "0.2.3",
-  "infile": "data/pip/kthread.txt",
-  "dependencies": {}
-}

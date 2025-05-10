@@ -1,8 +1,0 @@
-{
-  "libname": "uiautomation",
-  "libvers": "2.0.27",
-  "infile": "data/pip/uiautomation.txt",
-  "dependencies": {
-    "comtypes": "1.4.10"
-  }
-}

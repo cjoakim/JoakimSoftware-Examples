@@ -1,8 +1,0 @@
-{
-  "libname": "sling",
-  "libvers": "1.4.6",
-  "infile": "data/pip/sling.txt",
-  "dependencies": {
-    "sling-mac-arm64": "1.4.6"
-  }
-}

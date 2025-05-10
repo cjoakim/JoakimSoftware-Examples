@@ -1,6 +1,0 @@
-{
-  "libname": "ahocorasick-rs",
-  "libvers": "0.22.2",
-  "infile": "data/pip/ahocorasick-rs.txt",
-  "dependencies": {}
-}

@@ -1,6 +1,0 @@
-{
-  "libname": "aws-wsgi",
-  "libvers": "0.2.7",
-  "infile": "data/pip/aws-wsgi.txt",
-  "dependencies": {}
-}

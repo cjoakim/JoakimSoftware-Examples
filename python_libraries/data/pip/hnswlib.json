@@ -1,8 +1,0 @@
-{
-  "libname": "hnswlib",
-  "libvers": "0.8.0",
-  "infile": "data/pip/hnswlib.txt",
-  "dependencies": {
-    "numpy": "2.2.5"
-  }
-}

@@ -1,6 +1,0 @@
-{
-  "libname": "blob",
-  "libvers": "0.16",
-  "infile": "data/pip/blob.txt",
-  "dependencies": {}
-}

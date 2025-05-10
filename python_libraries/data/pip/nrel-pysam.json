@@ -1,6 +1,0 @@
-{
-  "libname": "nrel-pysam",
-  "libvers": "7.0.0",
-  "infile": "data/pip/nrel-pysam.txt",
-  "dependencies": {}
-}

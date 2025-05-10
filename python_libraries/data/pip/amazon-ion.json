@@ -1,6 +1,0 @@
-{
-  "libname": "amazon-ion",
-  "libvers": "0.13.0",
-  "infile": "data/pip/amazon-ion.txt",
-  "dependencies": {}
-}

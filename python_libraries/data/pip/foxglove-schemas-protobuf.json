@@ -1,8 +1,0 @@
-{
-  "libname": "foxglove-schemas-protobuf",
-  "libvers": "0.3.0",
-  "infile": "data/pip/foxglove-schemas-protobuf.txt",
-  "dependencies": {
-    "protobuf": "6.30.2"
-  }
-}

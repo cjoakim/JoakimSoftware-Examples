@@ -1,6 +1,0 @@
-{
-  "libname": "pluralizer",
-  "libvers": "1.2.0",
-  "infile": "data/pip/pluralizer.txt",
-  "dependencies": {}
-}

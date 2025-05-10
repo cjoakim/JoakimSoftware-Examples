@@ -1,6 +1,0 @@
-{
-  "libname": "subprocess-run",
-  "libvers": "0.0.8",
-  "infile": "data/pip/subprocess-run.txt",
-  "dependencies": {}
-}

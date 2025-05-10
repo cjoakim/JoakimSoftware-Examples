@@ -1,6 +1,0 @@
-{
-  "libname": "edgedb",
-  "libvers": "2.2.0",
-  "infile": "data/pip/edgedb.txt",
-  "dependencies": {}
-}

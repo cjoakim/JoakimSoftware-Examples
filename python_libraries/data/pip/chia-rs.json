@@ -1,8 +1,0 @@
-{
-  "libname": "chia-rs",
-  "libvers": "0.22.0",
-  "infile": "data/pip/chia-rs.txt",
-  "dependencies": {
-    "typing-extensions": "4.13.2"
-  }
-}

@@ -1,6 +1,0 @@
-{
-  "libname": "www-authenticate",
-  "libvers": "0.9.2",
-  "infile": "data/pip/www-authenticate.txt",
-  "dependencies": {}
-}

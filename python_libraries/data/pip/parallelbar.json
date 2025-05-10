@@ -1,9 +1,0 @@
-{
-  "libname": "parallelbar",
-  "libvers": "2.5",
-  "infile": "data/pip/parallelbar.txt",
-  "dependencies": {
-    "colorama": "0.4.6",
-    "tqdm": "4.67.1"
-  }
-}

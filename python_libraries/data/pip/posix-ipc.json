@@ -1,6 +1,0 @@
-{
-  "libname": "posix-ipc",
-  "libvers": "1.2.0",
-  "infile": "data/pip/posix-ipc.txt",
-  "dependencies": {}
-}

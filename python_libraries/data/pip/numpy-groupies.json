@@ -1,8 +1,0 @@
-{
-  "libname": "numpy-groupies",
-  "libvers": "0.11.2",
-  "infile": "data/pip/numpy-groupies.txt",
-  "dependencies": {
-    "numpy": "2.2.5"
-  }
-}

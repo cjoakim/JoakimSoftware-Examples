@@ -1,6 +1,0 @@
-{
-  "libname": "pybullet",
-  "libvers": "3.2.7",
-  "infile": "data/pip/pybullet.txt",
-  "dependencies": {}
-}

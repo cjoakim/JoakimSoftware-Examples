@@ -1,6 +1,0 @@
-{
-  "libname": "blurhash",
-  "libvers": "1.1.4",
-  "infile": "data/pip/blurhash.txt",
-  "dependencies": {}
-}

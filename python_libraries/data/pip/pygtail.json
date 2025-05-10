@@ -1,6 +1,0 @@
-{
-  "libname": "pygtail",
-  "libvers": "0.14.0",
-  "infile": "data/pip/pygtail.txt",
-  "dependencies": {}
-}

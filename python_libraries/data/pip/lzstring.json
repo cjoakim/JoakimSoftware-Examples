@@ -1,8 +1,0 @@
-{
-  "libname": "lzstring",
-  "libvers": "1.0.4",
-  "infile": "data/pip/lzstring.txt",
-  "dependencies": {
-    "future": "1.0.0"
-  }
-}

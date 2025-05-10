@@ -1,6 +1,0 @@
-{
-  "libname": "uncalled",
-  "libvers": "0.1.8",
-  "infile": "data/pip/uncalled.txt",
-  "dependencies": {}
-}

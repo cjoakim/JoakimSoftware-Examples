@@ -1,6 +1,0 @@
-{
-  "libname": "proxmoxer",
-  "libvers": "2.2.0",
-  "infile": "data/pip/proxmoxer.txt",
-  "dependencies": {}
-}

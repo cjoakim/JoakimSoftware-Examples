@@ -1,6 +1,0 @@
-{
-  "libname": "timebudget",
-  "libvers": "0.7.1",
-  "infile": "data/pip/timebudget.txt",
-  "dependencies": {}
-}

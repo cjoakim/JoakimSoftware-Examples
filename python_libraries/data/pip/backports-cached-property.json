@@ -1,6 +1,0 @@
-{
-  "libname": "backports-cached-property",
-  "libvers": "1.0.2",
-  "infile": "data/pip/backports-cached-property.txt",
-  "dependencies": {}
-}

@@ -1,6 +1,0 @@
-{
-  "libname": "unicode",
-  "libvers": "2.9",
-  "infile": "data/pip/unicode.txt",
-  "dependencies": {}
-}

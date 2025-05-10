@@ -1,6 +1,0 @@
-{
-  "libname": "websockets",
-  "libvers": "15.0.1",
-  "infile": "data/pip/websockets.txt",
-  "dependencies": {}
-}

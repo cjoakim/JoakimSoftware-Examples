@@ -1,9 +1,0 @@
-{
-  "libname": "asv-runner",
-  "libvers": "0.2.1",
-  "infile": "data/pip/asv-runner.txt",
-  "dependencies": {
-    "importlib-metadata": "8.7.0",
-    "zipp": "3.21.0"
-  }
-}

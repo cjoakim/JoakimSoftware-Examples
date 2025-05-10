@@ -1,6 +1,0 @@
-{
-  "libname": "tree-sitter-cpp",
-  "libvers": "0.23.4",
-  "infile": "data/pip/tree-sitter-cpp.txt",
-  "dependencies": {}
-}

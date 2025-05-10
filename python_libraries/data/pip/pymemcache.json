@@ -1,6 +1,0 @@
-{
-  "libname": "pymemcache",
-  "libvers": "4.0.0",
-  "infile": "data/pip/pymemcache.txt",
-  "dependencies": {}
-}

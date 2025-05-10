@@ -1,6 +1,0 @@
-{
-  "libname": "solace-pubsubplus",
-  "libvers": "1.10.0",
-  "infile": "data/pip/solace-pubsubplus.txt",
-  "dependencies": {}
-}

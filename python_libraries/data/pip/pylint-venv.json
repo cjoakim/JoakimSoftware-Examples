@@ -1,6 +1,0 @@
-{
-  "libname": "pylint-venv",
-  "libvers": "3.0.4",
-  "infile": "data/pip/pylint-venv.txt",
-  "dependencies": {}
-}

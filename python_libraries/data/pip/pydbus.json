@@ -1,6 +1,0 @@
-{
-  "libname": "pydbus",
-  "libvers": "0.6.0",
-  "infile": "data/pip/pydbus.txt",
-  "dependencies": {}
-}

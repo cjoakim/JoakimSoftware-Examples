@@ -1,8 +1,0 @@
-{
-  "libname": "stsci-imagestats",
-  "libvers": "1.8.3",
-  "infile": "data/pip/stsci-imagestats.txt",
-  "dependencies": {
-    "numpy": "2.2.5"
-  }
-}

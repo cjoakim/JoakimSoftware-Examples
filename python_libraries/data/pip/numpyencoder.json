@@ -1,8 +1,0 @@
-{
-  "libname": "numpyencoder",
-  "libvers": "0.3.0",
-  "infile": "data/pip/numpyencoder.txt",
-  "dependencies": {
-    "numpy": "2.2.5"
-  }
-}

@@ -1,6 +1,0 @@
-{
-  "libname": "daqp",
-  "libvers": "0.7.0",
-  "infile": "data/pip/daqp.txt",
-  "dependencies": {}
-}

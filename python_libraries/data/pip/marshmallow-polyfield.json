@@ -1,8 +1,0 @@
-{
-  "libname": "marshmallow-polyfield",
-  "libvers": "5.11",
-  "infile": "data/pip/marshmallow-polyfield.txt",
-  "dependencies": {
-    "marshmallow": "4.0.0"
-  }
-}

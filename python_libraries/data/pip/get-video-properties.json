@@ -1,6 +1,0 @@
-{
-  "libname": "get-video-properties",
-  "libvers": "0.1.1",
-  "infile": "data/pip/get-video-properties.txt",
-  "dependencies": {}
-}

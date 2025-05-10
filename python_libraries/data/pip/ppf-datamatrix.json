@@ -1,6 +1,0 @@
-{
-  "libname": "ppf-datamatrix",
-  "libvers": "0.2",
-  "infile": "data/pip/ppf-datamatrix.txt",
-  "dependencies": {}
-}

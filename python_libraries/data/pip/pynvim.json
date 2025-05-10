@@ -1,9 +1,0 @@
-{
-  "libname": "pynvim",
-  "libvers": "0.5.2",
-  "infile": "data/pip/pynvim.txt",
-  "dependencies": {
-    "greenlet": "3.2.1",
-    "msgpack": "1.1.0"
-  }
-}

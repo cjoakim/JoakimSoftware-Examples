@@ -1,8 +1,0 @@
-{
-  "libname": "construct-classes",
-  "libvers": "0.1.2",
-  "infile": "data/pip/construct-classes.txt",
-  "dependencies": {
-    "construct": "2.10.70"
-  }
-}

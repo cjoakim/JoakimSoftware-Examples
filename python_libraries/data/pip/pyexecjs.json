@@ -1,8 +1,0 @@
-{
-  "libname": "pyexecjs",
-  "libvers": "1.5.1",
-  "infile": "data/pip/pyexecjs.txt",
-  "dependencies": {
-    "six": "1.17.0"
-  }
-}

@@ -1,6 +1,0 @@
-{
-  "libname": "pytorch-crf",
-  "libvers": "0.7.2",
-  "infile": "data/pip/pytorch-crf.txt",
-  "dependencies": {}
-}

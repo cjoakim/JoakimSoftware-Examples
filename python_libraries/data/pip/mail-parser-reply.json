@@ -1,6 +1,0 @@
-{
-  "libname": "mail-parser-reply",
-  "libvers": "1.33",
-  "infile": "data/pip/mail-parser-reply.txt",
-  "dependencies": {}
-}

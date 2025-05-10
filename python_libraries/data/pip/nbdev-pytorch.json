@@ -1,8 +1,0 @@
-{
-  "libname": "nbdev-pytorch",
-  "libvers": "0.0.1835",
-  "infile": "data/pip/nbdev-pytorch.txt",
-  "dependencies": {
-    "packaging": "25.0"
-  }
-}

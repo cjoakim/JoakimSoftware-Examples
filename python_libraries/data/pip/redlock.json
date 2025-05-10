@@ -1,8 +1,0 @@
-{
-  "libname": "redlock",
-  "libvers": "1.2.0",
-  "infile": "data/pip/redlock.txt",
-  "dependencies": {
-    "redis": "6.0.0"
-  }
-}

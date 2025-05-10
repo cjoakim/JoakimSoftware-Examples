@@ -1,6 +1,0 @@
-{
-  "libname": "adyen",
-  "libvers": "13.4.0",
-  "infile": "data/pip/adyen.txt",
-  "dependencies": {}
-}

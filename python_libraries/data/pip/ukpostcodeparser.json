@@ -1,6 +1,0 @@
-{
-  "libname": "ukpostcodeparser",
-  "libvers": "1.1.2",
-  "infile": "data/pip/ukpostcodeparser.txt",
-  "dependencies": {}
-}

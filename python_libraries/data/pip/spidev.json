@@ -1,6 +1,0 @@
-{
-  "libname": "spidev",
-  "libvers": "3.7",
-  "infile": "data/pip/spidev.txt",
-  "dependencies": {}
-}

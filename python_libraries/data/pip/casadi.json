@@ -1,8 +1,0 @@
-{
-  "libname": "casadi",
-  "libvers": "3.7.0",
-  "infile": "data/pip/casadi.txt",
-  "dependencies": {
-    "numpy": "2.2.5"
-  }
-}

@@ -1,6 +1,0 @@
-{
-  "libname": "demoji",
-  "libvers": "1.1.0",
-  "infile": "data/pip/demoji.txt",
-  "dependencies": {}
-}

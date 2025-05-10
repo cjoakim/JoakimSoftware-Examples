@@ -1,6 +1,0 @@
-{
-  "libname": "cognitive-complexity",
-  "libvers": "1.3.0",
-  "infile": "data/pip/cognitive-complexity.txt",
-  "dependencies": {}
-}

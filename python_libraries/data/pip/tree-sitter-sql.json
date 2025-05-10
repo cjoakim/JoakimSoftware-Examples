@@ -1,6 +1,0 @@
-{
-  "libname": "tree-sitter-sql",
-  "libvers": "0.3.8",
-  "infile": "data/pip/tree-sitter-sql.txt",
-  "dependencies": {}
-}

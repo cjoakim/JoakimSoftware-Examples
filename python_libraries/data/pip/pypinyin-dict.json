@@ -1,8 +1,0 @@
-{
-  "libname": "pypinyin-dict",
-  "libvers": "0.9.0",
-  "infile": "data/pip/pypinyin-dict.txt",
-  "dependencies": {
-    "pypinyin": "0.54.0"
-  }
-}

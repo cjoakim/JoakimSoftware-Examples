@@ -1,8 +1,0 @@
-{
-  "libname": "langid",
-  "libvers": "1.1.6",
-  "infile": "data/pip/langid.txt",
-  "dependencies": {
-    "numpy": "2.2.5"
-  }
-}

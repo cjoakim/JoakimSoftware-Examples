@@ -1,9 +1,0 @@
-{
-  "libname": "snuggs",
-  "libvers": "1.4.7",
-  "infile": "data/pip/snuggs.txt",
-  "dependencies": {
-    "numpy": "2.2.5",
-    "pyparsing": "3.2.3"
-  }
-}

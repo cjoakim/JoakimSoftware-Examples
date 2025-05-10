@@ -1,8 +1,0 @@
-{
-  "libname": "spyne",
-  "libvers": "2.14.0",
-  "infile": "data/pip/spyne.txt",
-  "dependencies": {
-    "pytz": "2025.2"
-  }
-}

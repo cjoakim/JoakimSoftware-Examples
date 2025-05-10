@@ -1,8 +1,0 @@
-{
-  "libname": "jujubundlelib",
-  "libvers": "0.5.7",
-  "infile": "data/pip/jujubundlelib.txt",
-  "dependencies": {
-    "pyyaml": "6.0.2"
-  }
-}

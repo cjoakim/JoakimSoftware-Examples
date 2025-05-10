@@ -1,9 +1,0 @@
-{
-  "libname": "xattr",
-  "libvers": "1.1.4",
-  "infile": "data/pip/xattr.txt",
-  "dependencies": {
-    "cffi": "1.17.1",
-    "pycparser": "2.22"
-  }
-}

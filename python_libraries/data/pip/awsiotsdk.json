@@ -1,8 +1,0 @@
-{
-  "libname": "awsiotsdk",
-  "libvers": "1.22.2",
-  "infile": "data/pip/awsiotsdk.txt",
-  "dependencies": {
-    "awscrt": "0.24.1"
-  }
-}

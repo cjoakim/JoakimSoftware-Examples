@@ -1,6 +1,0 @@
-{
-  "libname": "aiocontextvars",
-  "libvers": "0.2.2",
-  "infile": "data/pip/aiocontextvars.txt",
-  "dependencies": {}
-}

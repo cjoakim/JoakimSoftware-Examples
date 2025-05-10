@@ -1,6 +1,0 @@
-{
-  "libname": "python-geoip",
-  "libvers": "1.2",
-  "infile": "data/pip/python-geoip.txt",
-  "dependencies": {}
-}

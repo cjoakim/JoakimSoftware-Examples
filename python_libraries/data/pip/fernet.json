@@ -1,8 +1,0 @@
-{
-  "libname": "fernet",
-  "libvers": "1.0.1",
-  "infile": "data/pip/fernet.txt",
-  "dependencies": {
-    "pyaes": "1.6.1"
-  }
-}

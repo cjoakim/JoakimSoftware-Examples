@@ -1,6 +1,0 @@
-{
-  "libname": "asyncio-atexit",
-  "libvers": "1.0.1",
-  "infile": "data/pip/asyncio-atexit.txt",
-  "dependencies": {}
-}

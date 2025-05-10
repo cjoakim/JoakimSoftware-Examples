@@ -1,6 +1,0 @@
-{
-  "libname": "types-aiobotocore-sagemaker-featurestore-runtime",
-  "libvers": "2.22.0",
-  "infile": "data/pip/types-aiobotocore-sagemaker-featurestore-runtime.txt",
-  "dependencies": {}
-}

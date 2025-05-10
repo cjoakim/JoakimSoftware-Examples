@@ -1,9 +1,0 @@
-{
-  "libname": "supervisord-dependent-startup",
-  "libvers": "1.4.0",
-  "infile": "data/pip/supervisord-dependent-startup.txt",
-  "dependencies": {
-    "supervisor": "4.2.5",
-    "toposort": "1.10"
-  }
-}

@@ -1,6 +1,0 @@
-{
-  "libname": "enum-compat",
-  "libvers": "0.0.3",
-  "infile": "data/pip/enum-compat.txt",
-  "dependencies": {}
-}

@@ -1,8 +1,0 @@
-{
-  "libname": "earthkit-meteo",
-  "libvers": "0.3.0",
-  "infile": "data/pip/earthkit-meteo.txt",
-  "dependencies": {
-    "numpy": "2.2.5"
-  }
-}

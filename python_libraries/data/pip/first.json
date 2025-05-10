@@ -1,6 +1,0 @@
-{
-  "libname": "first",
-  "libvers": "2.0.2",
-  "infile": "data/pip/first.txt",
-  "dependencies": {}
-}

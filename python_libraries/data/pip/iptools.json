@@ -1,6 +1,0 @@
-{
-  "libname": "iptools",
-  "libvers": "0.7.0",
-  "infile": "data/pip/iptools.txt",
-  "dependencies": {}
-}

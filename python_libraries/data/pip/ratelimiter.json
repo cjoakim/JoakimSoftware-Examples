@@ -1,6 +1,0 @@
-{
-  "libname": "ratelimiter",
-  "libvers": "1.2.0.post0",
-  "infile": "data/pip/ratelimiter.txt",
-  "dependencies": {}
-}

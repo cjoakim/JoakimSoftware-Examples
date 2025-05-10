@@ -1,6 +1,0 @@
-{
-  "libname": "django-ratelimit",
-  "libvers": "4.1.0",
-  "infile": "data/pip/django-ratelimit.txt",
-  "dependencies": {}
-}

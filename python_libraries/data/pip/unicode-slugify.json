@@ -1,9 +1,0 @@
-{
-  "libname": "unicode-slugify",
-  "libvers": "0.1.5",
-  "infile": "data/pip/unicode-slugify.txt",
-  "dependencies": {
-    "six": "1.17.0",
-    "unidecode": "1.4.0"
-  }
-}

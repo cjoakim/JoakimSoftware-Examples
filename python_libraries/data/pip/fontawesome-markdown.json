@@ -1,8 +1,0 @@
-{
-  "libname": "fontawesome-markdown",
-  "libvers": "0.2.6",
-  "infile": "data/pip/fontawesome-markdown.txt",
-  "dependencies": {
-    "markdown": "3.8"
-  }
-}

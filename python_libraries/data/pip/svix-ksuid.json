@@ -1,8 +1,0 @@
-{
-  "libname": "svix-ksuid",
-  "libvers": "0.6.2",
-  "infile": "data/pip/svix-ksuid.txt",
-  "dependencies": {
-    "python-baseconv": "1.2.2"
-  }
-}

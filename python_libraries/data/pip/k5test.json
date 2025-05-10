@@ -1,6 +1,0 @@
-{
-  "libname": "k5test",
-  "libvers": "0.10.4",
-  "infile": "data/pip/k5test.txt",
-  "dependencies": {}
-}

@@ -1,6 +1,0 @@
-{
-  "libname": "polars",
-  "libvers": "1.29.0",
-  "infile": "data/pip/polars.txt",
-  "dependencies": {}
-}

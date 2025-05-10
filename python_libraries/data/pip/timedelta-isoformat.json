@@ -1,6 +1,0 @@
-{
-  "libname": "timedelta-isoformat",
-  "libvers": "0.7.0",
-  "infile": "data/pip/timedelta-isoformat.txt",
-  "dependencies": {}
-}

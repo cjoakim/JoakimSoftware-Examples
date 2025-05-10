@@ -1,6 +1,0 @@
-{
-  "libname": "kornia-rs",
-  "libvers": "0.1.8",
-  "infile": "data/pip/kornia-rs.txt",
-  "dependencies": {}
-}

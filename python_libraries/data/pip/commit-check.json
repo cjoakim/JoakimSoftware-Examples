@@ -1,8 +1,0 @@
-{
-  "libname": "commit-check",
-  "libvers": "0.9.5",
-  "infile": "data/pip/commit-check.txt",
-  "dependencies": {
-    "pyyaml": "6.0.2"
-  }
-}

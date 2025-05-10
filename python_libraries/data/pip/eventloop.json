@@ -1,8 +1,0 @@
-{
-  "libname": "eventloop",
-  "libvers": "0.0.26",
-  "infile": "data/pip/eventloop.txt",
-  "dependencies": {
-    "colorama": "0.4.6"
-  }
-}

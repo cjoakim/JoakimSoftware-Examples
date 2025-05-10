@@ -1,8 +1,0 @@
-{
-  "libname": "docutils-stubs",
-  "libvers": "0.0.22",
-  "infile": "data/pip/docutils-stubs.txt",
-  "dependencies": {
-    "docutils": "0.21.2"
-  }
-}

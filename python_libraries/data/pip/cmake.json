@@ -1,6 +1,0 @@
-{
-  "libname": "cmake",
-  "libvers": "4.0.0",
-  "infile": "data/pip/cmake.txt",
-  "dependencies": {}
-}

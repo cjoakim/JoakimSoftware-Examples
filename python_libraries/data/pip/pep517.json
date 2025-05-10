@@ -1,6 +1,0 @@
-{
-  "libname": "pep517",
-  "libvers": "0.13.1",
-  "infile": "data/pip/pep517.txt",
-  "dependencies": {}
-}

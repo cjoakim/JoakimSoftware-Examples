@@ -1,6 +1,0 @@
-{
-  "libname": "tokenize-rt",
-  "libvers": "6.1.0",
-  "infile": "data/pip/tokenize-rt.txt",
-  "dependencies": {}
-}

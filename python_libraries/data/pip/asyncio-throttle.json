@@ -1,6 +1,0 @@
-{
-  "libname": "asyncio-throttle",
-  "libvers": "1.0.2",
-  "infile": "data/pip/asyncio-throttle.txt",
-  "dependencies": {}
-}

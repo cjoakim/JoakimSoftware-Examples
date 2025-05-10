@@ -1,6 +1,0 @@
-{
-  "libname": "rapidgzip",
-  "libvers": "0.14.3",
-  "infile": "data/pip/rapidgzip.txt",
-  "dependencies": {}
-}

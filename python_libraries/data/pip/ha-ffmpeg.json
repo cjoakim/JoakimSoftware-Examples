@@ -1,8 +1,0 @@
-{
-  "libname": "ha-ffmpeg",
-  "libvers": "3.2.2",
-  "infile": "data/pip/ha-ffmpeg.txt",
-  "dependencies": {
-    "async-timeout": "5.0.1"
-  }
-}

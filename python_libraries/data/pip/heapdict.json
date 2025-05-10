@@ -1,6 +1,0 @@
-{
-  "libname": "heapdict",
-  "libvers": "1.0.1",
-  "infile": "data/pip/heapdict.txt",
-  "dependencies": {}
-}

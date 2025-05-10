@@ -1,6 +1,0 @@
-{
-  "libname": "sly",
-  "libvers": "0.5",
-  "infile": "data/pip/sly.txt",
-  "dependencies": {}
-}

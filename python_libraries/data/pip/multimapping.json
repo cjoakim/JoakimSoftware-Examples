@@ -1,8 +1,0 @@
-{
-  "libname": "multimapping",
-  "libvers": "5.0",
-  "infile": "data/pip/multimapping.txt",
-  "dependencies": {
-    "extensionclass": "6.0"
-  }
-}

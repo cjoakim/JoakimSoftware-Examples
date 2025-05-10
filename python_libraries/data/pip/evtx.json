@@ -1,6 +1,0 @@
-{
-  "libname": "evtx",
-  "libvers": "0.8.9",
-  "infile": "data/pip/evtx.txt",
-  "dependencies": {}
-}

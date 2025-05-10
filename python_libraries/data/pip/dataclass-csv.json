@@ -1,6 +1,0 @@
-{
-  "libname": "dataclass-csv",
-  "libvers": "1.4.0",
-  "infile": "data/pip/dataclass-csv.txt",
-  "dependencies": {}
-}

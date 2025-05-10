@@ -1,6 +1,0 @@
-{
-  "libname": "databricks-pypi2",
-  "libvers": "0.2",
-  "infile": "data/pip/databricks-pypi2.txt",
-  "dependencies": {}
-}

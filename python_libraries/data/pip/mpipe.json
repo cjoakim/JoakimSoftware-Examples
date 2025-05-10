@@ -1,6 +1,0 @@
-{
-  "libname": "mpipe",
-  "libvers": "1.0.8",
-  "infile": "data/pip/mpipe.txt",
-  "dependencies": {}
-}

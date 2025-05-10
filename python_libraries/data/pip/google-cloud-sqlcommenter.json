@@ -1,6 +1,0 @@
-{
-  "libname": "google-cloud-sqlcommenter",
-  "libvers": "2.0.0",
-  "infile": "data/pip/google-cloud-sqlcommenter.txt",
-  "dependencies": {}
-}

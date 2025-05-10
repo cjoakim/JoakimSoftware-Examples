@@ -1,6 +1,0 @@
-{
-  "libname": "srt",
-  "libvers": "3.5.3",
-  "infile": "data/pip/srt.txt",
-  "dependencies": {}
-}

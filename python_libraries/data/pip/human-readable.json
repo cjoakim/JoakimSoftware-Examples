@@ -1,6 +1,0 @@
-{
-  "libname": "human-readable",
-  "libvers": "2.0.0",
-  "infile": "data/pip/human-readable.txt",
-  "dependencies": {}
-}

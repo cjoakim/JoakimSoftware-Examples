@@ -1,8 +1,0 @@
-{
-  "libname": "wcmatch",
-  "libvers": "10.0",
-  "infile": "data/pip/wcmatch.txt",
-  "dependencies": {
-    "bracex": "2.5.post1"
-  }
-}

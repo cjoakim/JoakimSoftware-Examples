@@ -1,8 +1,0 @@
-{
-  "libname": "python-utils",
-  "libvers": "3.9.1",
-  "infile": "data/pip/python-utils.txt",
-  "dependencies": {
-    "typing-extensions": "4.13.2"
-  }
-}

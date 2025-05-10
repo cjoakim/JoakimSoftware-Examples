@@ -1,6 +1,0 @@
-{
-  "libname": "sspilib",
-  "libvers": "0.3.1",
-  "infile": "data/pip/sspilib.txt",
-  "dependencies": {}
-}

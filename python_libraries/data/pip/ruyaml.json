@@ -1,8 +1,0 @@
-{
-  "libname": "ruyaml",
-  "libvers": "0.91.0",
-  "infile": "data/pip/ruyaml.txt",
-  "dependencies": {
-    "distro": "1.9.0"
-  }
-}

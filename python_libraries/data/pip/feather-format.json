@@ -1,8 +1,0 @@
-{
-  "libname": "feather-format",
-  "libvers": "0.4.1",
-  "infile": "data/pip/feather-format.txt",
-  "dependencies": {
-    "pyarrow": "20.0.0"
-  }
-}

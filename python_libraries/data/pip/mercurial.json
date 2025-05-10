@@ -1,6 +1,0 @@
-{
-  "libname": "mercurial",
-  "libvers": "7.0.1",
-  "infile": "data/pip/mercurial.txt",
-  "dependencies": {}
-}

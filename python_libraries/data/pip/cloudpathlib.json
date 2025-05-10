@@ -1,6 +1,0 @@
-{
-  "libname": "cloudpathlib",
-  "libvers": "0.21.0",
-  "infile": "data/pip/cloudpathlib.txt",
-  "dependencies": {}
-}

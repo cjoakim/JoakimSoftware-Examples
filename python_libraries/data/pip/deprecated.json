@@ -1,8 +1,0 @@
-{
-  "libname": "deprecated",
-  "libvers": "1.2.18",
-  "infile": "data/pip/deprecated.txt",
-  "dependencies": {
-    "wrapt": "1.17.2"
-  }
-}

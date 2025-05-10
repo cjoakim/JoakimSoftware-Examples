@@ -1,8 +1,0 @@
-{
-  "libname": "pyclibrary",
-  "libvers": "0.2.2",
-  "infile": "data/pip/pyclibrary.txt",
-  "dependencies": {
-    "pyparsing": "3.2.3"
-  }
-}

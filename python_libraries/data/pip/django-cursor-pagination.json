@@ -1,6 +1,0 @@
-{
-  "libname": "django-cursor-pagination",
-  "libvers": "0.3.0",
-  "infile": "data/pip/django-cursor-pagination.txt",
-  "dependencies": {}
-}

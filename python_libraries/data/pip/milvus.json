@@ -1,6 +1,0 @@
-{
-  "libname": "milvus",
-  "libvers": "2.3.9",
-  "infile": "data/pip/milvus.txt",
-  "dependencies": {}
-}

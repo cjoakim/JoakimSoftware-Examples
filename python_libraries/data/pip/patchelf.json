@@ -1,6 +1,0 @@
-{
-  "libname": "patchelf",
-  "libvers": "0.17.2.2",
-  "infile": "data/pip/patchelf.txt",
-  "dependencies": {}
-}

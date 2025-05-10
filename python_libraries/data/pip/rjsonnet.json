@@ -1,6 +1,0 @@
-{
-  "libname": "rjsonnet",
-  "libvers": "0.5.6",
-  "infile": "data/pip/rjsonnet.txt",
-  "dependencies": {}
-}

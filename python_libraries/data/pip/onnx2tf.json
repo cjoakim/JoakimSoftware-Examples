@@ -1,6 +1,0 @@
-{
-  "libname": "onnx2tf",
-  "libvers": "1.27.2",
-  "infile": "data/pip/onnx2tf.txt",
-  "dependencies": {}
-}

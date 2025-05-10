@@ -1,6 +1,0 @@
-{
-  "libname": "snownlp",
-  "libvers": "0.12.3",
-  "infile": "data/pip/snownlp.txt",
-  "dependencies": {}
-}

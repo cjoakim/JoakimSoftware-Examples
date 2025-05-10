@@ -1,8 +1,0 @@
-{
-  "libname": "removestar",
-  "libvers": "1.5.2",
-  "infile": "data/pip/removestar.txt",
-  "dependencies": {
-    "pyflakes": "3.3.2"
-  }
-}

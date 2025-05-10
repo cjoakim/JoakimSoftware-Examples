@@ -1,8 +1,0 @@
-{
-  "libname": "pyromark",
-  "libvers": "0.9.1",
-  "infile": "data/pip/pyromark.txt",
-  "dependencies": {
-    "typing-extensions": "4.13.2"
-  }
-}

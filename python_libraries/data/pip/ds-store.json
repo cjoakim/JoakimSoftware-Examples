@@ -1,8 +1,0 @@
-{
-  "libname": "ds-store",
-  "libvers": "1.3.1",
-  "infile": "data/pip/ds-store.txt",
-  "dependencies": {
-    "mac-alias": "2.2.2"
-  }
-}

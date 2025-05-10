@@ -1,9 +1,0 @@
-{
-  "libname": "pysolarmanv5",
-  "libvers": "3.0.6",
-  "infile": "data/pip/pysolarmanv5.txt",
-  "dependencies": {
-    "pyserial": "3.5",
-    "umodbus": "1.0.4"
-  }
-}

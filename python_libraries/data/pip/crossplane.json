@@ -1,6 +1,0 @@
-{
-  "libname": "crossplane",
-  "libvers": "0.5.8",
-  "infile": "data/pip/crossplane.txt",
-  "dependencies": {}
-}

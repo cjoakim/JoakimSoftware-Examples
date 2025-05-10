@@ -1,6 +1,0 @@
-{
-  "libname": "invoke",
-  "libvers": "2.2.0",
-  "infile": "data/pip/invoke.txt",
-  "dependencies": {}
-}

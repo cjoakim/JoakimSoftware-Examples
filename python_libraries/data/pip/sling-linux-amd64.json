@@ -1,6 +1,0 @@
-{
-  "libname": "sling-linux-amd64",
-  "libvers": "1.4.6",
-  "infile": "data/pip/sling-linux-amd64.txt",
-  "dependencies": {}
-}

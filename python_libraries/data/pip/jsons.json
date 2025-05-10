@@ -1,8 +1,0 @@
-{
-  "libname": "jsons",
-  "libvers": "1.6.3",
-  "infile": "data/pip/jsons.txt",
-  "dependencies": {
-    "typish": "1.9.3"
-  }
-}

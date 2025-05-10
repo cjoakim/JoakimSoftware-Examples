@@ -1,6 +1,0 @@
-{
-  "libname": "slugify",
-  "libvers": "0.0.1",
-  "infile": "data/pip/slugify.txt",
-  "dependencies": {}
-}

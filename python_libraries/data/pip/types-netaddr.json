@@ -1,6 +1,0 @@
-{
-  "libname": "types-netaddr",
-  "libvers": "1.3.0.20240530",
-  "infile": "data/pip/types-netaddr.txt",
-  "dependencies": {}
-}

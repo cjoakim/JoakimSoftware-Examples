@@ -1,6 +1,0 @@
-{
-  "libname": "sqlglot",
-  "libvers": "26.16.4",
-  "infile": "data/pip/sqlglot.txt",
-  "dependencies": {}
-}

@@ -1,8 +1,0 @@
-{
-  "libname": "teradatasql",
-  "libvers": "20.0.0.30",
-  "infile": "data/pip/teradatasql.txt",
-  "dependencies": {
-    "pycryptodome": "3.22.0"
-  }
-}

@@ -1,6 +1,0 @@
-{
-  "libname": "jax-bitempered-loss",
-  "libvers": "0.0.2",
-  "infile": "data/pip/jax-bitempered-loss.txt",
-  "dependencies": {}
-}

@@ -1,6 +1,0 @@
-{
-  "libname": "indexed-gzip",
-  "libvers": "1.9.4",
-  "infile": "data/pip/indexed-gzip.txt",
-  "dependencies": {}
-}

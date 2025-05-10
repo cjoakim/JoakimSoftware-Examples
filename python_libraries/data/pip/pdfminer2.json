@@ -1,8 +1,0 @@
-{
-  "libname": "pdfminer2",
-  "libvers": "20151206",
-  "infile": "data/pip/pdfminer2.txt",
-  "dependencies": {
-    "six": "1.17.0"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "libname": "coverage-threshold",
-  "libvers": "0.5.0",
-  "infile": "data/pip/coverage-threshold.txt",
-  "dependencies": {
-    "toml": "0.10.2"
-  }
-}

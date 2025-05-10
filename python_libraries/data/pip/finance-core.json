@@ -1,6 +1,0 @@
-{
-  "libname": "finance-core",
-  "libvers": "0.1.7",
-  "infile": "data/pip/finance-core.txt",
-  "dependencies": {}
-}

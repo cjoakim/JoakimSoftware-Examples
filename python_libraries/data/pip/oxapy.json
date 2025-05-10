@@ -1,8 +1,0 @@
-{
-  "libname": "oxapy",
-  "libvers": "0.4.3",
-  "infile": "data/pip/oxapy.txt",
-  "dependencies": {
-    "orjson": "3.10.18"
-  }
-}

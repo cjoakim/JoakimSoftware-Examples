@@ -1,6 +1,0 @@
-{
-  "libname": "cvss",
-  "libvers": "3.4",
-  "infile": "data/pip/cvss.txt",
-  "dependencies": {}
-}

@@ -1,8 +1,0 @@
-{
-  "libname": "psycopg",
-  "libvers": "3.2.7",
-  "infile": "data/pip/psycopg.txt",
-  "dependencies": {
-    "typing-extensions": "4.13.2"
-  }
-}

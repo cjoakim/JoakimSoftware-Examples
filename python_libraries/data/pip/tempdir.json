@@ -1,6 +1,0 @@
-{
-  "libname": "tempdir",
-  "libvers": "0.7.1",
-  "infile": "data/pip/tempdir.txt",
-  "dependencies": {}
-}

@@ -1,8 +1,0 @@
-{
-  "libname": "angreal",
-  "libvers": "2.2.0",
-  "infile": "data/pip/angreal.txt",
-  "dependencies": {
-    "packaging": "25.0"
-  }
-}

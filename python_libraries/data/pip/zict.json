@@ -1,6 +1,0 @@
-{
-  "libname": "zict",
-  "libvers": "3.0.0",
-  "infile": "data/pip/zict.txt",
-  "dependencies": {}
-}

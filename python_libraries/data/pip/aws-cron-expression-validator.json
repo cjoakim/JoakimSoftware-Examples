@@ -1,6 +1,0 @@
-{
-  "libname": "aws-cron-expression-validator",
-  "libvers": "1.1.13",
-  "infile": "data/pip/aws-cron-expression-validator.txt",
-  "dependencies": {}
-}

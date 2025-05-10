@@ -1,8 +1,0 @@
-{
-  "libname": "edx-codejail",
-  "libvers": "3.5.2",
-  "infile": "data/pip/edx-codejail.txt",
-  "dependencies": {
-    "six": "1.17.0"
-  }
-}

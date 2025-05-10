@@ -1,6 +1,0 @@
-{
-  "libname": "symstore",
-  "libvers": "0.3.4",
-  "infile": "data/pip/symstore.txt",
-  "dependencies": {}
-}

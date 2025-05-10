@@ -1,6 +1,0 @@
-{
-  "libname": "fuzzy",
-  "libvers": "1.2.2",
-  "infile": "data/pip/fuzzy.txt",
-  "dependencies": {}
-}

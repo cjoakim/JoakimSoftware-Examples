@@ -1,6 +1,0 @@
-{
-  "libname": "rbloom",
-  "libvers": "1.5.2",
-  "infile": "data/pip/rbloom.txt",
-  "dependencies": {}
-}

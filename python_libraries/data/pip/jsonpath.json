@@ -1,6 +1,0 @@
-{
-  "libname": "jsonpath",
-  "libvers": "0.82.2",
-  "infile": "data/pip/jsonpath.txt",
-  "dependencies": {}
-}

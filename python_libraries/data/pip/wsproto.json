@@ -1,8 +1,0 @@
-{
-  "libname": "wsproto",
-  "libvers": "1.2.0",
-  "infile": "data/pip/wsproto.txt",
-  "dependencies": {
-    "h11": "0.16.0"
-  }
-}

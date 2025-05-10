@@ -1,9 +1,0 @@
-{
-  "libname": "pyobjc-framework-devicecheck",
-  "libvers": "11.0",
-  "infile": "data/pip/pyobjc-framework-devicecheck.txt",
-  "dependencies": {
-    "pyobjc-core": "11.0",
-    "pyobjc-framework-cocoa": "11.0"
-  }
-}

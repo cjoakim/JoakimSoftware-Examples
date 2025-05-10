@@ -1,6 +1,0 @@
-{
-  "libname": "aiocoap",
-  "libvers": "0.4.14",
-  "infile": "data/pip/aiocoap.txt",
-  "dependencies": {}
-}

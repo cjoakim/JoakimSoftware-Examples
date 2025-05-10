@@ -1,6 +1,0 @@
-{
-  "libname": "ecmwf-api-client",
-  "libvers": "1.6.5",
-  "infile": "data/pip/ecmwf-api-client.txt",
-  "dependencies": {}
-}

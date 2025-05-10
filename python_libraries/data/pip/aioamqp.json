@@ -1,8 +1,0 @@
-{
-  "libname": "aioamqp",
-  "libvers": "0.15.0",
-  "infile": "data/pip/aioamqp.txt",
-  "dependencies": {
-    "pamqp": "3.3.0"
-  }
-}

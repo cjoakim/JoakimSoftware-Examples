@@ -1,6 +1,0 @@
-{
-  "libname": "geoip2fast",
-  "libvers": "1.2.2",
-  "infile": "data/pip/geoip2fast.txt",
-  "dependencies": {}
-}

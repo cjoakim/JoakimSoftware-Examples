@@ -1,9 +1,0 @@
-{
-  "libname": "randomname",
-  "libvers": "0.2.1",
-  "infile": "data/pip/randomname.txt",
-  "dependencies": {
-    "fire": "0.7.0",
-    "termcolor": "3.1.0"
-  }
-}

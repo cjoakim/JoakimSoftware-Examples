@@ -1,8 +1,0 @@
-{
-  "libname": "captcha",
-  "libvers": "0.7.1",
-  "infile": "data/pip/captcha.txt",
-  "dependencies": {
-    "pillow": "11.2.1"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "libname": "python-calamine",
-  "libvers": "0.3.2",
-  "infile": "data/pip/python-calamine.txt",
-  "dependencies": {
-    "packaging": "25.0"
-  }
-}

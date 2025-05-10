@@ -1,8 +1,0 @@
-{
-  "libname": "blockbuster",
-  "libvers": "1.5.24",
-  "infile": "data/pip/blockbuster.txt",
-  "dependencies": {
-    "forbiddenfruit": "0.1.4"
-  }
-}

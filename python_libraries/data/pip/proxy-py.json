@@ -1,6 +1,0 @@
-{
-  "libname": "proxy-py",
-  "libvers": "2.4.10",
-  "infile": "data/pip/proxy-py.txt",
-  "dependencies": {}
-}

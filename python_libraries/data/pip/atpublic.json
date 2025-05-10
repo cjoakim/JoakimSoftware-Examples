@@ -1,6 +1,0 @@
-{
-  "libname": "atpublic",
-  "libvers": "5.1",
-  "infile": "data/pip/atpublic.txt",
-  "dependencies": {}
-}

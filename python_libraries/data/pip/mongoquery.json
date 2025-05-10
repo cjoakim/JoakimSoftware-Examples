@@ -1,8 +1,0 @@
-{
-  "libname": "mongoquery",
-  "libvers": "1.4.2",
-  "infile": "data/pip/mongoquery.txt",
-  "dependencies": {
-    "six": "1.17.0"
-  }
-}

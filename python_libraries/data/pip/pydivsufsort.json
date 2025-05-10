@@ -1,9 +1,0 @@
-{
-  "libname": "pydivsufsort",
-  "libvers": "0.0.18",
-  "infile": "data/pip/pydivsufsort.txt",
-  "dependencies": {
-    "numpy": "2.2.5",
-    "wheel": "0.45.1"
-  }
-}

@@ -1,6 +1,0 @@
-{
-  "libname": "py-bcrypt",
-  "libvers": "0.4",
-  "infile": "data/pip/py-bcrypt.txt",
-  "dependencies": {}
-}

@@ -1,8 +1,0 @@
-{
-  "libname": "pylerc",
-  "libvers": "4.0",
-  "infile": "data/pip/pylerc.txt",
-  "dependencies": {
-    "numpy": "2.2.5"
-  }
-}

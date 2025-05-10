@@ -1,8 +1,0 @@
-{
-  "libname": "autograd",
-  "libvers": "1.8.0",
-  "infile": "data/pip/autograd.txt",
-  "dependencies": {
-    "numpy": "2.2.5"
-  }
-}

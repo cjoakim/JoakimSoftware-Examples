@@ -1,6 +1,0 @@
-{
-  "libname": "bash",
-  "libvers": "0.6",
-  "infile": "data/pip/bash.txt",
-  "dependencies": {}
-}

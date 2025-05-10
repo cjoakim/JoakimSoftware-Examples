@@ -1,8 +1,0 @@
-{
-  "libname": "recordtype",
-  "libvers": "1.4",
-  "infile": "data/pip/recordtype.txt",
-  "dependencies": {
-    "six": "1.17.0"
-  }
-}

@@ -1,6 +1,0 @@
-{
-  "libname": "dnslib",
-  "libvers": "0.9.26",
-  "infile": "data/pip/dnslib.txt",
-  "dependencies": {}
-}

@@ -1,8 +1,0 @@
-{
-  "libname": "always-updates",
-  "libvers": "156.7",
-  "infile": "data/pip/always-updates.txt",
-  "dependencies": {
-    "progress": "1.6"
-  }
-}

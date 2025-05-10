@@ -1,6 +1,0 @@
-{
-  "libname": "klayout",
-  "libvers": "0.30.1",
-  "infile": "data/pip/klayout.txt",
-  "dependencies": {}
-}

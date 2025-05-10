@@ -1,6 +1,0 @@
-{
-  "libname": "uwsgi-tools",
-  "libvers": "1.1.1",
-  "infile": "data/pip/uwsgi-tools.txt",
-  "dependencies": {}
-}

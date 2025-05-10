@@ -1,8 +1,0 @@
-{
-  "libname": "libthumbor",
-  "libvers": "2.0.2",
-  "infile": "data/pip/libthumbor.txt",
-  "dependencies": {
-    "six": "1.17.0"
-  }
-}

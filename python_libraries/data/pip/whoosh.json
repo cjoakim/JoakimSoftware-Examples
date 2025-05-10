@@ -1,6 +1,0 @@
-{
-  "libname": "whoosh",
-  "libvers": "2.7.4",
-  "infile": "data/pip/whoosh.txt",
-  "dependencies": {}
-}

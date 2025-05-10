@@ -1,6 +1,0 @@
-{
-  "libname": "conllu",
-  "libvers": "6.0.0",
-  "infile": "data/pip/conllu.txt",
-  "dependencies": {}
-}

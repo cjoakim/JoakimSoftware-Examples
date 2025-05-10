@@ -1,8 +1,0 @@
-{
-  "libname": "pymobiledetect",
-  "libvers": "1.3.2",
-  "infile": "data/pip/pymobiledetect.txt",
-  "dependencies": {
-    "six": "1.17.0"
-  }
-}

@@ -1,6 +1,0 @@
-{
-  "libname": "qemu-qmp",
-  "libvers": "0.0.3",
-  "infile": "data/pip/qemu-qmp.txt",
-  "dependencies": {}
-}

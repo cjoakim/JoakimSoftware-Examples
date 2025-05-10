@@ -1,8 +1,0 @@
-{
-  "libname": "sortedcollections",
-  "libvers": "2.1.0",
-  "infile": "data/pip/sortedcollections.txt",
-  "dependencies": {
-    "sortedcontainers": "2.4.0"
-  }
-}

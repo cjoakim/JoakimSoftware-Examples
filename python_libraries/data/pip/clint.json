@@ -1,8 +1,0 @@
-{
-  "libname": "clint",
-  "libvers": "0.5.1",
-  "infile": "data/pip/clint.txt",
-  "dependencies": {
-    "args": "0.1.0"
-  }
-}

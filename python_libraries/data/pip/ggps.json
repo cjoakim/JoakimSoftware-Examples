@@ -1,6 +1,0 @@
-{
-  "libname": "ggps",
-  "libvers": "0.5.1",
-  "infile": "data/pip/ggps.txt",
-  "dependencies": {}
-}

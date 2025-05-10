@@ -1,8 +1,0 @@
-{
-  "libname": "lemminflect",
-  "libvers": "0.2.3",
-  "infile": "data/pip/lemminflect.txt",
-  "dependencies": {
-    "numpy": "2.2.5"
-  }
-}

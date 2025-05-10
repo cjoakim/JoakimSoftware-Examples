@@ -1,6 +1,0 @@
-{
-  "libname": "ntplib",
-  "libvers": "0.4.0",
-  "infile": "data/pip/ntplib.txt",
-  "dependencies": {}
-}

@@ -1,8 +1,0 @@
-{
-  "libname": "geopy",
-  "libvers": "2.4.1",
-  "infile": "data/pip/geopy.txt",
-  "dependencies": {
-    "geographiclib": "2.0"
-  }
-}

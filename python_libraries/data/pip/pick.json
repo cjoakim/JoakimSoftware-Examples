@@ -1,6 +1,0 @@
-{
-  "libname": "pick",
-  "libvers": "2.4.0",
-  "infile": "data/pip/pick.txt",
-  "dependencies": {}
-}

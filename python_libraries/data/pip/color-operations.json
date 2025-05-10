@@ -1,8 +1,0 @@
-{
-  "libname": "color-operations",
-  "libvers": "0.2.0",
-  "infile": "data/pip/color-operations.txt",
-  "dependencies": {
-    "numpy": "2.2.5"
-  }
-}

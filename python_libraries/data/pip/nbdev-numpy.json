@@ -1,8 +1,0 @@
-{
-  "libname": "nbdev-numpy",
-  "libvers": "0.0.1837",
-  "infile": "data/pip/nbdev-numpy.txt",
-  "dependencies": {
-    "packaging": "25.0"
-  }
-}

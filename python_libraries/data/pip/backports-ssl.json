@@ -1,6 +1,0 @@
-{
-  "libname": "backports-ssl",
-  "libvers": "0.0.9",
-  "infile": "data/pip/backports-ssl.txt",
-  "dependencies": {}
-}

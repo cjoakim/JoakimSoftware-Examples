@@ -1,6 +1,0 @@
-{
-  "libname": "pyproject-hooks",
-  "libvers": "1.2.0",
-  "infile": "data/pip/pyproject-hooks.txt",
-  "dependencies": {}
-}

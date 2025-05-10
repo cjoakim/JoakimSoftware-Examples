@@ -1,6 +1,0 @@
-{
-  "libname": "clamd",
-  "libvers": "1.0.2",
-  "infile": "data/pip/clamd.txt",
-  "dependencies": {}
-}

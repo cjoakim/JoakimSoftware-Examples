@@ -1,6 +1,0 @@
-{
-  "libname": "types-boto3-dynamodb",
-  "libvers": "1.38.4",
-  "infile": "data/pip/types-boto3-dynamodb.txt",
-  "dependencies": {}
-}

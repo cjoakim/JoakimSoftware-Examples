@@ -1,8 +1,0 @@
-{
-  "libname": "bencode2",
-  "libvers": "0.3.26",
-  "infile": "data/pip/bencode2.txt",
-  "dependencies": {
-    "typing-extensions": "4.13.2"
-  }
-}

@@ -1,6 +1,0 @@
-{
-  "libname": "humanize",
-  "libvers": "4.12.3",
-  "infile": "data/pip/humanize.txt",
-  "dependencies": {}
-}

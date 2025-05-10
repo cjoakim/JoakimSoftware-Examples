@@ -1,6 +1,0 @@
-{
-  "libname": "wikidata",
-  "libvers": "0.8.1",
-  "infile": "data/pip/wikidata.txt",
-  "dependencies": {}
-}

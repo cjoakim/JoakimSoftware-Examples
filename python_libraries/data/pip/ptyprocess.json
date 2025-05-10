@@ -1,6 +1,0 @@
-{
-  "libname": "ptyprocess",
-  "libvers": "0.7.0",
-  "infile": "data/pip/ptyprocess.txt",
-  "dependencies": {}
-}

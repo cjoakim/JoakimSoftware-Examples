@@ -1,6 +1,0 @@
-{
-  "libname": "qt5-applications",
-  "libvers": "5.15.2.2.3",
-  "infile": "data/pip/qt5-applications.txt",
-  "dependencies": {}
-}

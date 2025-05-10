@@ -1,6 +1,0 @@
-{
-  "libname": "asyncio-redis",
-  "libvers": "0.16.0",
-  "infile": "data/pip/asyncio-redis.txt",
-  "dependencies": {}
-}

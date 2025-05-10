@@ -1,6 +1,0 @@
-{
-  "libname": "frozendict",
-  "libvers": "2.4.6",
-  "infile": "data/pip/frozendict.txt",
-  "dependencies": {}
-}

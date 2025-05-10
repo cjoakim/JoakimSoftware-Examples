@@ -1,9 +1,0 @@
-{
-  "libname": "pyqt-builder",
-  "libvers": "1.18.1",
-  "infile": "data/pip/pyqt-builder.txt",
-  "dependencies": {
-    "packaging": "25.0",
-    "sip": "6.10.0"
-  }
-}

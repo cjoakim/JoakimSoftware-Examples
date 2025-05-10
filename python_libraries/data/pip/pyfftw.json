@@ -1,8 +1,0 @@
-{
-  "libname": "pyfftw",
-  "libvers": "0.15.0",
-  "infile": "data/pip/pyfftw.txt",
-  "dependencies": {
-    "numpy": "2.2.5"
-  }
-}

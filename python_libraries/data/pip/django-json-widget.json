@@ -1,6 +1,0 @@
-{
-  "libname": "django-json-widget",
-  "libvers": "2.0.1",
-  "infile": "data/pip/django-json-widget.txt",
-  "dependencies": {}
-}

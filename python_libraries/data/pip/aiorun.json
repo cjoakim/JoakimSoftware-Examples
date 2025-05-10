@@ -1,6 +1,0 @@
-{
-  "libname": "aiorun",
-  "libvers": "2025.1.1",
-  "infile": "data/pip/aiorun.txt",
-  "dependencies": {}
-}

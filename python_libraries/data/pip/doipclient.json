@@ -1,6 +1,0 @@
-{
-  "libname": "doipclient",
-  "libvers": "1.1.5",
-  "infile": "data/pip/doipclient.txt",
-  "dependencies": {}
-}

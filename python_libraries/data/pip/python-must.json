@@ -1,6 +1,0 @@
-{
-  "libname": "python-must",
-  "libvers": "3.12.3",
-  "infile": "data/pip/python-must.txt",
-  "dependencies": {}
-}

@@ -1,6 +1,0 @@
-{
-  "libname": "datetime-quarter",
-  "libvers": "1.0.3",
-  "infile": "data/pip/datetime-quarter.txt",
-  "dependencies": {}
-}

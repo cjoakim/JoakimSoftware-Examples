@@ -1,6 +1,0 @@
-{
-  "libname": "pyotp",
-  "libvers": "2.9.0",
-  "infile": "data/pip/pyotp.txt",
-  "dependencies": {}
-}

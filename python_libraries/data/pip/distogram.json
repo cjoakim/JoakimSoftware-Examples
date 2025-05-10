@@ -1,6 +1,0 @@
-{
-  "libname": "distogram",
-  "libvers": "3.0.3",
-  "infile": "data/pip/distogram.txt",
-  "dependencies": {}
-}

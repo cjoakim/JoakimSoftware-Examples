@@ -1,6 +1,0 @@
-{
-  "libname": "solrq",
-  "libvers": "1.1.2",
-  "infile": "data/pip/solrq.txt",
-  "dependencies": {}
-}

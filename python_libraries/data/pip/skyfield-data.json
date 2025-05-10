@@ -1,6 +1,0 @@
-{
-  "libname": "skyfield-data",
-  "libvers": "6.0.0",
-  "infile": "data/pip/skyfield-data.txt",
-  "dependencies": {}
-}

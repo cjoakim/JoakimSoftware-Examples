@@ -1,6 +1,0 @@
-{
-  "libname": "types-pyinstaller",
-  "libvers": "6.13.0.20250417",
-  "infile": "data/pip/types-pyinstaller.txt",
-  "dependencies": {}
-}

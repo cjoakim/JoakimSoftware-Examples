@@ -1,6 +1,0 @@
-{
-  "libname": "lib-detect-testenv",
-  "libvers": "2.0.8",
-  "infile": "data/pip/lib-detect-testenv.txt",
-  "dependencies": {}
-}

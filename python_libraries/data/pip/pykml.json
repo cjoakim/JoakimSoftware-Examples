@@ -1,8 +1,0 @@
-{
-  "libname": "pykml",
-  "libvers": "0.2.0",
-  "infile": "data/pip/pykml.txt",
-  "dependencies": {
-    "lxml": "5.4.0"
-  }
-}

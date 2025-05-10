@@ -1,6 +1,0 @@
-{
-  "libname": "msl-loadlib",
-  "libvers": "0.10.0",
-  "infile": "data/pip/msl-loadlib.txt",
-  "dependencies": {}
-}

@@ -1,6 +1,0 @@
-{
-  "libname": "string-gen",
-  "libvers": "0.1.0",
-  "infile": "data/pip/string-gen.txt",
-  "dependencies": {}
-}

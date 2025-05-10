@@ -1,6 +1,0 @@
-{
-  "libname": "nassl",
-  "libvers": "5.3.0",
-  "infile": "data/pip/nassl.txt",
-  "dependencies": {}
-}

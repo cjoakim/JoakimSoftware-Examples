@@ -1,8 +1,0 @@
-{
-  "libname": "minimalmodbus",
-  "libvers": "2.1.1",
-  "infile": "data/pip/minimalmodbus.txt",
-  "dependencies": {
-    "pyserial": "3.5"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "libname": "pyulog",
-  "libvers": "1.2.0",
-  "infile": "data/pip/pyulog.txt",
-  "dependencies": {
-    "numpy": "2.2.5"
-  }
-}

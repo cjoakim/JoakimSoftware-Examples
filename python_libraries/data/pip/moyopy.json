@@ -1,8 +1,0 @@
-{
-  "libname": "moyopy",
-  "libvers": "0.4.3",
-  "infile": "data/pip/moyopy.txt",
-  "dependencies": {
-    "typing-extensions": "4.13.2"
-  }
-}

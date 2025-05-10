@@ -1,6 +1,0 @@
-{
-  "libname": "glpk",
-  "libvers": "0.4.8",
-  "infile": "data/pip/glpk.txt",
-  "dependencies": {}
-}

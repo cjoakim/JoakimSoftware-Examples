@@ -1,6 +1,0 @@
-{
-  "libname": "pubchempy",
-  "libvers": "1.0.4",
-  "infile": "data/pip/pubchempy.txt",
-  "dependencies": {}
-}

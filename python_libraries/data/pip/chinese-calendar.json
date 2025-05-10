@@ -1,6 +1,0 @@
-{
-  "libname": "chinese-calendar",
-  "libvers": "1.10.0",
-  "infile": "data/pip/chinese-calendar.txt",
-  "dependencies": {}
-}

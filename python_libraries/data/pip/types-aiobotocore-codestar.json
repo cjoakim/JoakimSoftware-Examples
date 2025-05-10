@@ -1,6 +1,0 @@
-{
-  "libname": "types-aiobotocore-codestar",
-  "libvers": "2.13.3",
-  "infile": "data/pip/types-aiobotocore-codestar.txt",
-  "dependencies": {}
-}

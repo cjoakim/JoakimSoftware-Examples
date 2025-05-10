@@ -1,8 +1,0 @@
-{
-  "libname": "pyjls",
-  "libvers": "0.14.0",
-  "infile": "data/pip/pyjls.txt",
-  "dependencies": {
-    "numpy": "2.2.5"
-  }
-}

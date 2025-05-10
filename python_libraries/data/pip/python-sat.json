@@ -1,8 +1,0 @@
-{
-  "libname": "python-sat",
-  "libvers": "1.8.dev16",
-  "infile": "data/pip/python-sat.txt",
-  "dependencies": {
-    "six": "1.17.0"
-  }
-}

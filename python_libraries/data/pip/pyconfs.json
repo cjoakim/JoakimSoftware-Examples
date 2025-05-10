@@ -1,8 +1,0 @@
-{
-  "libname": "pyconfs",
-  "libvers": "0.5.5",
-  "infile": "data/pip/pyconfs.txt",
-  "dependencies": {
-    "pyplugs": "0.4.0"
-  }
-}

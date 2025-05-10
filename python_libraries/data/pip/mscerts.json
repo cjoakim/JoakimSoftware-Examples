@@ -1,6 +1,0 @@
-{
-  "libname": "mscerts",
-  "libvers": "2025.2.26",
-  "infile": "data/pip/mscerts.txt",
-  "dependencies": {}
-}

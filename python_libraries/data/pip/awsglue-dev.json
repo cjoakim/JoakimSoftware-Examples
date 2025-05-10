@@ -1,6 +1,0 @@
-{
-  "libname": "awsglue-dev",
-  "libvers": "2021.12.30",
-  "infile": "data/pip/awsglue-dev.txt",
-  "dependencies": {}
-}

@@ -1,6 +1,0 @@
-{
-  "libname": "translationstring",
-  "libvers": "1.4",
-  "infile": "data/pip/translationstring.txt",
-  "dependencies": {}
-}

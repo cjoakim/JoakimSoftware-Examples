@@ -1,6 +1,0 @@
-{
-  "libname": "ray-cpp",
-  "libvers": "2.45.0",
-  "infile": "data/pip/ray-cpp.txt",
-  "dependencies": {}
-}

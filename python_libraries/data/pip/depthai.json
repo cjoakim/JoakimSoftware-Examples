@@ -1,6 +1,0 @@
-{
-  "libname": "depthai",
-  "libvers": "2.30.0.0",
-  "infile": "data/pip/depthai.txt",
-  "dependencies": {}
-}

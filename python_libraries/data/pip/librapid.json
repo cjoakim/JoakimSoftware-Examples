@@ -1,6 +1,0 @@
-{
-  "libname": "librapid",
-  "libvers": "0.7.5",
-  "infile": "data/pip/librapid.txt",
-  "dependencies": {}
-}

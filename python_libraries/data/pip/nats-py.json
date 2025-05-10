@@ -1,6 +1,0 @@
-{
-  "libname": "nats-py",
-  "libvers": "2.10.0",
-  "infile": "data/pip/nats-py.txt",
-  "dependencies": {}
-}

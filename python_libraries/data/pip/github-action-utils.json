@@ -1,6 +1,0 @@
-{
-  "libname": "github-action-utils",
-  "libvers": "1.1.0",
-  "infile": "data/pip/github-action-utils.txt",
-  "dependencies": {}
-}

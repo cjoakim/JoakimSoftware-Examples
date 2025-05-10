@@ -1,6 +1,0 @@
-{
-  "libname": "picklescan",
-  "libvers": "0.0.26",
-  "infile": "data/pip/picklescan.txt",
-  "dependencies": {}
-}

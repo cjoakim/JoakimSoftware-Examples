@@ -1,8 +1,0 @@
-{
-  "libname": "rpyc",
-  "libvers": "6.0.2",
-  "infile": "data/pip/rpyc.txt",
-  "dependencies": {
-    "plumbum": "1.9.0"
-  }
-}

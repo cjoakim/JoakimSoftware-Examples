@@ -1,6 +1,0 @@
-{
-  "libname": "zabbix-api",
-  "libvers": "0.5.6",
-  "infile": "data/pip/zabbix-api.txt",
-  "dependencies": {}
-}

@@ -1,6 +1,0 @@
-{
-  "libname": "pyppmd",
-  "libvers": "1.2.0",
-  "infile": "data/pip/pyppmd.txt",
-  "dependencies": {}
-}

@@ -1,8 +1,0 @@
-{
-  "libname": "asyncio-mqtt",
-  "libvers": "0.16.2",
-  "infile": "data/pip/asyncio-mqtt.txt",
-  "dependencies": {
-    "paho-mqtt": "2.1.0"
-  }
-}

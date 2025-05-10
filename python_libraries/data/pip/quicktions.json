@@ -1,6 +1,0 @@
-{
-  "libname": "quicktions",
-  "libvers": "1.19",
-  "infile": "data/pip/quicktions.txt",
-  "dependencies": {}
-}

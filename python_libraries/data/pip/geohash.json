@@ -1,8 +1,0 @@
-{
-  "libname": "geohash",
-  "libvers": "1.0",
-  "infile": "data/pip/geohash.txt",
-  "dependencies": {
-    "docutils": "0.21.2"
-  }
-}

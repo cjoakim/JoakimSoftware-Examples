@@ -1,8 +1,0 @@
-{
-  "libname": "super-collections",
-  "libvers": "0.5.3",
-  "infile": "data/pip/super-collections.txt",
-  "dependencies": {
-    "hjson": "3.1.0"
-  }
-}

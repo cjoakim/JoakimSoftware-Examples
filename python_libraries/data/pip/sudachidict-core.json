@@ -1,8 +1,0 @@
-{
-  "libname": "sudachidict-core",
-  "libvers": "20250129",
-  "infile": "data/pip/sudachidict-core.txt",
-  "dependencies": {
-    "sudachipy": "0.6.10"
-  }
-}

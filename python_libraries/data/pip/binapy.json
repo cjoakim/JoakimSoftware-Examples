@@ -1,8 +1,0 @@
-{
-  "libname": "binapy",
-  "libvers": "0.8.0",
-  "infile": "data/pip/binapy.txt",
-  "dependencies": {
-    "typing-extensions": "4.13.2"
-  }
-}

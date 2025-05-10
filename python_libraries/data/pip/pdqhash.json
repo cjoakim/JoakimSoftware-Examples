@@ -1,6 +1,0 @@
-{
-  "libname": "pdqhash",
-  "libvers": "0.2.7",
-  "infile": "data/pip/pdqhash.txt",
-  "dependencies": {}
-}

@@ -1,8 +1,0 @@
-{
-  "libname": "tbb",
-  "libvers": "2022.1.0",
-  "infile": "data/pip/tbb.txt",
-  "dependencies": {
-    "tcmlib": "1.3.0"
-  }
-}

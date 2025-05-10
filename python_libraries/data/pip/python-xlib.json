@@ -1,8 +1,0 @@
-{
-  "libname": "python-xlib",
-  "libvers": "0.33",
-  "infile": "data/pip/python-xlib.txt",
-  "dependencies": {
-    "six": "1.17.0"
-  }
-}

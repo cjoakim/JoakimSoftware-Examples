@@ -1,8 +1,0 @@
-{
-  "libname": "bleach",
-  "libvers": "6.2.0",
-  "infile": "data/pip/bleach.txt",
-  "dependencies": {
-    "webencodings": "0.5.1"
-  }
-}

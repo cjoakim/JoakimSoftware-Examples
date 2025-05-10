@@ -1,6 +1,0 @@
-{
-  "libname": "fastcounter",
-  "libvers": "1.1.0",
-  "infile": "data/pip/fastcounter.txt",
-  "dependencies": {}
-}
